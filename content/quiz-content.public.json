@@ -2,8 +2,8 @@
   "quiz": {
     "id": "10000000-0000-4000-8000-000000000001",
     "slug": "english-grade-2-semester-2",
-    "title": "English Grade 2",
-    "description": "Semester 2 Practice Test",
+    "title": "English Grade 2 – End-of-term Test 1",
+    "description": "Global Success – Semester 2",
     "grade": "Grade 2",
     "subject": "English",
     "is_published": true
@@ -13,54 +13,71 @@
     {
       "id": "20000000-0000-4000-8000-000000000001",
       "title": "Listen and circle",
-      "instruction": "Listen to your teacher or the uploaded audio. Circle the word you hear.",
+      "instruction": "Listen and circle the sound you hear.",
       "section_type": "listening_choice",
       "position": 1,
-      "audio": null,
+      "audio": "audio/section-1.mp3",
       "questions": [
-        { "id": "30000000-0000-4000-8000-000000000001", "position": 1, "question_type": "single_choice", "prompt": "Which word do you hear?", "points": 1, "options": [["a","ship"],["b","shop"],["c","sheep"]] },
-        { "id": "30000000-0000-4000-8000-000000000002", "position": 2, "question_type": "single_choice", "prompt": "Choose the classroom word you hear.", "points": 1, "options": [["a","pen"],["b","pencil"],["c","ruler"]] },
-        { "id": "30000000-0000-4000-8000-000000000003", "position": 3, "question_type": "single_choice", "prompt": "Choose the animal word you hear.", "points": 1, "options": [["a","dog"],["b","duck"],["c","cat"]] },
-        { "id": "30000000-0000-4000-8000-000000000004", "position": 4, "question_type": "single_choice", "prompt": "Choose the colour word you hear.", "points": 1, "options": [["a","green"],["b","blue"],["c","brown"]] }
+        { "id": "30000000-0000-4000-8000-000000000001", "position": 1, "question_type": "single_choice", "prompt": "Listen and choose.", "points": 1, "options": [["a","sh"],["b","er"]] },
+        { "id": "30000000-0000-4000-8000-000000000002", "position": 2, "question_type": "single_choice", "prompt": "Listen and choose.", "points": 1, "options": [["a","s"],["b","sh"]] },
+        { "id": "30000000-0000-4000-8000-000000000003", "position": 3, "question_type": "single_choice", "prompt": "Listen and choose.", "points": 1, "options": [["a","m"],["b","n"]] },
+        { "id": "30000000-0000-4000-8000-000000000004", "position": 4, "question_type": "single_choice", "prompt": "Listen and choose.", "points": 1, "options": [["a","v"],["b","t"]] }
       ]
     },
     {
       "id": "20000000-0000-4000-8000-000000000002",
       "title": "Listen and tick",
-      "instruction": "Listen, then choose the matching picture.",
+      "instruction": "Listen, then tick the correct picture.",
       "section_type": "listening_image_choice",
       "position": 2,
-      "audio": null,
+      "audio": "audio/section-2.mp3",
       "questions": [
-        { "id": "30000000-0000-4000-8000-000000000005", "position": 1, "question_type": "image_choice", "prompt": "Which picture shows a kite?", "points": 1, "options": [["a","Kite"],["b","Ball"],["c","Bike"]] },
-        { "id": "30000000-0000-4000-8000-000000000006", "position": 2, "question_type": "image_choice", "prompt": "Which picture shows two cats?", "points": 1, "options": [["a","One dog"],["b","Two cats"],["c","Three birds"]] },
-        { "id": "30000000-0000-4000-8000-000000000007", "position": 3, "question_type": "image_choice", "prompt": "Which picture shows a yellow hat?", "points": 1, "options": [["a","Red cap"],["b","Blue bag"],["c","Yellow hat"]] },
-        { "id": "30000000-0000-4000-8000-000000000008", "position": 4, "question_type": "image_choice", "prompt": "Which picture shows a book on a table?", "points": 1, "options": [["a","Book on a table"],["b","Book under a chair"],["c","Book in a bag"]] }
+        { "id": "30000000-0000-4000-8000-000000000005", "position": 1, "question_type": "image_choice", "prompt": "Listen and choose the correct picture.", "points": 1, "image": "images/part2/question-1.png", "metadata": { "sprite_columns": 3 }, "options": [["a","13"],["b","14"],["c","15"]] },
+        { "id": "30000000-0000-4000-8000-000000000006", "position": 2, "question_type": "image_choice", "prompt": "Listen and choose the correct picture.", "points": 1, "image": "images/part2/question-2.png", "metadata": { "sprite_columns": 3 }, "options": [["a","40 years old"],["b","11 years old"],["c","7 years old"]] },
+        { "id": "30000000-0000-4000-8000-000000000007", "position": 3, "question_type": "image_choice", "prompt": "Listen and choose the correct picture.", "points": 1, "image": "images/part2/question-3.png", "metadata": { "sprite_columns": 3 }, "options": [["a","Shoes"],["b","Shorts"],["c","Shirts"]] },
+        { "id": "30000000-0000-4000-8000-000000000008", "position": 4, "question_type": "image_choice", "prompt": "Listen and choose the correct picture.", "points": 1, "image": "images/part2/question-4.png", "metadata": { "sprite_columns": 3 }, "options": [["a","Outside the tent"],["b","In the tent"],["c","On the chair"]] }
       ]
     },
     {
       "id": "20000000-0000-4000-8000-000000000003",
       "title": "Read and match",
-      "instruction": "Match each sentence with the best ending. Use each choice once.",
+      "instruction": "Read each dialogue and match it with the correct picture.",
       "section_type": "matching",
       "position": 3,
       "audio": null,
       "questions": [
-        { "id": "30000000-0000-4000-8000-000000000009", "position": 1, "question_type": "matching", "prompt": "Make four complete sentences.", "points": 4, "metadata": { "left_items": [{"key":"hello","text":"Hello!"},{"key":"name","text":"What is your name?"},{"key":"weather","text":"How is the weather?"},{"key":"thanks","text":"Thank you."}] }, "options": [["a","You are welcome."],["b","It is sunny."],["c","Hi!"],["d","My name is Mai."]] }
+        {
+          "id": "30000000-0000-4000-8000-000000000009",
+          "position": 1,
+          "question_type": "matching",
+          "prompt": "Read and match.",
+          "points": 4,
+          "image": "images/part3/matching.png",
+          "metadata": {
+            "sprite_columns": 4,
+            "left_items": [
+              { "key": "one", "text": "A: What number is it? B: It’s fifteen." },
+              { "key": "two", "text": "A: How old is your brother? B: He’s thirteen." },
+              { "key": "three", "text": "A: Where are the shirts? B: Over there." },
+              { "key": "four", "text": "A: Is the teapot near the tent? B: Yes, it is." }
+            ]
+          },
+          "options": [["a","Shirts"],["b","Tent"],["c","Thirteen"],["d","Fifteen"]]
+        }
       ]
     },
     {
       "id": "20000000-0000-4000-8000-000000000004",
       "title": "Look and write",
-      "instruction": "Look at each picture, then write the missing word.",
+      "instruction": "Look at each picture and write the missing word.",
       "section_type": "fill_blank",
       "position": 4,
       "audio": null,
       "questions": [
-        { "id": "30000000-0000-4000-8000-000000000010", "position": 1, "question_type": "fill_blank", "prompt": "I fly my ____ in the park.", "points": 1, "image": null, "options": [] },
-        { "id": "30000000-0000-4000-8000-000000000011", "position": 2, "question_type": "fill_blank", "prompt": "This is my red ____.", "points": 1, "image": null, "options": [] },
-        { "id": "30000000-0000-4000-8000-000000000012", "position": 3, "question_type": "fill_blank", "prompt": "The ____ says meow.", "points": 1, "image": null, "options": [] },
-        { "id": "30000000-0000-4000-8000-000000000013", "position": 4, "question_type": "fill_blank", "prompt": "Open your English ____.", "points": 1, "image": null, "options": [] }
+        { "id": "30000000-0000-4000-8000-000000000010", "position": 1, "question_type": "fill_blank", "prompt": "A: What number is it? B: It’s ____.", "points": 1, "image": "images/part4/fill-objects.png", "metadata": { "sprite_columns": 4, "sprite_index": 0 }, "options": [] },
+        { "id": "30000000-0000-4000-8000-000000000011", "position": 2, "question_type": "fill_blank", "prompt": "A: Where are the ____? B: Over there.", "points": 1, "image": "images/part4/fill-objects.png", "metadata": { "sprite_columns": 4, "sprite_index": 1 }, "options": [] },
+        { "id": "30000000-0000-4000-8000-000000000012", "position": 3, "question_type": "fill_blank", "prompt": "A: How old is your ____? B: She’s eight.", "points": 1, "image": "images/part4/fill-objects.png", "metadata": { "sprite_columns": 4, "sprite_index": 2 }, "options": [] },
+        { "id": "30000000-0000-4000-8000-000000000013", "position": 4, "question_type": "fill_blank", "prompt": "A: Is the teapot near the table? B: No, it isn’t. It’s ____ the table.", "points": 1, "image": "images/part4/fill-objects.png", "metadata": { "sprite_columns": 4, "sprite_index": 3 }, "options": [] }
       ]
     }
   ]
