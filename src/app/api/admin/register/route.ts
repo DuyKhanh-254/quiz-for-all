@@ -18,7 +18,17 @@ export async function POST(request: Request) {
 
   const admin = createAdminClient();
   const { data, error } = await admin.auth.admin.createUser({ email: parsed.data.email, password: parsed.data.password, email_confirm: true, user_metadata: { full_name: parsed.data.fullName } });
-  if (error || !data.user) return safeError(error?.message.includes("registered") ? "An account with this email already exists." : "The administrator account could not be created.", 400);
+  if (error || !data.user) {
+    console.error("Supabase admin createUser failed", {
+      code: error?.code ?? "missing_user",
+      status: error?.status ?? 400,
+      message: error?.message ?? "Supabase returned no user",
+    });
+    if (error?.message.toLowerCase().includes("already") || error?.message.toLowerCase().includes("registered")) {
+      return safeError("An account with this email already exists. Try signing in instead.", 409);
+    }
+    return safeError("Supabase rejected the administrator account. Check the server log for the safe diagnostic message.", 400);
+  }
   const { error: profileError } = await admin.from("profiles").upsert({ id: data.user.id, full_name: parsed.data.fullName, class_name: null, role: "admin", updated_at: new Date().toISOString() }, { onConflict: "id" });
   if (profileError) {
     await admin.auth.admin.deleteUser(data.user.id);
