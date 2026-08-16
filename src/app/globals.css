@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #183153;
+  --muted: #61738a;
+  --paper: #fffdf8;
+  --line: #dce6ee;
+  --blue: #2869c7;
+  --blue-dark: #174a91;
+  --yellow: #ffd166;
+  --green: #2e8b68;
+  --red: #b8424b;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: #f4f8fb;
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+button, input, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+:focus-visible { outline: 3px solid #f0a928; outline-offset: 3px; }
+
+.shell { width: min(1180px, calc(100% - 32px)); margin-inline: auto; }
+.card { background: white; border: 1px solid var(--line); border-radius: 22px; box-shadow: 0 12px 30px rgba(24,49,83,.07); }
+.btn {
+  display: inline-flex; min-height: 48px; align-items: center; justify-content: center; gap: 8px;
+  border-radius: 14px; border: 1px solid transparent; padding: 10px 20px; font-weight: 750;
+  transition: transform .15s ease, background .15s ease;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:disabled { cursor: not-allowed; opacity: .55; transform: none; }
+.btn-primary { background: var(--blue); color: white; }
+.btn-primary:hover { background: var(--blue-dark); }
+.btn-secondary { background: white; border-color: #bdccda; color: var(--ink); }
+.btn-danger { background: #fff1f1; border-color: #f0c5c8; color: #9a3038; }
+.field { width: 100%; min-height: 50px; border: 1px solid #b9c9d8; border-radius: 13px; padding: 10px 14px; background: white; color: var(--ink); }
+.label { display: block; margin-bottom: 7px; font-size: .9rem; font-weight: 750; color: #39516d; }
+.muted { color: var(--muted); }
+.error-box { border: 1px solid #efbdc0; border-radius: 13px; background: #fff3f3; padding: 12px 14px; color: #8f2932; }
+.success-box { border: 1px solid #add9c8; border-radius: 13px; background: #effbf5; padding: 12px 14px; color: #246b53; }
+.badge { display: inline-flex; align-items: center; gap: 5px; border-radius: 999px; padding: 5px 10px; font-size: .78rem; font-weight: 800; }
+.skeleton { animation: pulse 1.3s infinite; border-radius: 12px; background: #e6edf2; }
+@keyframes pulse { 50% { opacity: .48; } }
+
+@media (max-width: 640px) {
+  .shell { width: min(100% - 20px, 1180px); }
+  .card { border-radius: 17px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation-duration: .01ms !important; }
+}

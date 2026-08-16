@@ -1,0 +1,13 @@
+project_id = "english-practice-quiz"
+
+[auth]
+site_url = "http://localhost:3000"
+enable_signup = true
+enable_anonymous_sign_ins = true
+
+[auth.email]
+enable_signup = true
+enable_confirmations = false
+
+[storage]
+file_size_limit = "20MiB"
