@@ -13,17 +13,16 @@ const files = [
   ["test-2/04-CUP Pre A1 Starters 03 CD 01 Test 01 Part 04.mp3", "english-grade-2-test-2/audio/listening-part-4.mp3", "audio/mpeg"],
   ...[
     "listening-part3-q1.jpg", "listening-part3-q2.jpg", "listening-part3-q3.jpg", "listening-part3-q4.jpg", "listening-part3-q5.jpg",
-    "listening-part4-scene.jpg", "reading-part3-q1.jpg", "reading-part3-q2.jpg", "reading-part3-q3.jpg", "reading-part3-q4.jpg", "reading-part3-q5.jpg", "reading-part4-donkey.jpg",
+    "listening-part4-scene.jpg", "reading-part3-q1.jpg", "reading-part3-q2.jpg", "reading-part3-q3.jpg", "reading-part3-q4.jpg", "reading-part3-q5.jpg",
   ].map((name) => {
     const destination = name.startsWith("listening-part3-")
       ? `english-grade-2-test-2/images/listening/${name.replace("listening-", "")}`
       : name === "listening-part4-scene.jpg"
         ? "english-grade-2-test-2/images/listening/part4-scene.jpg"
-        : name.startsWith("reading-part3-")
-          ? `english-grade-2-test-2/images/reading/${name.replace("reading-", "")}`
-          : "english-grade-2-test-2/images/reading/part4-donkey.jpg";
+        : `english-grade-2-test-2/images/reading/${name.replace("reading-", "")}`;
     return [`content/test-2-assets/${name}`, destination, "image/jpeg"];
   }),
+  ["content/test-2-assets/reading-part5-scene.png", "english-grade-2-test-2/images/reading/part5-scene.png", "image/png"],
 ];
 
 const supabase = createClient(url, serviceKey, { auth: { persistSession: false, autoRefreshToken: false } });

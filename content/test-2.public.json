@@ -57,17 +57,17 @@
     },
     {
       "id": "21000000-0000-4000-8000-000000000004",
-      "title": "Reading and Writing – Part 4",
-      "instruction": "Read the text about a donkey. Choose one word for each gap.",
+      "title": "Reading and Writing – Part 5",
+      "instruction": "Look at the pictures and read the questions. Write one-word answers.",
       "section_type": "fill_blank",
       "position": 4,
-      "image": "images/reading/part4-donkey.jpg",
+      "image": "images/reading/part5-scene.png",
       "questions": [
-        { "id": "31000000-0000-4000-8000-000000000016", "position": 1, "question_type": "fill_blank", "prompt": "A donkey has two very long (1) ____ on its head.", "points": 1, "options": [] },
-        { "id": "31000000-0000-4000-8000-000000000017", "position": 2, "question_type": "fill_blank", "prompt": "At the end of its body a donkey has a small (2) ____.", "points": 1, "options": [] },
-        { "id": "31000000-0000-4000-8000-000000000018", "position": 3, "question_type": "fill_blank", "prompt": "A donkey can walk and run on its four (3) ____.", "points": 1, "options": [] },
-        { "id": "31000000-0000-4000-8000-000000000019", "position": 4, "question_type": "fill_blank", "prompt": "Donkeys drink (4) ____.", "points": 1, "options": [] },
-        { "id": "31000000-0000-4000-8000-000000000020", "position": 5, "question_type": "fill_blank", "prompt": "They love eating (5) ____ and they like apples, too.", "points": 1, "options": [] }
+        { "id": "31000000-0000-4000-8000-000000000016", "position": 1, "question_type": "fill_blank", "prompt": "How many children are there?", "points": 1, "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000017", "position": 2, "question_type": "fill_blank", "prompt": "Where are the children? — in a ____", "points": 1, "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000018", "position": 3, "question_type": "fill_blank", "prompt": "What is on the table? — a ____", "points": 1, "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000019", "position": 4, "question_type": "fill_blank", "prompt": "What is the boy putting on Dad? — a ____", "points": 1, "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000020", "position": 5, "question_type": "fill_blank", "prompt": "Who is taking a photo? — the ____", "points": 1, "options": [] }
       ]
     }
   ]
