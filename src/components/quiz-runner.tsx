@@ -5,6 +5,7 @@ import { ArrowLeft, ArrowRight, CheckCircle2, Clock3, Cloud, CloudOff, Graduatio
 import Link from "next/link";
 import { AudioPlayer } from "@/components/audio-player";
 import { QuestionCard, isAnswered } from "@/components/questions";
+import { QuestionImage } from "@/components/question-image";
 import { formatDuration } from "@/lib/format";
 import type { AttemptAnswer, AttemptSummary, JsonResponse, Quiz } from "@/lib/types";
 
@@ -97,6 +98,7 @@ export function QuizRunner({ attemptId }: { attemptId: string }) {
       <div>
         <section className="mb-5 rounded-2xl bg-[#183153] p-5 text-white"><p className="text-sm font-bold text-[#bed1e8]">Part {sectionIndex + 1} of {data.quiz.quiz_sections.length}</p><h2 className="mt-1 text-2xl font-black">{section.title}</h2><p className="mt-2 text-[#e3edf7]">{section.instruction}</p></section>
         {section.audio_url && <div className="card mb-5 p-5"><h3 className="mb-3 flex items-center gap-2 font-extrabold">Listen carefully</h3><AudioPlayer src={section.audio_url} label={`${section.title} audio`} /></div>}
+        {section.image_url && <div className="card mb-5 p-4 sm:p-6"><QuestionImage src={section.image_url} alt={`Reference picture for ${section.title}`} className="min-h-[32rem] sm:min-h-[46rem]" /></div>}
         <div className="space-y-5">{section.questions.map((question, index) => <QuestionCard key={question.id} question={question} number={globalOffset + index + 1} value={responses[question.id]} onChange={(response) => update(question.id, response)} />)}</div>
       </div>
       <aside className="hidden lg:block"><div className="card sticky top-24 p-5"><p className="font-extrabold">Your progress</p><p className="muted mt-1 text-sm">{answered} / {questions.length} answered</p><nav className="mt-5 space-y-2" aria-label="Quiz sections">{data.quiz.quiz_sections.map((item, index) => { const count = item.questions.filter((q) => isAnswered(q, responses[q.id])).length; return <button key={item.id} onClick={() => setSectionIndex(index)} className={`flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm font-bold ${index === sectionIndex ? "bg-[#e9f2ff] text-[#1f5da9]" : "hover:bg-[#f3f6f8]"}`}><span>Part {index + 1}</span><span>{count}/{item.questions.length}</span></button>; })}</nav><div className="mt-5 grid grid-cols-4 gap-2">{questions.map((question, index) => <button onClick={() => { const targetSection = data.quiz.quiz_sections.findIndex((s) => s.questions.some((q) => q.id === question.id)); setSectionIndex(targetSection); setTimeout(() => document.getElementById(`question-${question.id}`)?.scrollIntoView(), 50); }} key={question.id} aria-label={`Go to question ${index + 1}`} className={`grid aspect-square place-items-center rounded-lg text-xs font-black ${isAnswered(question, responses[question.id]) ? "bg-[#dff4eb] text-[#246c53]" : "bg-[#f0f3f6] text-[#61738a]"}`}>{index + 1}</button>)}</div></div></aside>

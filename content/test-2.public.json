@@ -1,0 +1,74 @@
+{
+  "quiz": {
+    "id": "11000000-0000-4000-8000-000000000001",
+    "slug": "cambridge-starters-test-1-parts-3-4",
+    "title": "Test 2 – Cambridge Starters Practice",
+    "description": "Listening and Reading/Writing Parts 3–4",
+    "grade": "Pre A1",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-2",
+  "sections": [
+    {
+      "id": "21000000-0000-4000-8000-000000000001",
+      "title": "Listening – Part 3",
+      "instruction": "Listen and tick the correct picture.",
+      "section_type": "listening_image_choice",
+      "position": 1,
+      "audio": "audio/listening-part-3.mp3",
+      "questions": [
+        { "id": "31000000-0000-4000-8000-000000000001", "position": 1, "question_type": "image_choice", "prompt": "What does Alex want?", "points": 1, "image": "images/listening/part3-q1.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Pear"], ["b", "Grapes"], ["c", "Orange"]] },
+        { "id": "31000000-0000-4000-8000-000000000002", "position": 2, "question_type": "image_choice", "prompt": "Where is Ben's tablet?", "points": 1, "image": "images/listening/part3-q2.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "On the chair"], ["b", "On the bed"], ["c", "On the desk"]] },
+        { "id": "31000000-0000-4000-8000-000000000003", "position": 3, "question_type": "image_choice", "prompt": "What is Bill's favourite animal?", "points": 1, "image": "images/listening/part3-q3.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Crocodile"], ["b", "Giraffe"], ["c", "Hippo"]] },
+        { "id": "31000000-0000-4000-8000-000000000004", "position": 4, "question_type": "image_choice", "prompt": "What is Alice doing?", "points": 1, "image": "images/listening/part3-q4.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Playing baseball"], ["b", "Playing hockey"], ["c", "Playing tennis"]] },
+        { "id": "31000000-0000-4000-8000-000000000005", "position": 5, "question_type": "image_choice", "prompt": "Which is Kim's cat?", "points": 1, "image": "images/listening/part3-q5.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Cat A"], ["b", "Cat B"], ["c", "Cat C"]] }
+      ]
+    },
+    {
+      "id": "21000000-0000-4000-8000-000000000002",
+      "title": "Listening – Part 4",
+      "instruction": "Listen and choose the correct colour for each apple.",
+      "section_type": "listening_choice",
+      "position": 2,
+      "audio": "audio/listening-part-4.mp3",
+      "image": "images/listening/part4-scene.jpg",
+      "questions": [
+        { "id": "31000000-0000-4000-8000-000000000006", "position": 1, "question_type": "single_choice", "prompt": "What colour is the apple on the tree?", "points": 1, "options": [["a", "Red"], ["b", "Blue"], ["c", "Purple"], ["d", "Yellow"], ["e", "Orange"]] },
+        { "id": "31000000-0000-4000-8000-000000000007", "position": 2, "question_type": "single_choice", "prompt": "What colour is the apple on the bookshelf?", "points": 1, "options": [["a", "Red"], ["b", "Blue"], ["c", "Purple"], ["d", "Yellow"], ["e", "Orange"]] },
+        { "id": "31000000-0000-4000-8000-000000000008", "position": 3, "question_type": "single_choice", "prompt": "What colour is the apple in the man's hand?", "points": 1, "options": [["a", "Red"], ["b", "Blue"], ["c", "Purple"], ["d", "Yellow"], ["e", "Orange"]] },
+        { "id": "31000000-0000-4000-8000-000000000009", "position": 4, "question_type": "single_choice", "prompt": "What colour is the apple in the girl's hand?", "points": 1, "options": [["a", "Red"], ["b", "Blue"], ["c", "Purple"], ["d", "Yellow"], ["e", "Orange"]] },
+        { "id": "31000000-0000-4000-8000-000000000010", "position": 5, "question_type": "single_choice", "prompt": "What colour is the apple on the table?", "points": 1, "options": [["a", "Red"], ["b", "Blue"], ["c", "Purple"], ["d", "Yellow"], ["e", "Orange"]] }
+      ]
+    },
+    {
+      "id": "21000000-0000-4000-8000-000000000003",
+      "title": "Reading and Writing – Part 3",
+      "instruction": "Look at the picture and letters. Write the word.",
+      "section_type": "fill_blank",
+      "position": 3,
+      "questions": [
+        { "id": "31000000-0000-4000-8000-000000000011", "position": 1, "question_type": "fill_blank", "prompt": "Write the food word.", "points": 1, "image": "images/reading/part3-q1.jpg", "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000012", "position": 2, "question_type": "fill_blank", "prompt": "Write the drink word.", "points": 1, "image": "images/reading/part3-q2.jpg", "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000013", "position": 3, "question_type": "fill_blank", "prompt": "Write the food word.", "points": 1, "image": "images/reading/part3-q3.jpg", "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000014", "position": 4, "question_type": "fill_blank", "prompt": "Write the food word.", "points": 1, "image": "images/reading/part3-q4.jpg", "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000015", "position": 5, "question_type": "fill_blank", "prompt": "Write the food word.", "points": 1, "image": "images/reading/part3-q5.jpg", "options": [] }
+      ]
+    },
+    {
+      "id": "21000000-0000-4000-8000-000000000004",
+      "title": "Reading and Writing – Part 4",
+      "instruction": "Read the text about a donkey. Choose one word for each gap.",
+      "section_type": "fill_blank",
+      "position": 4,
+      "image": "images/reading/part4-donkey.jpg",
+      "questions": [
+        { "id": "31000000-0000-4000-8000-000000000016", "position": 1, "question_type": "fill_blank", "prompt": "A donkey has two very long (1) ____ on its head.", "points": 1, "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000017", "position": 2, "question_type": "fill_blank", "prompt": "At the end of its body a donkey has a small (2) ____.", "points": 1, "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000018", "position": 3, "question_type": "fill_blank", "prompt": "A donkey can walk and run on its four (3) ____.", "points": 1, "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000019", "position": 4, "question_type": "fill_blank", "prompt": "Donkeys drink (4) ____.", "points": 1, "options": [] },
+        { "id": "31000000-0000-4000-8000-000000000020", "position": 5, "question_type": "fill_blank", "prompt": "They love eating (5) ____ and they like apples, too.", "points": 1, "options": [] }
+      ]
+    }
+  ]
+}

@@ -6,8 +6,10 @@ const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 if (!url || !serviceKey) throw new Error("Set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY before importing.");
 
-const publicContent = JSON.parse(await readFile(new URL("../content/quiz-content.public.json", import.meta.url), "utf8"));
-const privateAnswers = JSON.parse(await readFile(new URL("../content/quiz-content.private.json", import.meta.url), "utf8"));
+const contentName = process.argv[2] ?? "quiz-content";
+if (!/^[a-z0-9-]+$/i.test(contentName)) throw new Error("The content name may only contain letters, numbers, and hyphens.");
+const publicContent = JSON.parse(await readFile(new URL(`../content/${contentName}.public.json`, import.meta.url), "utf8"));
+const privateAnswers = JSON.parse(await readFile(new URL(`../content/${contentName}.private.json`, import.meta.url), "utf8"));
 const supabase = createClient(url, serviceKey, { auth: { persistSession: false, autoRefreshToken: false } });
 
 function assetUrl(relativePath) {

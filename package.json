@@ -11,6 +11,8 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "import:quiz": "node scripts/import-quiz.mjs",
+    "import:test2": "node scripts/import-quiz.mjs test-2",
+    "upload:test2": "node scripts/upload-test-2-media.mjs",
     "audit:answers": "node scripts/audit-answer-security.mjs"
   },
   "dependencies": {
