@@ -14,7 +14,7 @@
       "id": "22000000-0000-4000-8000-000000000001",
       "title": "Vocabulary – Part 1 (English to Vietnamese)",
       "instruction": "Chọn nghĩa tiếng Việt đúng cho từ tiếng Anh dưới đây.",
-      "section_type": "single_choice",
+      "section_type": "listening_choice",
       "position": 1,
       "questions": [
         { "id": "32000000-0000-4000-8000-000000000001", "position": 1, "question_type": "single_choice", "prompt": "Nghĩa tiếng Việt của \"garden\" là gì?", "points": 1, "options": [["a", "Khu vườn"], ["b", "Phòng ngủ"], ["c", "Lều cắm trại"], ["d", "Trường học"]] },
@@ -43,7 +43,7 @@
       "id": "22000000-0000-4000-8000-000000000002",
       "title": "Vocabulary – Part 2 (Vietnamese to English)",
       "instruction": "Chọn từ tiếng Anh đúng nghĩa cho các từ tiếng Việt dưới đây.",
-      "section_type": "single_choice",
+      "section_type": "listening_choice",
       "position": 2,
       "questions": [
         { "id": "32000000-0000-4000-8000-000000000021", "position": 1, "question_type": "single_choice", "prompt": "Từ tiếng Anh nào có nghĩa là \"phòng ngủ\"?", "points": 1, "options": [["a", "bedroom"], ["b", "garden"], ["c", "kitchen"], ["d", "bathroom"]] },
