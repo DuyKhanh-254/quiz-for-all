@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BookOpen, Check, Clock3, History, Layers3, LoaderCircle, LockKeyhole, Sparkles, User, GraduationCap, Edit3, ArrowRight } from "lucide-react";
+import { BookOpen, Check, History, Layers3, LoaderCircle, User, GraduationCap, Edit3, ArrowRight, Lock } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { createClient } from "@/lib/supabase/client";
 import { formatDate } from "@/lib/format";
@@ -26,9 +26,10 @@ export function StudentHome({ configured }: { configured: boolean }) {
   const [fullName, setFullName] = useState("");
   const [className, setClassName] = useState("");
   
-  // Student Gate State & Active Tab State
+  // Student Gate State, Active Tab State, & Vocab Lock State
   const [isInfoSubmitted, setIsInfoSubmitted] = useState(false);
   const [activeTab, setActiveTab] = useState<"tests" | "vocab">("tests");
+  const [isVocabLocked, setIsVocabLocked] = useState(false);
 
   useEffect(() => {
     // Restore student info from localStorage if available
@@ -203,8 +204,11 @@ export function StudentHome({ configured }: { configured: boolean }) {
 
           <button
             type="button"
+            disabled={isVocabLocked}
             onClick={() => setIsInfoSubmitted(false)}
-            className="btn btn-secondary !min-h-10 !px-4 text-xs font-extrabold text-[#785412] border-[#f6d77d] hover:bg-[#fef3c7]"
+            className={`btn btn-secondary !min-h-10 !px-4 text-xs font-extrabold text-[#785412] border-[#f6d77d] ${
+              isVocabLocked ? "opacity-50 cursor-not-allowed" : "hover:bg-[#fef3c7]"
+            }`}
           >
             <Edit3 size={15} /> Đổi học sinh
           </button>
@@ -215,7 +219,7 @@ export function StudentHome({ configured }: { configured: boolean }) {
       <section className="py-6">
         <div className="text-center max-w-2xl mx-auto space-y-3">
           <span className="badge bg-[#fef0c7] text-[#75530c] font-black">
-            <Sparkles size={15} /> Giao Diện Học Tập Tiếng Anh
+            🦁 Giao Diện Học Tập Tiếng Anh
           </span>
           <h1 className="text-3xl font-black tracking-tight text-[#78350f] sm:text-5xl">
             Chọn Bài Học & Luyện Tập
@@ -223,6 +227,12 @@ export function StudentHome({ configured }: { configured: boolean }) {
           <p className="muted text-base font-bold text-[#64748b]">
             Em có thể chọn làm Bài Test Luyện Tập hoặc Học Từ Vựng Thẻ Nhớ ở bên dưới!
           </p>
+
+          {isVocabLocked && (
+            <div className="mt-3 inline-flex items-center gap-2 rounded-2xl bg-[#fee2e2] px-4 py-2 text-sm font-black text-[#991b1b] border-2 border-[#fca5a5] animate-pulse">
+              <Lock size={16} /> 🔒 Đang trong quá trình làm Bài Kiểm Tra Vocab. Hãy bấm Nộp Bài để mở khóa các phần khác!
+            </div>
+          )}
         </div>
 
         {/* 2 MAIN PARTS TAB SWITCHER */}
@@ -230,10 +240,13 @@ export function StudentHome({ configured }: { configured: boolean }) {
           <div className="inline-flex rounded-2xl border-3 border-[#f6d77d] bg-[#fffcf2] p-1.5 shadow-md">
             <button
               type="button"
+              disabled={isVocabLocked}
               onClick={() => setActiveTab("tests")}
               className={`flex items-center gap-2 rounded-xl px-6 py-3 text-base font-black transition ${
                 activeTab === "tests"
                   ? "bg-[#f59e0b] text-white shadow-md"
+                  : isVocabLocked
+                  ? "opacity-50 cursor-not-allowed text-[#785412]"
                   : "text-[#785412] hover:bg-[#fef3c7]"
               }`}
             >
@@ -385,7 +398,11 @@ export function StudentHome({ configured }: { configured: boolean }) {
       {/* TAB 2: VOCABULARY FLASHCARDS */}
       {activeTab === "vocab" && (
         <div className="pb-14">
-          <VocabFlashcards fullName={fullName} className={className} />
+          <VocabFlashcards
+            fullName={fullName}
+            className={className}
+            onLockChange={setIsVocabLocked}
+          />
         </div>
       )}
     </>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Volume2, RotateCw, ArrowLeft, ArrowRight, CheckCircle2, XCircle, Sparkles, BookOpen, Award, Check, RefreshCw, Send, LoaderCircle } from "lucide-react";
+import { Volume2, RotateCw, ArrowLeft, ArrowRight, CheckCircle2, XCircle, Sparkles, BookOpen, Award, Check, RefreshCw, Send, LoaderCircle, Lock } from "lucide-react";
 import type { JsonResponse } from "@/lib/types";
 
 export interface VocabItem {
@@ -111,7 +111,15 @@ export function generateVocabQuestions(): VocabQuestion[] {
   return questions;
 }
 
-export function VocabFlashcards({ fullName, className }: { fullName: string; className: string }) {
+export function VocabFlashcards({
+  fullName,
+  className,
+  onLockChange,
+}: {
+  fullName: string;
+  className: string;
+  onLockChange?: (locked: boolean) => void;
+}) {
   const [subMode, setSubMode] = useState<"study" | "practice">("study");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
@@ -122,6 +130,12 @@ export function VocabFlashcards({ fullName, className }: { fullName: string; cla
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [quizResult, setQuizResult] = useState<{ score: number; total: number; percentage: number } | null>(null);
+
+  // Notify parent component about lock status when taking the practice test
+  useEffect(() => {
+    const isLocked = subMode === "practice" && !isSubmitted;
+    onLockChange?.(isLocked);
+  }, [subMode, isSubmitted, onLockChange]);
 
   useEffect(() => {
     setQuestions(generateVocabQuestions());
@@ -207,6 +221,8 @@ export function VocabFlashcards({ fullName, className }: { fullName: string; cla
     setQuizResult(null);
   };
 
+  const isTestingLocked = subMode === "practice" && !isSubmitted;
+
   return (
     <div className="space-y-6">
       {/* Sub Mode Header Tabs */}
@@ -214,14 +230,17 @@ export function VocabFlashcards({ fullName, className }: { fullName: string; cla
         <div className="flex gap-2">
           <button
             type="button"
+            disabled={isTestingLocked}
             onClick={() => setSubMode("study")}
             className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-extrabold transition ${
               subMode === "study"
                 ? "bg-[#f59e0b] text-white shadow-md"
+                : isTestingLocked
+                ? "opacity-50 cursor-not-allowed text-[#785412]"
                 : "text-[#785412] hover:bg-[#ffe9ad]"
             }`}
           >
-            <BookOpen size={18} /> 🎴 Thẻ Thẻ Ghi Nhớ (Flashcards)
+            <BookOpen size={18} /> 🎴 Thẻ Ghi Nhớ (Flashcards)
           </button>
           <button
             type="button"
@@ -236,9 +255,16 @@ export function VocabFlashcards({ fullName, className }: { fullName: string; cla
           </button>
         </div>
 
-        <span className="badge bg-[#fef0c7] text-[#785412] text-xs font-black">
-          🦁 30 Từ Vựng Test 1
-        </span>
+        <div className="flex items-center gap-2">
+          {isTestingLocked && (
+            <span className="badge bg-[#fee2e2] text-[#991b1b] text-xs font-black animate-pulse">
+              <Lock size={13} /> Khóa các phần khác cho tới khi nộp bài
+            </span>
+          )}
+          <span className="badge bg-[#fef0c7] text-[#785412] text-xs font-black">
+            🦁 30 Từ Vựng Test 1
+          </span>
+        </div>
       </div>
 
       {/* MODE 1: STUDY FLASHCARDS */}
@@ -384,7 +410,7 @@ export function VocabFlashcards({ fullName, className }: { fullName: string; cla
                 </p>
 
                 <p className="mt-4 text-sm font-bold text-slate-600">
-                  ✅ Kết quả đã được tự động lưu và gửi cho Giáo viên (Admin) xem chi tiết!
+                  ✅ Kết quả đã được tự động lưu và gửi cho Giáo viên (Admin) xem chi tiết! Các phần khác đã được mở khóa!
                 </p>
 
                 <div className="mt-6 flex justify-center gap-3">
