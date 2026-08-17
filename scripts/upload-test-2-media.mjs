@@ -22,7 +22,7 @@ const files = [
         : `english-grade-2-test-2/images/reading/${name.replace("reading-", "")}`;
     return [`content/test-2-assets/${name}`, destination, "image/jpeg"];
   }),
-  ["content/test-2-assets/reading-part5-scene.png", "english-grade-2-test-2/images/reading/part5-scene.png", "image/png"],
+  ["content/test-2-assets/reading-part5-scene.jpg", "english-grade-2-test-2/images/reading/part5-scene.jpg", "image/jpeg"],
 ];
 
 const supabase = createClient(url, serviceKey, { auth: { persistSession: false, autoRefreshToken: false } });

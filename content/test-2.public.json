@@ -61,7 +61,7 @@
       "instruction": "Look at the pictures and read the questions. Write one-word answers.",
       "section_type": "fill_blank",
       "position": 4,
-      "image": "images/reading/part5-scene.png",
+      "image": "images/reading/part5-scene.jpg",
       "questions": [
         { "id": "31000000-0000-4000-8000-000000000016", "position": 1, "question_type": "fill_blank", "prompt": "How many children are there?", "points": 1, "options": [] },
         { "id": "31000000-0000-4000-8000-000000000017", "position": 2, "question_type": "fill_blank", "prompt": "Where are the children? — in a ____", "points": 1, "options": [] },
