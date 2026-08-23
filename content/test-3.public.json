@@ -50,11 +50,11 @@
       "position": 3,
       "audio": "audio/test3-lis-part3.mp3",
       "questions": [
-        { "id": "33000000-0000-4000-8000-000000000011", "position": 1, "question_type": "image_choice", "prompt": "What animal is Alex thinking about?", "points": 1, "image": "images/listening/test3-part3-q1.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Snake"], ["b", "Crocodile"], ["c", "Horse"]] },
-        { "id": "33000000-0000-4000-8000-000000000012", "position": 2, "question_type": "image_choice", "prompt": "Which is Grace's monster picture?", "points": 1, "image": "images/listening/test3-part3-q2.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Monster A"], ["b", "Monster B"], ["c", "Monster C"]] },
-        { "id": "33000000-0000-4000-8000-000000000013", "position": 3, "question_type": "image_choice", "prompt": "Where are the tennis rackets?", "points": 1, "image": "images/listening/test3-part3-q3.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Classroom"], ["b", "Gym"], ["c", "Outside school"]] },
-        { "id": "33000000-0000-4000-8000-000000000014", "position": 4, "question_type": "image_choice", "prompt": "What is new in Dan's bedroom?", "points": 1, "image": "images/listening/test3-part3-q4.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Desk"], ["b", "Armchair"], ["c", "Lamp"]] },
-        { "id": "33000000-0000-4000-8000-000000000015", "position": 5, "question_type": "image_choice", "prompt": "What is in Grandpa's garden?", "points": 1, "image": "images/listening/test3-part3-q5.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Potatoes"], ["b", "Tomatoes"], ["c", "Carrots"]] }
+        { "id": "33000000-0000-4000-8000-000000000011", "position": 1, "question_type": "image_choice", "prompt": "What animal is Alex thinking about?", "points": 1, "options": [["a", "Snake", "images/listening/q1-a.jpg"], ["b", "Crocodile", "images/listening/q1-b.jpg"], ["c", "Horse", "images/listening/q1-c.jpg"]] },
+        { "id": "33000000-0000-4000-8000-000000000012", "position": 2, "question_type": "image_choice", "prompt": "Which is Grace's monster picture?", "points": 1, "options": [["a", "Monster A", "images/listening/q2-a.jpg"], ["b", "Monster B", "images/listening/q2-b.jpg"], ["c", "Monster C", "images/listening/q2-c.jpg"]] },
+        { "id": "33000000-0000-4000-8000-000000000013", "position": 3, "question_type": "image_choice", "prompt": "Where are the tennis rackets?", "points": 1, "options": [["a", "Classroom", "images/listening/q3-a.jpg"], ["b", "Gym", "images/listening/q3-b.jpg"], ["c", "Outside school", "images/listening/q3-c.jpg"]] },
+        { "id": "33000000-0000-4000-8000-000000000014", "position": 4, "question_type": "image_choice", "prompt": "What is new in Dan's bedroom?", "points": 1, "options": [["a", "Desk", "images/listening/q4-a.jpg"], ["b", "Armchair", "images/listening/q4-b.jpg"], ["c", "Lamp", "images/listening/q4-c.jpg"]] },
+        { "id": "33000000-0000-4000-8000-000000000015", "position": 5, "question_type": "image_choice", "prompt": "What is in Grandpa's garden?", "points": 1, "options": [["a", "Potatoes", "images/listening/q5-a.jpg"], ["b", "Tomatoes", "images/listening/q5-b.jpg"], ["c", "Carrots", "images/listening/q5-c.jpg"]] }
       ]
     }
   ]
