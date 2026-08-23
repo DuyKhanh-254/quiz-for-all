@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Volume2, RotateCw, ArrowLeft, ArrowRight, CheckCircle2, XCircle, Sparkles, BookOpen, Award, RefreshCw, Send, LoaderCircle, Lock } from "lucide-react";
 import type { JsonResponse } from "@/lib/types";
+import { VocabMatching } from "@/components/vocab-matching";
 
 export interface VocabItem {
   id: number;
@@ -120,7 +121,8 @@ export function VocabFlashcards({
   className: string;
   onLockChange?: (locked: boolean) => void;
 }) {
-  const [subMode, setSubMode] = useState<"study" | "practice">("study");
+  const [subMode, setSubMode] = useState<"study" | "practice" | "matching">("study");
+  const [isMatchingLocked, setIsMatchingLocked] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
@@ -133,9 +135,9 @@ export function VocabFlashcards({
 
   // Notify parent component about lock status when taking the practice test
   useEffect(() => {
-    const isLocked = subMode === "practice" && !isSubmitted;
+    const isLocked = (subMode === "practice" && !isSubmitted) || (subMode === "matching" && isMatchingLocked);
     onLockChange?.(isLocked);
-  }, [subMode, isSubmitted, onLockChange]);
+  }, [subMode, isSubmitted, isMatchingLocked, onLockChange]);
 
   const speak = (text: string) => {
     if (typeof window !== "undefined" && "speechSynthesis" in window) {
@@ -217,13 +219,13 @@ export function VocabFlashcards({
     setQuizResult(null);
   };
 
-  const isTestingLocked = subMode === "practice" && !isSubmitted;
+  const isTestingLocked = (subMode === "practice" && !isSubmitted) || (subMode === "matching" && isMatchingLocked);
 
   return (
     <div className="space-y-6">
       {/* Sub Mode Header Tabs */}
       <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-[#fff8e7] p-2 border-2 border-[#f6d77d]">
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           <button
             type="button"
             disabled={isTestingLocked}
@@ -240,14 +242,34 @@ export function VocabFlashcards({
           </button>
           <button
             type="button"
+            disabled={isTestingLocked && subMode !== "practice"}
             onClick={() => setSubMode("practice")}
             className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-extrabold transition ${
               subMode === "practice"
                 ? "bg-[#f59e0b] text-white shadow-md"
+                : isTestingLocked
+                ? "opacity-50 cursor-not-allowed text-[#785412]"
                 : "text-[#785412] hover:bg-[#ffe9ad]"
             }`}
           >
             <Award size={18} /> 📝 Bài Luyện Tập (30 Câu)
+          </button>
+          <button
+            type="button"
+            disabled={isTestingLocked && subMode !== "matching"}
+            onClick={() => {
+              setSubMode("matching");
+              setIsMatchingLocked(true);
+            }}
+            className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-extrabold transition ${
+              subMode === "matching"
+                ? "bg-[#f59e0b] text-white shadow-md"
+                : isTestingLocked
+                ? "opacity-50 cursor-not-allowed text-[#785412]"
+                : "text-[#785412] hover:bg-[#ffe9ad]"
+            }`}
+          >
+            🔗 Nối câu hỏi &amp; trả lời (24 Câu)
           </button>
         </div>
 
@@ -536,6 +558,15 @@ export function VocabFlashcards({
             </div>
           )}
         </div>
+      )}
+
+      {/* MODE 3: QUESTION & ANSWER MATCHING */}
+      {subMode === "matching" && (
+        <VocabMatching
+          fullName={fullName}
+          className={className}
+          onLockChange={setIsMatchingLocked}
+        />
       )}
     </div>
   );
