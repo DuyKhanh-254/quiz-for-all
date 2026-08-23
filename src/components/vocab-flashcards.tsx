@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Volume2, RotateCw, ArrowLeft, ArrowRight, CheckCircle2, XCircle, Sparkles, BookOpen, Award, Check, RefreshCw, Send, LoaderCircle, Lock } from "lucide-react";
+import { Volume2, RotateCw, ArrowLeft, ArrowRight, CheckCircle2, XCircle, Sparkles, BookOpen, Award, RefreshCw, Send, LoaderCircle, Lock } from "lucide-react";
 import type { JsonResponse } from "@/lib/types";
 
 export interface VocabItem {
@@ -125,7 +125,7 @@ export function VocabFlashcards({
   const [isFlipped, setIsFlipped] = useState(false);
 
   // Practice Quiz State
-  const [questions, setQuestions] = useState<VocabQuestion[]>([]);
+  const [questions, setQuestions] = useState<VocabQuestion[]>(generateVocabQuestions);
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -136,10 +136,6 @@ export function VocabFlashcards({
     const isLocked = subMode === "practice" && !isSubmitted;
     onLockChange?.(isLocked);
   }, [subMode, isSubmitted, onLockChange]);
-
-  useEffect(() => {
-    setQuestions(generateVocabQuestions());
-  }, []);
 
   const speak = (text: string) => {
     if (typeof window !== "undefined" && "speechSynthesis" in window) {
@@ -314,7 +310,7 @@ export function VocabFlashcards({
                   <div className="rounded-2xl bg-white/80 p-4 text-left border border-[#fef0c7]">
                     <p className="text-xs font-extrabold text-[#78350f]">Ví dụ câu:</p>
                     <p className="mt-1 text-base font-bold text-[#1e293b] italic">
-                      "{currentItem.example}"
+                      &quot;{currentItem.example}&quot;
                     </p>
                   </div>
                 </div>

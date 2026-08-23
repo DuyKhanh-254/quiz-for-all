@@ -10,43 +10,42 @@ import { VocabFlashcards } from "@/components/vocab-flashcards";
 
 type QuizCard = { id: string; slug: string; title: string; description: string | null; quiz_sections: Array<{ id: string; questions: Array<{ id: string }> }> };
 type AttemptWithQuiz = AttemptSummary & { quizzes: { title: string } | Array<{ title: string }> | null };
+type StoredStudentInfo = { name: string; cls: string };
 
 function quizTitle(attempt: AttemptWithQuiz) {
   return Array.isArray(attempt.quizzes) ? attempt.quizzes[0]?.title : attempt.quizzes?.title;
 }
 
+function readStoredStudentInfo(): StoredStudentInfo | null {
+  if (typeof window === "undefined") return null;
+  try {
+    const savedInfo = localStorage.getItem("quiz_student_info");
+    if (!savedInfo) return null;
+    const parsed = JSON.parse(savedInfo) as Partial<StoredStudentInfo>;
+    if (!parsed.name || !parsed.cls) return null;
+    return { name: parsed.name, cls: parsed.cls };
+  } catch {
+    return null;
+  }
+}
+
 export function StudentHome({ configured }: { configured: boolean }) {
   const router = useRouter();
+  const [storedStudentInfo] = useState(readStoredStudentInfo);
   const [ready, setReady] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [attempts, setAttempts] = useState<AttemptWithQuiz[]>([]);
   const [quizzes, setQuizzes] = useState<QuizCard[]>([]);
   const [selectedSlug, setSelectedSlug] = useState("");
-  const [fullName, setFullName] = useState("");
-  const [className, setClassName] = useState("");
+  const [fullName, setFullName] = useState(storedStudentInfo?.name ?? "");
+  const [className, setClassName] = useState(storedStudentInfo?.cls ?? "");
   
   // Student Gate State, Active Tab State, & Vocab Lock State
-  const [isInfoSubmitted, setIsInfoSubmitted] = useState(false);
+  const [isInfoSubmitted, setIsInfoSubmitted] = useState(Boolean(storedStudentInfo));
   const [activeTab, setActiveTab] = useState<"tests" | "vocab">("tests");
   const [isVocabLocked, setIsVocabLocked] = useState(false);
-
-  useEffect(() => {
-    // Restore student info from localStorage if available
-    try {
-      const savedInfo = localStorage.getItem("quiz_student_info");
-      if (savedInfo) {
-        const { name, cls } = JSON.parse(savedInfo);
-        if (name && cls) {
-          setFullName(name);
-          setClassName(cls);
-          setIsInfoSubmitted(true);
-        }
-      }
-    } catch {
-      /* storage check */
-    }
-  }, []);
+  const [selectedVocabSet, setSelectedVocabSet] = useState("");
 
   useEffect(() => {
     if (!configured) return;
@@ -255,7 +254,10 @@ export function StudentHome({ configured }: { configured: boolean }) {
 
             <button
               type="button"
-              onClick={() => setActiveTab("vocab")}
+              onClick={() => {
+                setActiveTab("vocab");
+                setSelectedVocabSet("");
+              }}
               className={`flex items-center gap-2 rounded-xl px-6 py-3 text-base font-black transition ${
                 activeTab === "vocab"
                   ? "bg-[#f59e0b] text-white shadow-md"
@@ -398,11 +400,87 @@ export function StudentHome({ configured }: { configured: boolean }) {
       {/* TAB 2: VOCABULARY FLASHCARDS */}
       {activeTab === "vocab" && (
         <div className="pb-14">
-          <VocabFlashcards
-            fullName={fullName}
-            className={className}
-            onLockChange={setIsVocabLocked}
-          />
+          {!selectedVocabSet ? (
+            <section aria-labelledby="vocab-board-heading" className="space-y-6">
+              <div className="flex flex-wrap items-end justify-between gap-3">
+                <div>
+                  <p className="text-xs font-black uppercase tracking-wider text-[#926011]">Vocab board</p>
+                  <h2 id="vocab-board-heading" className="mt-1 text-2xl font-black text-[#78350f]">
+                    Danh sách học từ vựng
+                  </h2>
+                  <p className="muted mt-1 text-sm font-bold">
+                    Chọn bộ từ vựng bên dưới rồi mới vào flashcard hoặc bài luyện tập.
+                  </p>
+                </div>
+
+                <span className="badge bg-[#fef0c7] text-[#785412] text-xs font-black">
+                  1 bộ đang mở
+                </span>
+              </div>
+
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <button
+                  type="button"
+                  onClick={() => setSelectedVocabSet("test-1")}
+                  className="card relative p-6 text-left transition hover:-translate-y-0.5 hover:border-[#f59e0b] hover:bg-[#fffdf5]"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="grid size-12 place-items-center rounded-2xl bg-[#fef3c7] font-black text-[#b45309]">
+                      1
+                    </span>
+                    <span className="badge bg-[#fef0c7] text-[#785412] font-bold">
+                      <BookOpen size={15} /> 30 từ
+                    </span>
+                  </div>
+                  <h3 className="mt-5 text-xl font-black text-[#78350f]">Vocab Test 1</h3>
+                  <p className="mt-1 font-bold text-[#35516e]">Flashcards & bài luyện tập từ vựng</p>
+                  <p className="muted mt-2 line-clamp-2 text-sm">
+                    Học từ, nghe phát âm, lật thẻ ghi nhớ và làm bài kiểm tra 30 câu.
+                  </p>
+                  <p className="mt-4 text-xs font-extrabold uppercase tracking-wide text-[#61738a]">
+                    Bấm để mở phần học từ vựng
+                  </p>
+                </button>
+
+                {[2, 3].map((number) => (
+                  <div
+                    key={number}
+                    className="card border-dashed border-[#f6d77d] bg-[#fffdf5] p-6 text-left opacity-75"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <span className="grid size-12 place-items-center rounded-2xl bg-[#fef3c7] font-black text-[#b45309]">
+                        {number}
+                      </span>
+                      <span className="badge bg-[#f1f5f9] text-[#64748b] font-bold">Sắp có</span>
+                    </div>
+                    <h3 className="mt-5 text-xl font-black text-[#78350f]">Vocab Test {number}</h3>
+                    <p className="muted mt-2 text-sm">
+                      Có thể thêm bộ từ vựng mới vào đây khi có nội dung Test {number}.
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          ) : (
+            <div className="space-y-5">
+              <button
+                type="button"
+                disabled={isVocabLocked}
+                onClick={() => setSelectedVocabSet("")}
+                className={`btn btn-secondary !min-h-10 !px-4 text-xs font-extrabold text-[#785412] border-[#f6d77d] ${
+                  isVocabLocked ? "opacity-50 cursor-not-allowed" : "hover:bg-[#fef3c7]"
+                }`}
+              >
+                <Layers3 size={15} /> Quay lại Vocab board
+              </button>
+
+              <VocabFlashcards
+                fullName={fullName}
+                className={className}
+                onLockChange={setIsVocabLocked}
+              />
+            </div>
+          )}
         </div>
       )}
     </>
