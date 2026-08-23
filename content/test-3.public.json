@@ -1,0 +1,61 @@
+{
+  "quiz": {
+    "id": "13000000-0000-4000-8000-000000000001",
+    "slug": "cambridge-starters-test-3-mixed",
+    "title": "Test 3 – Cambridge Starters Practice",
+    "description": "Listening Parts 2 & 3 (Test 2 & Test 3)",
+    "grade": "Pre A1",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-3",
+  "sections": [
+    {
+      "id": "23000000-0000-4000-8000-000000000001",
+      "title": "Listening – Test 2 Part 2",
+      "instruction": "Read the question. Listen and write a name or a number.",
+      "section_type": "listening_fill_blank",
+      "position": 1,
+      "audio": "audio/test2-lis-part2.mp3",
+      "image": "images/listening/test2-part2-scene.jpg",
+      "questions": [
+        { "id": "33000000-0000-4000-8000-000000000001", "position": 1, "question_type": "fill_blank", "prompt": "How many chickens has Kim's mum got?", "points": 1, "options": [] },
+        { "id": "33000000-0000-4000-8000-000000000002", "position": 2, "question_type": "fill_blank", "prompt": "What is the name of Kim's duck?", "points": 1, "options": [] },
+        { "id": "33000000-0000-4000-8000-000000000003", "position": 3, "question_type": "fill_blank", "prompt": "How many goats are in the garden?", "points": 1, "options": [] },
+        { "id": "33000000-0000-4000-8000-000000000004", "position": 4, "question_type": "fill_blank", "prompt": "What is the lizard's name?", "points": 1, "options": [] },
+        { "id": "33000000-0000-4000-8000-000000000005", "position": 5, "question_type": "fill_blank", "prompt": "How old is the lizard?", "points": 1, "options": [] }
+      ]
+    },
+    {
+      "id": "23000000-0000-4000-8000-000000000002",
+      "title": "Listening – Test 3 Part 2",
+      "instruction": "Read the question. Listen and write a name or a number.",
+      "section_type": "listening_fill_blank",
+      "position": 2,
+      "audio": "audio/test3-lis-part2.mp3",
+      "image": "images/listening/test3-part2-scene.jpg",
+      "questions": [
+        { "id": "33000000-0000-4000-8000-000000000006", "position": 1, "question_type": "fill_blank", "prompt": "What is the name of the zoo?", "points": 1, "metadata": { "hint": "_______ Zoo" }, "options": [] },
+        { "id": "33000000-0000-4000-8000-000000000007", "position": 2, "question_type": "fill_blank", "prompt": "How many monkeys are there in the zoo?", "points": 1, "options": [] },
+        { "id": "33000000-0000-4000-8000-000000000008", "position": 3, "question_type": "fill_blank", "prompt": "What is the name of the funny monkey?", "points": 1, "options": [] },
+        { "id": "33000000-0000-4000-8000-000000000009", "position": 4, "question_type": "fill_blank", "prompt": "What is the name of Sam's teacher?", "points": 1, "metadata": { "hint": "Mrs _______" }, "options": [] },
+        { "id": "33000000-0000-4000-8000-000000000010", "position": 5, "question_type": "fill_blank", "prompt": "How many children are there in Sam's class?", "points": 1, "options": [] }
+      ]
+    },
+    {
+      "id": "23000000-0000-4000-8000-000000000003",
+      "title": "Listening – Test 3 Part 3",
+      "instruction": "Listen and tick (✔) the box. There is one example.",
+      "section_type": "listening_image_choice",
+      "position": 3,
+      "audio": "audio/test3-lis-part3.mp3",
+      "questions": [
+        { "id": "33000000-0000-4000-8000-000000000011", "position": 1, "question_type": "image_choice", "prompt": "What animal is Alex thinking about?", "points": 1, "image": "images/listening/test3-part3-q1.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Snake"], ["b", "Crocodile"], ["c", "Horse"]] },
+        { "id": "33000000-0000-4000-8000-000000000012", "position": 2, "question_type": "image_choice", "prompt": "Which is Grace's monster picture?", "points": 1, "image": "images/listening/test3-part3-q2.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Monster A"], ["b", "Monster B"], ["c", "Monster C"]] },
+        { "id": "33000000-0000-4000-8000-000000000013", "position": 3, "question_type": "image_choice", "prompt": "Where are the tennis rackets?", "points": 1, "image": "images/listening/test3-part3-q3.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Classroom"], ["b", "Gym"], ["c", "Outside school"]] },
+        { "id": "33000000-0000-4000-8000-000000000014", "position": 4, "question_type": "image_choice", "prompt": "What is new in Dan's bedroom?", "points": 1, "image": "images/listening/test3-part3-q4.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Desk"], ["b", "Armchair"], ["c", "Lamp"]] },
+        { "id": "33000000-0000-4000-8000-000000000015", "position": 5, "question_type": "image_choice", "prompt": "What is in Grandpa's garden?", "points": 1, "image": "images/listening/test3-part3-q5.jpg", "metadata": { "sprite_columns": 3 }, "options": [["a", "Potatoes"], ["b", "Tomatoes"], ["c", "Carrots"]] }
+      ]
+    }
+  ]
+}

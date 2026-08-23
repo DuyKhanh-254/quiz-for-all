@@ -18,3 +18,10 @@ de-thi-hoc-ki-2-tieng-anh-2-global-success-de-so-1-*.pdf
 test-1/*.mp3
 test-2/*.mp3
 test-2/source-pages/
+content/test-2-assets/*.jpg
+content/test-2-assets/*.png
+content/test-3-assets/*.jpg
+content/test-3-assets/*.png
+content/test-3-assets/audio/
+
+.env*
