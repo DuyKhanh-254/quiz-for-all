@@ -21,13 +21,13 @@
       "questions": [
         { "id": "34000000-0000-4000-8000-000000000001", "position": 1, "question_type": "fill_blank", "prompt": "1. What is Tom's friend's name?", "points": 1, "options": [] },
         { "id": "34000000-0000-4000-8000-000000000002", "position": 2, "question_type": "fill_blank", "prompt": "2. How old is Tom's friend?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000003", "position": 3, "question_type": "fill_blank", "prompt": "+ Is the boy's friend a good friend?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000004", "position": 4, "question_type": "fill_blank", "prompt": "3. How many brothers has Tom's friend got?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000005", "position": 5, "question_type": "fill_blank", "prompt": "+ Where is his brother?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000006", "position": 6, "question_type": "fill_blank", "prompt": "+ How many sisters does he have?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000007", "position": 7, "question_type": "fill_blank", "prompt": "4. How many children are in Tom's class?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000008", "position": 8, "question_type": "fill_blank", "prompt": "5. What is the name of Tom's teacher?", "points": 1, "metadata": { "hint": "Mr _______" }, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000009", "position": 9, "question_type": "fill_blank", "prompt": "+ Does the boy like his teacher?", "points": 1, "options": [] }
+        { "id": "34000000-0000-4000-8000-000000000003", "position": 3, "question_type": "fill_blank", "prompt": "3. Is the boy's friend a good friend?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000004", "position": 4, "question_type": "fill_blank", "prompt": "4. How many brothers has Tom's friend got?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000005", "position": 5, "question_type": "fill_blank", "prompt": "5. Where is his brother?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000006", "position": 6, "question_type": "fill_blank", "prompt": "6. How many sisters does he have?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000007", "position": 7, "question_type": "fill_blank", "prompt": "7. How many children are in Tom's class?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000008", "position": 8, "question_type": "fill_blank", "prompt": "8. What is the name of Tom's teacher?", "points": 1, "metadata": { "hint": "Mr _______" }, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000009", "position": 9, "question_type": "fill_blank", "prompt": "9. Does the boy like his teacher?", "points": 1, "options": [] }
       ]
     },
     {
