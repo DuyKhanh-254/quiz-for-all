@@ -52,8 +52,7 @@
         { "id": "34000000-0000-4000-8000-000000000021", "position": 12, "question_type": "fill_blank", "prompt": "D3. Where is the desk in Jill's room?", "points": 1, "options": [] },
         { "id": "34000000-0000-4000-8000-000000000022", "position": 13, "question_type": "fill_blank", "prompt": "D4. Is there a TV in Jill's bedroom?", "points": 1, "options": [] },
         { "id": "34000000-0000-4000-8000-000000000023", "position": 14, "question_type": "fill_blank", "prompt": "E1. What is Nick's brother doing?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000024", "position": 15, "question_type": "fill_blank", "prompt": "E2. What is Nick's brother wearing on his face?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000025", "position": 16, "question_type": "fill_blank", "prompt": "E3. What is the boy eating a burger? (Who is he?)", "points": 1, "options": [] }
+        { "id": "34000000-0000-4000-8000-000000000024", "position": 15, "question_type": "fill_blank", "prompt": "E2. What is Nick's brother wearing on his face?", "points": 1, "options": [] }
       ]
     },
     {
