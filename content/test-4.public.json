@@ -3,7 +3,7 @@
     "id": "14000000-0000-4000-8000-000000000001",
     "slug": "cambridge-starters-test-4-mixed",
     "title": "Test 4 – Cambridge Starters Practice",
-    "description": "Listening Parts 2, 3 & 4 (Test 1)",
+    "description": "Listening Parts 2, 3 & 4 (Full Tự Luận)",
     "grade": "Pre A1",
     "subject": "English",
     "is_published": true
@@ -19,43 +19,58 @@
       "audio": "audio/test4-lis-part2.mp3",
       "image": "images/listening/test4-part2-scene.jpg",
       "questions": [
-        { "id": "34000000-0000-4000-8000-000000000001", "position": 1, "question_type": "fill_blank", "prompt": "What is Tom's friend's name?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000002", "position": 2, "question_type": "fill_blank", "prompt": "How old is Tom's friend?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000003", "position": 3, "question_type": "fill_blank", "prompt": "How many brothers has Tom's friend got?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000004", "position": 4, "question_type": "fill_blank", "prompt": "How many children are in Tom's class?", "points": 1, "options": [] },
-        { "id": "34000000-0000-4000-8000-000000000005", "position": 5, "question_type": "fill_blank", "prompt": "What is the name of Tom's teacher?", "points": 1, "metadata": { "hint": "Mr _______" }, "options": [] }
+        { "id": "34000000-0000-4000-8000-000000000001", "position": 1, "question_type": "fill_blank", "prompt": "1. What is Tom's friend's name?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000002", "position": 2, "question_type": "fill_blank", "prompt": "2. How old is Tom's friend?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000003", "position": 3, "question_type": "fill_blank", "prompt": "3. Is the boy's friend a good friend?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000004", "position": 4, "question_type": "fill_blank", "prompt": "4. How many brothers has Tom's friend got?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000005", "position": 5, "question_type": "fill_blank", "prompt": "5. Where is his brother?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000006", "position": 6, "question_type": "fill_blank", "prompt": "6. How many sisters does he have?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000007", "position": 7, "question_type": "fill_blank", "prompt": "7. How many children are in Tom's class?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000008", "position": 8, "question_type": "fill_blank", "prompt": "8. What is the name of Tom's teacher?", "points": 1, "metadata": { "hint": "Mr _______" }, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000009", "position": 9, "question_type": "fill_blank", "prompt": "9. Does the boy like his teacher?", "points": 1, "options": [] }
       ]
     },
     {
       "id": "24000000-0000-4000-8000-000000000002",
       "title": "Listening – Part 3",
-      "instruction": "Listen and tick (✔) the box. There is one example.",
-      "section_type": "listening_image_choice",
+      "instruction": "Listen to the audio and write short answers for each question.",
+      "section_type": "fill_blank",
       "position": 2,
       "audio": "audio/test4-lis-part3.mp3",
       "questions": [
-        { "id": "34000000-0000-4000-8000-000000000006", "position": 1, "question_type": "image_choice", "prompt": "What is Anna taking to school?", "points": 1, "options": [["a", "Jacket and pens", "images/listening/q1-a.jpg"], ["b", "Books and pens", "images/listening/q1-b.jpg"], ["c", "Jacket, books and pens", "images/listening/q1-c.jpg"]] },
-        { "id": "34000000-0000-4000-8000-000000000007", "position": 2, "question_type": "image_choice", "prompt": "Which is Bill's dad?", "points": 1, "options": [["a", "Washing car", "images/listening/q2-a.jpg"], ["b", "Playing basketball", "images/listening/q2-b.jpg"], ["c", "Painting window", "images/listening/q2-c.jpg"]] },
-        { "id": "34000000-0000-4000-8000-000000000008", "position": 3, "question_type": "image_choice", "prompt": "What would Sam like to do?", "points": 1, "options": [["a", "Play tennis", "images/listening/q3-a.jpg"], ["b", "Play computer game", "images/listening/q3-b.jpg"], ["c", "Watch TV", "images/listening/q3-c.jpg"]] },
-        { "id": "34000000-0000-4000-8000-000000000009", "position": 4, "question_type": "image_choice", "prompt": "Which is Jill's bedroom?", "points": 1, "options": [["a", "Room with TV", "images/listening/q4-a.jpg"], ["b", "Room with 2 beds", "images/listening/q4-b.jpg"], ["c", "Room with 1 bed", "images/listening/q4-c.jpg"]] },
-        { "id": "34000000-0000-4000-8000-000000000010", "position": 5, "question_type": "image_choice", "prompt": "Which is Nick's brother?", "points": 1, "options": [["a", "Boy with glasses", "images/listening/q5-a.jpg"], ["b", "Boy eating burger", "images/listening/q5-b.jpg"], ["c", "Boy with camera", "images/listening/q5-c.jpg"]] }
+        { "id": "34000000-0000-4000-8000-000000000010", "position": 1, "question_type": "fill_blank", "prompt": "A1. What is Anna taking to school?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000011", "position": 2, "question_type": "fill_blank", "prompt": "A2. What is the weather like today?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000012", "position": 3, "question_type": "fill_blank", "prompt": "A3. Is Anna taking her jacket to school?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000013", "position": 4, "question_type": "fill_blank", "prompt": "B1. Where is Bill's dad today?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000014", "position": 5, "question_type": "fill_blank", "prompt": "B2. What is Bill's dad doing?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000015", "position": 6, "question_type": "fill_blank", "prompt": "B3. Is Bill's dad playing basketball?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000016", "position": 7, "question_type": "fill_blank", "prompt": "C1. What game does the girl want to play outside?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000017", "position": 8, "question_type": "fill_blank", "prompt": "C2. What kind of game does Sam want to play on the computer?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000018", "position": 9, "question_type": "fill_blank", "prompt": "C3. Does Sam want to play the girl's animal game?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000019", "position": 10, "question_type": "fill_blank", "prompt": "D1. Is Jill's bedroom big or small?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000020", "position": 11, "question_type": "fill_blank", "prompt": "D2. How many beds are there in Jill's bedroom?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000021", "position": 12, "question_type": "fill_blank", "prompt": "D3. Where is the desk in Jill's room?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000022", "position": 13, "question_type": "fill_blank", "prompt": "D4. Is there a TV in Jill's bedroom?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000023", "position": 14, "question_type": "fill_blank", "prompt": "E1. What is Nick's brother doing?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000024", "position": 15, "question_type": "fill_blank", "prompt": "E2. What is Nick's brother wearing on his face?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000025", "position": 16, "question_type": "fill_blank", "prompt": "E3. Who is the boy eating a burger?", "points": 1, "options": [] }
       ]
     },
     {
       "id": "24000000-0000-4000-8000-000000000003",
       "title": "Listening – Part 4",
-      "instruction": "Listen and choose the correct colour for each cake.",
-      "section_type": "listening_choice",
+      "instruction": "Listen and write the color for each cake.",
+      "section_type": "fill_blank",
       "position": 3,
       "audio": "audio/test4-lis-part4.mp3",
       "image": "images/listening/test4-part4-scene.jpg",
       "questions": [
-        { "id": "34000000-0000-4000-8000-000000000011", "position": 1, "question_type": "single_choice", "prompt": "What color is the cake in the cupboard?", "points": 1, "options": [["a", "Brown"], ["b", "Pink"], ["c", "Yellow"], ["d", "Orange"], ["e", "Green"], ["f", "Blue"], ["g", "Red"]] },
-        { "id": "34000000-0000-4000-8000-000000000012", "position": 2, "question_type": "single_choice", "prompt": "What color is the cake in the boy's hand?", "points": 1, "options": [["a", "Brown"], ["b", "Pink"], ["c", "Yellow"], ["d", "Orange"], ["e", "Green"], ["f", "Blue"], ["g", "Red"]] },
-        { "id": "34000000-0000-4000-8000-000000000013", "position": 3, "question_type": "single_choice", "prompt": "What color is the small girl's cake?", "points": 1, "options": [["a", "Brown"], ["b", "Pink"], ["c", "Yellow"], ["d", "Orange"], ["e", "Green"], ["f", "Blue"], ["g", "Red"]] },
-        { "id": "34000000-0000-4000-8000-000000000014", "position": 4, "question_type": "single_choice", "prompt": "What color is the cake on the mat?", "points": 1, "options": [["a", "Brown"], ["b", "Pink"], ["c", "Yellow"], ["d", "Orange"], ["e", "Green"], ["f", "Blue"], ["g", "Red"]] },
-        { "id": "34000000-0000-4000-8000-000000000015", "position": 5, "question_type": "single_choice", "prompt": "What color is the cake in front of the cat?", "points": 1, "options": [["a", "Brown"], ["b", "Pink"], ["c", "Yellow"], ["d", "Orange"], ["e", "Green"], ["f", "Blue"], ["g", "Red"]] },
-        { "id": "34000000-0000-4000-8000-000000000016", "position": 6, "question_type": "single_choice", "prompt": "What color is the cake next to the girl's mother?", "points": 1, "options": [["a", "Brown"], ["b", "Pink"], ["c", "Yellow"], ["d", "Orange"], ["e", "Green"], ["f", "Blue"], ["g", "Red"]] }
+        { "id": "34000000-0000-4000-8000-000000000026", "position": 1, "question_type": "fill_blank", "prompt": "1. What color is the cake in the cupboard?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000027", "position": 2, "question_type": "fill_blank", "prompt": "2. What color is the cake in the boy's hand?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000028", "position": 3, "question_type": "fill_blank", "prompt": "3. What color is the small girl's cake?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000029", "position": 4, "question_type": "fill_blank", "prompt": "4. What color is the cake on the mat?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000030", "position": 5, "question_type": "fill_blank", "prompt": "5. What color is the cake in front of the cat?", "points": 1, "options": [] },
+        { "id": "34000000-0000-4000-8000-000000000031", "position": 6, "question_type": "fill_blank", "prompt": "6. What color is the cake next to the girl's mother?", "points": 1, "options": [] }
       ]
     }
   ]
