@@ -23,5 +23,8 @@ content/test-2-assets/*.png
 content/test-3-assets/*.jpg
 content/test-3-assets/*.png
 content/test-3-assets/audio/
+content/test-4-assets/*.jpg
+content/test-4-assets/*.png
+content/test-4-assets/audio/
 
 .env*
