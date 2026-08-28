@@ -1,0 +1,2045 @@
+{
+  "quiz": {
+    "id": "15000000-0000-4000-8000-000000000001",
+    "slug": "english-vocabulary-test-5",
+    "title": "Test 5 – Family & School Vocabulary",
+    "description": "61 illustrated vocabulary questions about family and school.",
+    "grade": "Grade 2",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-5",
+  "sections": [
+    {
+      "id": "25000000-0000-4000-8000-000000000001",
+      "title": "Part 1 – Family",
+      "instruction": "Look at the cartoon picture. Read the question and choose the best answer.",
+      "section_type": "listening_choice",
+      "position": 1,
+      "questions": [
+        {
+          "id": "35000000-0000-4000-8000-000000000001",
+          "position": 1,
+          "question_type": "single_choice",
+          "prompt": "Who is the man that protects and takes care of your family?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Father",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 0
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "He is my uncle."
+            ],
+            [
+              "b",
+              "He is my father."
+            ],
+            [
+              "c",
+              "He is my brother."
+            ],
+            [
+              "d",
+              "He is my grandfather."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000002",
+          "position": 2,
+          "question_type": "single_choice",
+          "prompt": "Who is the woman that cooks delicious meals and gives you love?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Mother",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 1
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "She is my mother."
+            ],
+            [
+              "b",
+              "She is my aunt."
+            ],
+            [
+              "c",
+              "She is my sister."
+            ],
+            [
+              "d",
+              "She is my grandmother."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000003",
+          "position": 3,
+          "question_type": "single_choice",
+          "prompt": "Who is the boy that shares toys and plays football with you in your family?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Brother",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 2
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "He is my father."
+            ],
+            [
+              "b",
+              "He is my grandfather."
+            ],
+            [
+              "c",
+              "He is my brother."
+            ],
+            [
+              "d",
+              "He is my uncle."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000004",
+          "position": 4,
+          "question_type": "single_choice",
+          "prompt": "Who is the girl that reads books and plays dolls with you in your family?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Sister",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 3
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "She is my sister."
+            ],
+            [
+              "b",
+              "She is my mother."
+            ],
+            [
+              "c",
+              "She is my grandmother."
+            ],
+            [
+              "d",
+              "She is my aunt."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000005",
+          "position": 5,
+          "question_type": "single_choice",
+          "prompt": "Who is the adult that raises and guides children in the home?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Parent",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 4
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That person is a baby."
+            ],
+            [
+              "b",
+              "That person is a parent."
+            ],
+            [
+              "c",
+              "That person is a cousin."
+            ],
+            [
+              "d",
+              "That person is a teenager."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000006",
+          "position": 6,
+          "question_type": "single_choice",
+          "prompt": "Who is the boy child of a mother and a father?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Son",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 5
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "He is their daughter."
+            ],
+            [
+              "b",
+              "He is their uncle."
+            ],
+            [
+              "c",
+              "He is their son."
+            ],
+            [
+              "d",
+              "He is their grandfather."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000007",
+          "position": 7,
+          "question_type": "single_choice",
+          "prompt": "Who is the girl child of a mother and a father?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Daughter",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 6
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "She is their son."
+            ],
+            [
+              "b",
+              "She is their daughter."
+            ],
+            [
+              "c",
+              "She is their aunt."
+            ],
+            [
+              "d",
+              "She is their brother."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000008",
+          "position": 8,
+          "question_type": "single_choice",
+          "prompt": "Who is the old lady that bakes sweet cakes and tells you bedtime stories?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Grandmother",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 7
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "She is my sister."
+            ],
+            [
+              "b",
+              "She is my mother."
+            ],
+            [
+              "c",
+              "She is my aunt."
+            ],
+            [
+              "d",
+              "She is my grandmother."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000009",
+          "position": 9,
+          "question_type": "single_choice",
+          "prompt": "Who is the old man that walks with you and teaches you good things?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Grandfather",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 8
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "He is my grandfather."
+            ],
+            [
+              "b",
+              "He is my father."
+            ],
+            [
+              "c",
+              "He is my brother."
+            ],
+            [
+              "d",
+              "He is my cousin."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000010",
+          "position": 10,
+          "question_type": "single_choice",
+          "prompt": "Who is the brother of your mother or father?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Uncle",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 9
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "He is my father."
+            ],
+            [
+              "b",
+              "He is my uncle."
+            ],
+            [
+              "c",
+              "He is my son."
+            ],
+            [
+              "d",
+              "He is my grandfather."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000011",
+          "position": 11,
+          "question_type": "single_choice",
+          "prompt": "Who is the sister of your mother or father?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Aunt",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 10
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "She is my mother."
+            ],
+            [
+              "b",
+              "She is my sister."
+            ],
+            [
+              "c",
+              "She is my aunt."
+            ],
+            [
+              "d",
+              "She is my daughter."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000012",
+          "position": 12,
+          "question_type": "single_choice",
+          "prompt": "Who is the child of your uncle or aunt?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Cousin",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 11
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That child is my cousin."
+            ],
+            [
+              "b",
+              "That child is my parent."
+            ],
+            [
+              "c",
+              "That child is my grandfather."
+            ],
+            [
+              "d",
+              "That child is my teacher."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000013",
+          "position": 13,
+          "question_type": "single_choice",
+          "prompt": "Who is the tiny person that drinks milk and needs constant care?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Baby",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 12
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That tiny person is a teenager."
+            ],
+            [
+              "b",
+              "That tiny person is a baby."
+            ],
+            [
+              "c",
+              "That tiny person is a parent."
+            ],
+            [
+              "d",
+              "That tiny person is an uncle."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000014",
+          "position": 14,
+          "question_type": "single_choice",
+          "prompt": "Who is the young person between thirteen and nineteen years old?",
+          "image": "images/family-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Teenager",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 13
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That young person is a baby."
+            ],
+            [
+              "b",
+              "That young person is a grandfather."
+            ],
+            [
+              "c",
+              "That young person is a teenager."
+            ],
+            [
+              "d",
+              "That young person is a parent."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000015",
+          "position": 15,
+          "question_type": "single_choice",
+          "prompt": "Who are the young boys and girls that go to school and love to play?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Children",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 0
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "They are children."
+            ],
+            [
+              "b",
+              "They are grandfathers."
+            ],
+            [
+              "c",
+              "They are parents."
+            ],
+            [
+              "d",
+              "They are uncles."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000016",
+          "position": 16,
+          "question_type": "single_choice",
+          "prompt": "Who is the group of people including parents and children living together with love?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Family",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 1
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That group is a class."
+            ],
+            [
+              "b",
+              "That group is a team."
+            ],
+            [
+              "c",
+              "That group is a family."
+            ],
+            [
+              "d",
+              "That group is a store."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000017",
+          "position": 17,
+          "question_type": "single_choice",
+          "prompt": "Who is a person connected to you by blood or marriage, like your uncle or aunt?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Relative",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 2
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That person is a relative."
+            ],
+            [
+              "b",
+              "That person is a driver."
+            ],
+            [
+              "c",
+              "That person is a neighbor."
+            ],
+            [
+              "d",
+              "That person is a stranger."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000018",
+          "position": 18,
+          "question_type": "single_choice",
+          "prompt": "Who is the son of your brother or sister?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Nephew",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 3
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "He is my niece."
+            ],
+            [
+              "b",
+              "He is my nephew."
+            ],
+            [
+              "c",
+              "He is my auntie."
+            ],
+            [
+              "d",
+              "He is my wife."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000019",
+          "position": 19,
+          "question_type": "single_choice",
+          "prompt": "Who is the daughter of your brother or sister?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Niece",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 4
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "She is my nephew."
+            ],
+            [
+              "b",
+              "She is my uncle."
+            ],
+            [
+              "c",
+              "She is my husband."
+            ],
+            [
+              "d",
+              "She is my niece."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000020",
+          "position": 20,
+          "question_type": "single_choice",
+          "prompt": "Who are your mother and father together?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Parents",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 5
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "They are my children."
+            ],
+            [
+              "b",
+              "They are my parents."
+            ],
+            [
+              "c",
+              "They are my cousins."
+            ],
+            [
+              "d",
+              "They are my stepbrothers."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000021",
+          "position": 21,
+          "question_type": "single_choice",
+          "prompt": "Who is the child of your uncle or auntie?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Cousin",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 6
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That child is my cousin."
+            ],
+            [
+              "b",
+              "That child is my father."
+            ],
+            [
+              "c",
+              "That child is my mother."
+            ],
+            [
+              "d",
+              "That child is my husband."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000022",
+          "position": 22,
+          "question_type": "single_choice",
+          "prompt": "What is a chart or drawing that shows all the members and relationships in a family?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Family tree",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 7
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That drawing is a map."
+            ],
+            [
+              "b",
+              "That drawing is a family tree."
+            ],
+            [
+              "c",
+              "That drawing is a storybook."
+            ],
+            [
+              "d",
+              "That drawing is a photo album."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000023",
+          "position": 23,
+          "question_type": "single_choice",
+          "prompt": "Who is the son of your stepfather or stepmother?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Stepbrother",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 8
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "He is my stepbrother."
+            ],
+            [
+              "b",
+              "He is my auntie."
+            ],
+            [
+              "c",
+              "He is my stepsister."
+            ],
+            [
+              "d",
+              "He is my wife."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000024",
+          "position": 24,
+          "question_type": "single_choice",
+          "prompt": "Who is the daughter of your stepfather or stepmother?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Stepsister",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 9
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "She is my stepbrother."
+            ],
+            [
+              "b",
+              "She is my uncle."
+            ],
+            [
+              "c",
+              "She is my stepsister."
+            ],
+            [
+              "d",
+              "She is my husband."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000025",
+          "position": 25,
+          "question_type": "single_choice",
+          "prompt": "Who is the married man to a wife in a family?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Husband",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 10
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "He is a husband."
+            ],
+            [
+              "b",
+              "He is a niece."
+            ],
+            [
+              "c",
+              "He is a stepsister."
+            ],
+            [
+              "d",
+              "He is an auntie."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000026",
+          "position": 26,
+          "question_type": "single_choice",
+          "prompt": "Who is the married woman to a husband in a family?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Wife",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 11
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "She is a stepbrother."
+            ],
+            [
+              "b",
+              "She is a nephew."
+            ],
+            [
+              "c",
+              "She is a wife."
+            ],
+            [
+              "d",
+              "She is an uncle."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000027",
+          "position": 27,
+          "question_type": "single_choice",
+          "prompt": "Who is the warm and caring sister of your mother or father?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Auntie",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 12
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "She is my uncle."
+            ],
+            [
+              "b",
+              "She is my auntie."
+            ],
+            [
+              "c",
+              "She is my husband."
+            ],
+            [
+              "d",
+              "She is my nephew."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000028",
+          "position": 28,
+          "question_type": "single_choice",
+          "prompt": "Who is the brother of your mother or father?",
+          "image": "images/family-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Uncle",
+            "sprite_columns": 4,
+            "sprite_rows": 4,
+            "sprite_index": 13
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "He is my auntie."
+            ],
+            [
+              "b",
+              "He is my niece."
+            ],
+            [
+              "c",
+              "He is my stepsister."
+            ],
+            [
+              "d",
+              "He is my uncle"
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000029",
+          "position": 29,
+          "question_type": "single_choice",
+          "prompt": "Who is the father of your mother or father?",
+          "image": "images/family-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Grandfather",
+            "sprite_columns": 2,
+            "sprite_rows": 2,
+            "sprite_index": 0
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "He is my grandfather."
+            ],
+            [
+              "b",
+              "He is my sibling."
+            ],
+            [
+              "c",
+              "He is my child."
+            ],
+            [
+              "d",
+              "He is my brother."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000030",
+          "position": 30,
+          "question_type": "single_choice",
+          "prompt": "Who is the mother of your mother or father?",
+          "image": "images/family-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Grandmother",
+            "sprite_columns": 2,
+            "sprite_rows": 2,
+            "sprite_index": 1
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "She is my sister."
+            ],
+            [
+              "b",
+              "She is my child."
+            ],
+            [
+              "c",
+              "She is my grandmother."
+            ],
+            [
+              "d",
+              "She is my sibling."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000031",
+          "position": 31,
+          "question_type": "single_choice",
+          "prompt": "Who is a brother or a sister that has the same parents as you?",
+          "image": "images/family-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Sibling",
+            "sprite_columns": 2,
+            "sprite_rows": 2,
+            "sprite_index": 2
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That person is a grandfather."
+            ],
+            [
+              "b",
+              "That person is a sibling."
+            ],
+            [
+              "c",
+              "That person is a grandmother."
+            ],
+            [
+              "d",
+              "That person is an uncle."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000032",
+          "position": 32,
+          "question_type": "single_choice",
+          "prompt": "Who is a young human being who is not yet an adult?",
+          "image": "images/family-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Child",
+            "sprite_columns": 2,
+            "sprite_rows": 2,
+            "sprite_index": 3
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That young person is a child."
+            ],
+            [
+              "b",
+              "That person is a grandfather."
+            ],
+            [
+              "c",
+              "That person is a grandmother."
+            ],
+            [
+              "d",
+              "That person is a parent."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "25000000-0000-4000-8000-000000000002",
+      "title": "Part 2 – School",
+      "instruction": "Look at the cartoon picture. Read the question and choose the best answer.",
+      "section_type": "listening_choice",
+      "position": 2,
+      "questions": [
+        {
+          "id": "35000000-0000-4000-8000-000000000033",
+          "position": 1,
+          "question_type": "single_choice",
+          "prompt": "What is the place where students go every day to learn and play?",
+          "image": "images/school-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "School",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 0
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a library."
+            ],
+            [
+              "b",
+              "It is a school."
+            ],
+            [
+              "c",
+              "It is a classroom."
+            ],
+            [
+              "d",
+              "It is a playground."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000034",
+          "position": 2,
+          "question_type": "single_choice",
+          "prompt": "Who is the person that teaches lessons and helps you learn at school?",
+          "image": "images/school-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Teacher",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 1
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That person is a teacher."
+            ],
+            [
+              "b",
+              "That person is a student."
+            ],
+            [
+              "c",
+              "That person is a partner."
+            ],
+            [
+              "d",
+              "That person is a friend."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000035",
+          "position": 3,
+          "question_type": "single_choice",
+          "prompt": "Who is the young person that goes to school to study and listen to teachers?",
+          "image": "images/school-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Student",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 2
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That person is a teacher."
+            ],
+            [
+              "b",
+              "That person is a printer."
+            ],
+            [
+              "c",
+              "That person is a student."
+            ],
+            [
+              "d",
+              "That person is a partner."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000036",
+          "position": 4,
+          "question_type": "single_choice",
+          "prompt": "What is the room in a school where students sit and study together?",
+          "image": "images/school-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Classroom",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 3
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a playground."
+            ],
+            [
+              "b",
+              "It is a classroom."
+            ],
+            [
+              "c",
+              "It is a library."
+            ],
+            [
+              "d",
+              "It is a schoolbag."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000037",
+          "position": 5,
+          "question_type": "single_choice",
+          "prompt": "What is the item with printed pages that you read to get information or stories?",
+          "image": "images/school-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Book",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 4
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a book."
+            ],
+            [
+              "b",
+              "It is an eraser."
+            ],
+            [
+              "c",
+              "It is a chair."
+            ],
+            [
+              "d",
+              "It is a ruler."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000038",
+          "position": 6,
+          "question_type": "single_choice",
+          "prompt": "What is the piece of furniture with a flat top that you write on at school?",
+          "image": "images/school-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Desk",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 5
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a desk."
+            ],
+            [
+              "b",
+              "It is a chair."
+            ],
+            [
+              "c",
+              "It is a whiteboard."
+            ],
+            [
+              "d",
+              "It is a pencil case."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000039",
+          "position": 7,
+          "question_type": "single_choice",
+          "prompt": "What is the tool made of wood that you use for writing or drawing with graphite?",
+          "image": "images/school-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Pencil",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 6
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a pen."
+            ],
+            [
+              "b",
+              "It is a pencil."
+            ],
+            [
+              "c",
+              "It is a ruler."
+            ],
+            [
+              "d",
+              "It is a chalk."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000040",
+          "position": 8,
+          "question_type": "single_choice",
+          "prompt": "What is the small rubber item that removes pencil marks from paper?",
+          "image": "images/school-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Eraser",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 7
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is an eraser."
+            ],
+            [
+              "b",
+              "It is a notebook."
+            ],
+            [
+              "c",
+              "It is a ruler."
+            ],
+            [
+              "d",
+              "It is a desk."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000041",
+          "position": 9,
+          "question_type": "single_choice",
+          "prompt": "What is the long straight tool that helps you measure lines and draw straight edges?",
+          "image": "images/school-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Ruler",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 8
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a ruler."
+            ],
+            [
+              "b",
+              "It is a book."
+            ],
+            [
+              "c",
+              "It is a chalk."
+            ],
+            [
+              "d",
+              "It is a pen."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000042",
+          "position": 10,
+          "question_type": "single_choice",
+          "prompt": "What is the book with empty pages that you write your daily lessons in?",
+          "image": "images/school-1.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Notebook",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 9
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a textbook."
+            ],
+            [
+              "b",
+              "It is a notebook."
+            ],
+            [
+              "c",
+              "It is a pencil case."
+            ],
+            [
+              "d",
+              "It is a timetable."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000043",
+          "position": 11,
+          "question_type": "single_choice",
+          "prompt": "What is the writing tool filled with ink that you use to write on paper?",
+          "image": "images/school-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Pen",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 0
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a pen."
+            ],
+            [
+              "b",
+              "It is a pencil."
+            ],
+            [
+              "c",
+              "It is a chalk."
+            ],
+            [
+              "d",
+              "It is an eraser."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000044",
+          "position": 12,
+          "question_type": "single_choice",
+          "prompt": "What is the large white board on the classroom wall where the teacher writes with markers?",
+          "image": "images/school-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Whiteboard",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 1
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a desk."
+            ],
+            [
+              "b",
+              "It is a computer."
+            ],
+            [
+              "c",
+              "It is a whiteboard."
+            ],
+            [
+              "d",
+              "It is a timetable."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000045",
+          "position": 13,
+          "question_type": "single_choice",
+          "prompt": "What is the small white or colored stick used for writing on a blackboard?",
+          "image": "images/school-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Chalk",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 2
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a pencil."
+            ],
+            [
+              "b",
+              "It is a pen."
+            ],
+            [
+              "c",
+              "It is a chalk."
+            ],
+            [
+              "d",
+              "It is an eraser."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000046",
+          "position": 14,
+          "question_type": "single_choice",
+          "prompt": "What is the piece of furniture that you sit on during lesson time?",
+          "image": "images/school-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Chair",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 3
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a chair."
+            ],
+            [
+              "b",
+              "It is a desk."
+            ],
+            [
+              "c",
+              "It is a schoolbag."
+            ],
+            [
+              "d",
+              "It is a pencil case."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000047",
+          "position": 15,
+          "question_type": "single_choice",
+          "prompt": "What is the schedule chart that shows which subject you learn at what time?",
+          "image": "images/school-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Timetable",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 4
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a lesson."
+            ],
+            [
+              "b",
+              "It is a timetable."
+            ],
+            [
+              "c",
+              "It is a test."
+            ],
+            [
+              "d",
+              "It is a project."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000048",
+          "position": 16,
+          "question_type": "single_choice",
+          "prompt": "What is the set of questions you answer to show how well you understand the lesson?",
+          "image": "images/school-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Test",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 5
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a test."
+            ],
+            [
+              "b",
+              "It is a break."
+            ],
+            [
+              "c",
+              "It is a subject."
+            ],
+            [
+              "d",
+              "It is a playground."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000049",
+          "position": 17,
+          "question_type": "single_choice",
+          "prompt": "What is the bag you carry on your back to bring books and stationery to school?",
+          "image": "images/school-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Schoolbag",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 6
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a schoolbag."
+            ],
+            [
+              "b",
+              "It is a pencil case."
+            ],
+            [
+              "c",
+              "It is a classroom."
+            ],
+            [
+              "d",
+              "It is a library."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000050",
+          "position": 18,
+          "question_type": "single_choice",
+          "prompt": "What is the small pouch or box that holds your pens, pencils, and erasers?",
+          "image": "images/school-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Pencil case",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 7
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a schoolbag."
+            ],
+            [
+              "b",
+              "It is a notebook."
+            ],
+            [
+              "c",
+              "It is a pencil case."
+            ],
+            [
+              "d",
+              "It is a desk."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000051",
+          "position": 19,
+          "question_type": "single_choice",
+          "prompt": "What is the period of time when you learn a specific topic with your teacher?",
+          "image": "images/school-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Lesson",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 8
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a lesson."
+            ],
+            [
+              "b",
+              "It is a break."
+            ],
+            [
+              "c",
+              "It is a playground."
+            ],
+            [
+              "d",
+              "It is a printer."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000052",
+          "position": 20,
+          "question_type": "single_choice",
+          "prompt": "What is the rest time between classes when you can relax, eat snacks, and play?",
+          "image": "images/school-2.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Break",
+            "sprite_columns": 5,
+            "sprite_rows": 2,
+            "sprite_index": 9
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a lesson."
+            ],
+            [
+              "b",
+              "It is a break."
+            ],
+            [
+              "c",
+              "It is a subject."
+            ],
+            [
+              "d",
+              "It is a test."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000053",
+          "position": 21,
+          "question_type": "single_choice",
+          "prompt": "What is an area of study at school, such as Math, English, or Science?",
+          "image": "images/school-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Subject",
+            "sprite_columns": 3,
+            "sprite_rows": 3,
+            "sprite_index": 0
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a subject."
+            ],
+            [
+              "b",
+              "It is a homework."
+            ],
+            [
+              "c",
+              "It is a project."
+            ],
+            [
+              "d",
+              "It is a timetable."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000054",
+          "position": 22,
+          "question_type": "single_choice",
+          "prompt": "What are the exercises or tasks that your teacher gives you to do at home?",
+          "image": "images/school-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Homework",
+            "sprite_columns": 3,
+            "sprite_rows": 3,
+            "sprite_index": 1
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a lesson."
+            ],
+            [
+              "b",
+              "It is a homework."
+            ],
+            [
+              "c",
+              "It is a break."
+            ],
+            [
+              "d",
+              "It is a test."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000055",
+          "position": 23,
+          "question_type": "single_choice",
+          "prompt": "What is the quiet room in a school filled with many books for reading and borrowing?",
+          "image": "images/school-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Library",
+            "sprite_columns": 3,
+            "sprite_rows": 3,
+            "sprite_index": 2
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a library."
+            ],
+            [
+              "b",
+              "It is a classroom."
+            ],
+            [
+              "c",
+              "It is a playground."
+            ],
+            [
+              "d",
+              "It is a computer."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000056",
+          "position": 24,
+          "question_type": "single_choice",
+          "prompt": "What is the electronic machine used for typing, searching information, and learning online?",
+          "image": "images/school-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Computer",
+            "sprite_columns": 3,
+            "sprite_rows": 3,
+            "sprite_index": 3
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a printer."
+            ],
+            [
+              "b",
+              "It is a computer."
+            ],
+            [
+              "c",
+              "It is a whiteboard."
+            ],
+            [
+              "d",
+              "It is a desk."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000057",
+          "position": 25,
+          "question_type": "single_choice",
+          "prompt": "What is the machine connected to a computer that prints words and images onto paper?",
+          "image": "images/school-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Printer",
+            "sprite_columns": 3,
+            "sprite_rows": 3,
+            "sprite_index": 4
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a computer."
+            ],
+            [
+              "b",
+              "It is a printer."
+            ],
+            [
+              "c",
+              "It is a whiteboard."
+            ],
+            [
+              "d",
+              "It is a schoolbag."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000058",
+          "position": 26,
+          "question_type": "single_choice",
+          "prompt": "What is the special assignment or group work that students prepare and present together?",
+          "image": "images/school-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Project",
+            "sprite_columns": 3,
+            "sprite_rows": 3,
+            "sprite_index": 5
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a project."
+            ],
+            [
+              "b",
+              "It is a break."
+            ],
+            [
+              "c",
+              "It is a timetable."
+            ],
+            [
+              "d",
+              "It is a subject."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000059",
+          "position": 27,
+          "question_type": "single_choice",
+          "prompt": "Who is the classmate that works together with you on a classroom activity?",
+          "image": "images/school-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Partner",
+            "sprite_columns": 3,
+            "sprite_rows": 3,
+            "sprite_index": 6
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That person is a partner."
+            ],
+            [
+              "b",
+              "That person is a teacher."
+            ],
+            [
+              "c",
+              "That person is a parent."
+            ],
+            [
+              "d",
+              "That person is a sibling."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000060",
+          "position": 28,
+          "question_type": "single_choice",
+          "prompt": "What is the open outdoor area at school where children run and play games during break?",
+          "image": "images/school-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Playground",
+            "sprite_columns": 3,
+            "sprite_rows": 3,
+            "sprite_index": 7
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "It is a classroom."
+            ],
+            [
+              "b",
+              "It is a playground."
+            ],
+            [
+              "c",
+              "It is a library."
+            ],
+            [
+              "d",
+              "It is a office."
+            ]
+          ]
+        },
+        {
+          "id": "35000000-0000-4000-8000-000000000061",
+          "position": 29,
+          "question_type": "single_choice",
+          "prompt": "Who is a person you like, trust, and enjoy spending time with at school?",
+          "image": "images/school-3.png",
+          "metadata": {
+            "visual_theme": "test-5-illustrated",
+            "concept": "Friend",
+            "sprite_columns": 3,
+            "sprite_rows": 3,
+            "sprite_index": 8
+          },
+          "points": 1,
+          "options": [
+            [
+              "a",
+              "That person is a friend."
+            ],
+            [
+              "b",
+              "That person is a teacher."
+            ],
+            [
+              "c",
+              "That person is a stranger."
+            ],
+            [
+              "d",
+              "That person is a parent."
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

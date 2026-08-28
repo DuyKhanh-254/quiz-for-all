@@ -1,6 +1,9 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { ArrowLeft, ArrowRight, CheckCircle2, Clock3, Cloud, CloudOff, GraduationCap, LoaderCircle, Send, X } from "lucide-react";
 import Link from "next/link";
 import { AudioPlayer } from "@/components/audio-player";
@@ -12,6 +15,8 @@ import type { AttemptAnswer, AttemptSummary, JsonResponse, Quiz } from "@/lib/ty
 type Payload = { attempt: AttemptSummary; quiz: Quiz; answers: AttemptAnswer[] };
 type Result = { score: number; maxScore: number; percentage: number; correctCount: number; totalQuestions: number; durationSeconds: number };
 
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 export function QuizRunner({ attemptId }: { attemptId: string }) {
   const [data, setData] = useState<Payload | null>(null);
   const [responses, setResponses] = useState<Record<string, JsonResponse>>({});
@@ -22,7 +27,9 @@ export function QuizRunner({ attemptId }: { attemptId: string }) {
   const [showConfirm, setShowConfirm] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [result, setResult] = useState<Result | null>(null);
+  const [testFiveQuestionIndex, setTestFiveQuestionIndex] = useState(0);
   const timers = useRef<Record<string, ReturnType<typeof setTimeout>>>({});
+  const testFiveStage = useRef<HTMLDivElement>(null);
   const localKey = `quiz-attempt-${attemptId}`;
 
   useEffect(() => {
@@ -53,6 +60,23 @@ export function QuizRunner({ attemptId }: { attemptId: string }) {
   const questions = useMemo(() => data?.quiz.quiz_sections.flatMap((section) => section.questions) ?? [], [data]);
   const answered = questions.filter((question) => isAnswered(question, responses[question.id])).length;
   const unanswered = questions.length - answered;
+
+  useGSAP(() => {
+    if (data?.quiz.slug !== "english-vocabulary-test-5" || !testFiveStage.current) return;
+    const card = testFiveStage.current.querySelector(".test5-question-card");
+    const image = testFiveStage.current.querySelector(".test5-concept-image");
+    if (card) {
+      gsap.fromTo(card, { y: 42, opacity: 0, rotateX: -3 }, { y: 0, opacity: 1, rotateX: 0, duration: 0.58, ease: "power3.out" });
+    }
+    if (image) {
+      gsap.fromTo(image, { scale: 0.82, opacity: 0.2 }, {
+        scale: 1,
+        opacity: 1,
+        ease: "none",
+        scrollTrigger: { trigger: image, start: "top 92%", end: "top 52%", scrub: 0.5 },
+      });
+    }
+  }, { scope: testFiveStage, dependencies: [data?.quiz.slug, testFiveQuestionIndex] });
 
   const save = useCallback(async (questionId: string, response: JsonResponse) => {
     setSaveState("saving");
@@ -89,6 +113,62 @@ export function QuizRunner({ attemptId }: { attemptId: string }) {
   if (!data) return <main className="shell py-16" aria-busy="true"><div className="skeleton h-72" /></main>;
   if (result) return <ResultView result={result} attemptId={attemptId} />;
 
+  if (data.quiz.slug === "english-vocabulary-test-5") {
+    const currentQuestion = questions[testFiveQuestionIndex];
+    const currentSectionIndex = data.quiz.quiz_sections.findIndex((item) => item.questions.some((question) => question.id === currentQuestion?.id));
+    const currentSection = data.quiz.quiz_sections[Math.max(0, currentSectionIndex)];
+    const sectionStart = data.quiz.quiz_sections.slice(0, Math.max(0, currentSectionIndex)).reduce((sum, item) => sum + item.questions.length, 0);
+    const questionInSection = testFiveQuestionIndex - sectionStart + 1;
+    const goToQuestion = (index: number) => {
+      setTestFiveQuestionIndex(Math.min(Math.max(0, index), questions.length - 1));
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+    return <main className="min-h-screen overflow-x-hidden bg-[radial-gradient(circle_at_top_left,_#f5ffd9,_transparent_34%),linear-gradient(135deg,_#f8f6ee_0%,_#eef5e8_100%)] pb-28">
+      <header className="sticky top-0 z-30 border-b border-[#bed88a] bg-[#2f6f1f]/95 text-white shadow-lg backdrop-blur">
+        <div className="shell flex min-h-17 items-center justify-between gap-3">
+          <div className="min-w-0"><h1 className="truncate font-black">{data.quiz.title}</h1><p className="truncate text-xs font-bold text-[#e6f4ce]">{data.attempt.student_name} · {data.attempt.class_name}</p></div>
+          <div className="flex items-center gap-3 text-sm font-bold"><span className="hidden items-center gap-1 sm:flex">{saveState === "offline" ? <CloudOff size={17} /> : <Cloud size={17} />}{saveState === "saving" ? "Đang lưu…" : saveState === "offline" ? "Đã lưu trên máy" : "Đã lưu"}</span><span className="flex items-center gap-1"><Clock3 size={17} /> {formatDuration(elapsed)}</span></div>
+        </div>
+        <div className="h-1.5 bg-[#dbe8c3]"><div className="h-full bg-[#f4c430] transition-all duration-500" style={{ width: `${questions.length ? answered / questions.length * 100 : 0}%` }} /></div>
+      </header>
+
+      <div className="shell py-7" ref={testFiveStage}>
+        <section className="relative mb-7 overflow-hidden rounded-3xl border border-[#c9dc9d] bg-white px-5 py-6 shadow-[0_18px_50px_rgba(61,105,35,.12)] sm:px-8">
+          <div className="absolute inset-y-0 left-0 w-2 bg-[#f4c430]" />
+          <div className="flex flex-wrap items-center justify-between gap-4">
+            <div><p className="text-sm font-black text-[#5d7f2b]">{currentSection?.title}</p><p className="mt-1 text-lg font-extrabold text-[#173b28]">Câu {questionInSection}/{currentSection?.questions.length} trong phần này</p></div>
+            <div className="rounded-2xl bg-[#eff8dc] px-5 py-3 text-right"><strong className="block text-xl text-[#326b24]">{testFiveQuestionIndex + 1}/{questions.length}</strong><span className="text-xs font-bold text-[#68804b]">Toàn bài</span></div>
+          </div>
+        </section>
+
+        <div className="grid gap-7 xl:grid-cols-[minmax(0,1fr)_260px]">
+          <div className="relative">
+            <div aria-hidden className="absolute inset-x-5 top-3 h-full rounded-3xl border border-[#cbdca8] bg-[#e8f2d3]" />
+            <div aria-hidden className="absolute inset-x-10 top-6 h-full rounded-3xl border border-[#dbe5c8] bg-white/70" />
+            <div className="relative">{currentQuestion && <QuestionCard question={currentQuestion} number={testFiveQuestionIndex + 1} value={responses[currentQuestion.id]} onChange={(response) => update(currentQuestion.id, response)} />}</div>
+          </div>
+
+          <aside className="hidden xl:block">
+            <div className="sticky top-24 rounded-3xl border border-[#c9dc9d] bg-white p-5 shadow-[0_14px_40px_rgba(61,105,35,.1)]">
+              <p className="font-black text-[#173b28]">Tiến độ của em</p><p className="mt-1 text-sm font-bold text-[#68804b]">Đã trả lời {answered}/{questions.length}</p>
+              <nav className="mt-5 space-y-2" aria-label="Các phần của Test 5">{data.quiz.quiz_sections.map((item, index) => { const start = data.quiz.quiz_sections.slice(0, index).reduce((sum, entry) => sum + entry.questions.length, 0); return <button type="button" key={item.id} onClick={() => goToQuestion(start)} className={`flex w-full items-center justify-between rounded-xl px-3 py-3 text-left text-sm font-black ${index === currentSectionIndex ? "bg-[#eff8dc] text-[#326b24]" : "text-[#52663d] hover:bg-[#f6f8f1]"}`}><span>Part {index + 1}</span><span>{item.questions.filter((q) => isAnswered(q, responses[q.id])).length}/{item.questions.length}</span></button>; })}</nav>
+              <div className="mt-5 grid grid-cols-5 gap-2">{questions.map((question, index) => <button type="button" key={question.id} onClick={() => goToQuestion(index)} aria-label={`Đi đến câu ${index + 1}`} className={`grid aspect-square place-items-center rounded-lg text-xs font-black transition ${index === testFiveQuestionIndex ? "bg-[#326b24] text-white ring-2 ring-[#a8cd62]" : isAnswered(question, responses[question.id]) ? "bg-[#e6f5cf] text-[#326b24]" : "bg-[#f1f3ed] text-[#6b7761] hover:bg-[#e4eadb]"}`}>{index + 1}</button>)}</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      {error && <div className="fixed bottom-24 left-1/2 z-40 w-[min(90%,600px)] -translate-x-1/2 error-box shadow-xl" role="alert">{error}</div>}
+      <div className="fixed inset-x-0 bottom-0 z-30 border-t border-[#c9dc9d] bg-white/95 p-3 shadow-[0_-8px_30px_rgba(43,78,25,.12)] backdrop-blur"><div className="shell flex items-center justify-between gap-3">
+        <button className="btn btn-secondary !border-[#9fc566] !text-[#326b24]" disabled={testFiveQuestionIndex === 0} onClick={() => goToQuestion(testFiveQuestionIndex - 1)}><ArrowLeft size={18} /> <span className="hidden sm:inline">Câu trước</span></button>
+        <span className="text-sm font-black text-[#326b24] xl:hidden">{answered}/{questions.length} đã trả lời</span>
+        {testFiveQuestionIndex < questions.length - 1 ? <button className="btn !bg-[#326b24] !text-white hover:!bg-[#245519]" onClick={() => goToQuestion(testFiveQuestionIndex + 1)}><span className="hidden sm:inline">Câu tiếp</span><ArrowRight size={18} /></button> : <button className="btn !bg-[#326b24] !text-white hover:!bg-[#245519]" disabled={submitting} onClick={() => setShowConfirm(true)}>{submitting ? <LoaderCircle className="animate-spin" size={18} /> : <Send size={18} />} Nộp bài</button>}
+      </div></div>
+      {showConfirm && <SubmitDialog unanswered={unanswered} onClose={() => setShowConfirm(false)} onSubmit={() => void submit()} />}
+    </main>;
+  }
+
   const section = data.quiz.quiz_sections[sectionIndex];
   let globalOffset = 0;
   for (let index = 0; index < sectionIndex; index++) globalOffset += data.quiz.quiz_sections[index].questions.length;
@@ -105,8 +185,12 @@ export function QuizRunner({ attemptId }: { attemptId: string }) {
     </div>
     {error && <div className="fixed bottom-24 left-1/2 z-40 w-[min(90%,600px)] -translate-x-1/2 error-box shadow-xl" role="alert">{error}</div>}
     <div className="fixed inset-x-0 bottom-0 z-30 border-t border-[#d4e0e9] bg-white p-3 shadow-[0_-8px_24px_rgba(24,49,83,.08)]"><div className="shell flex items-center justify-between gap-3"><button className="btn btn-secondary" disabled={sectionIndex === 0} onClick={() => { setSectionIndex((value) => value - 1); window.scrollTo(0, 0); }}><ArrowLeft size={18} /> <span className="hidden sm:inline">Previous</span></button><span className="text-sm font-extrabold lg:hidden">{answered}/{questions.length} answered</span>{sectionIndex < data.quiz.quiz_sections.length - 1 ? <button className="btn btn-primary" onClick={() => { setSectionIndex((value) => value + 1); window.scrollTo(0, 0); }}><span className="hidden sm:inline">Next part</span><ArrowRight size={18} /></button> : <button className="btn btn-primary" disabled={submitting} onClick={() => setShowConfirm(true)}>{submitting ? <LoaderCircle className="animate-spin" size={18} /> : <Send size={18} />} Submit Test</button>}</div></div>
-    {showConfirm && <div className="fixed inset-0 z-50 grid place-items-center bg-[#10243d]/60 p-4" role="dialog" aria-modal="true" aria-labelledby="submit-title"><div className="card w-full max-w-md p-6"><div className="flex items-start justify-between"><div><h2 id="submit-title" className="text-xl font-extrabold">Submit your test?</h2><p className="muted mt-2">{unanswered ? `You still have ${unanswered} unanswered question${unanswered === 1 ? "" : "s"}.` : "You answered every question. Great work!"}</p></div><button className="rounded-lg p-2 hover:bg-[#eef2f5]" onClick={() => setShowConfirm(false)} aria-label="Close"><X /></button></div><div className="mt-6 flex flex-col gap-3 sm:flex-row"><button className="btn btn-secondary flex-1" onClick={() => setShowConfirm(false)}>Continue Test</button><button className="btn btn-primary flex-1" onClick={() => void submit()}>Submit Anyway</button></div></div></div>}
+    {showConfirm && <SubmitDialog unanswered={unanswered} onClose={() => setShowConfirm(false)} onSubmit={() => void submit()} />}
   </main>;
+}
+
+function SubmitDialog({ unanswered, onClose, onSubmit }: { unanswered: number; onClose: () => void; onSubmit: () => void }) {
+  return <div className="fixed inset-0 z-50 grid place-items-center bg-[#10243d]/60 p-4" role="dialog" aria-modal="true" aria-labelledby="submit-title"><div className="card w-full max-w-md p-6"><div className="flex items-start justify-between"><div><h2 id="submit-title" className="text-xl font-extrabold">Nộp bài kiểm tra?</h2><p className="muted mt-2">{unanswered ? `Em vẫn còn ${unanswered} câu chưa trả lời.` : "Em đã trả lời tất cả câu hỏi."}</p></div><button className="rounded-lg p-2 hover:bg-[#eef2f5]" onClick={onClose} aria-label="Đóng"><X /></button></div><div className="mt-6 flex flex-col gap-3 sm:flex-row"><button className="btn btn-secondary flex-1" onClick={onClose}>Tiếp tục làm bài</button><button className="btn btn-primary flex-1" onClick={onSubmit}>Vẫn nộp bài</button></div></div></div>;
 }
 
 function ResultView({ result, attemptId }: { result: Result; attemptId: string }) {

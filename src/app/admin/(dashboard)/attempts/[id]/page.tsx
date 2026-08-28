@@ -3,6 +3,7 @@ import { ArrowLeft, CheckCircle2, CircleX, HelpCircle, Music2 } from "lucide-rea
 import { notFound } from "next/navigation";
 import { AudioPlayer } from "@/components/audio-player";
 import { QuestionImage } from "@/components/question-image";
+import { SpriteImage } from "@/components/sprite-image";
 import { formatDate, formatDuration } from "@/lib/format";
 import { createAdminClient } from "@/lib/supabase/admin";
 
@@ -14,7 +15,7 @@ type Question = {
   prompt: string;
   image_url: string | null;
   audio_url: string | null;
-  metadata: { left_items?: Array<{ key: string; text: string }>; sprite_columns?: number } | null;
+  metadata: { left_items?: Array<{ key: string; text: string }>; sprite_columns?: number; sprite_rows?: number; sprite_index?: number; visual_theme?: string; concept?: string } | null;
   points: number;
   position: number;
   question_type: string;
@@ -114,7 +115,19 @@ export default async function AdminAttemptDetail({ params }: { params: Promise<{
                 <div className="p-5 sm:p-6">
                   {section?.audio_url && <div className="mb-5"><p className="mb-2 flex items-center gap-2 text-sm font-extrabold"><Music2 size={17} /> Audio của phần</p><AudioPlayer src={section.audio_url} label={`Audio phần ${section.position}`} /></div>}
                   {question.audio_url && question.audio_url !== section?.audio_url && <div className="mb-5"><p className="mb-2 flex items-center gap-2 text-sm font-extrabold"><Music2 size={17} /> Audio của câu hỏi</p><AudioPlayer src={question.audio_url} label={`Audio câu ${index + 1}`} /></div>}
-                  {question.image_url && <QuestionImage className="mb-5 max-w-3xl" src={question.image_url} alt={question.prompt} />}
+                  {question.image_url && question.metadata?.visual_theme === "test-5-illustrated" ? (
+                    <div className="mb-5 rounded-3xl border border-[#c9dc9d] bg-[#f8fceb] p-5">
+                      <p className="mb-3 text-center text-xl font-black text-[#326b24]">{question.metadata.concept}</p>
+                      <SpriteImage
+                        src={question.image_url}
+                        columns={Number(question.metadata.sprite_columns) || 1}
+                        rows={Number(question.metadata.sprite_rows) || 1}
+                        index={Number(question.metadata.sprite_index) || 0}
+                        alt={`Minh họa ${question.metadata.concept || question.prompt}`}
+                        className="mx-auto w-full max-w-[17rem] border-4 border-white shadow-lg"
+                      />
+                    </div>
+                  ) : question.image_url ? <QuestionImage className="mb-5 max-w-3xl" src={question.image_url} alt={question.prompt} /> : null}
 
                   {question.question_options.length > 0 && (
                     <div className={`grid gap-3 ${question.question_type === "image_choice" ? "sm:grid-cols-3" : "sm:grid-cols-2"}`}>
