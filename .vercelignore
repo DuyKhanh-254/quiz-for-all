@@ -1,0 +1,10 @@
+.agents/
+skills-lock.json
+content/generated-images/
+content/test-2-assets/
+content/test-3-assets/
+content/test-4-assets/
+test-1/
+test-2/
+*.pdf
+*.mp3
