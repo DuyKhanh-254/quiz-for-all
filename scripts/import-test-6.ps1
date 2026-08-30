@@ -18,7 +18,8 @@ $privatePath = "d:\WEB_QUIZ\content\test-6.private.json"
 $publicContent = Get-Content $publicPath -Raw -Encoding UTF8 | ConvertFrom-Json
 $privateAnswers = Get-Content $privatePath -Raw -Encoding UTF8 | ConvertFrom-Json
 
-$storageBase = "$supabaseUrl/storage/v1/object/public/quiz-assets/$($publicContent.assetBase)"
+$cleanAssetBase = if ($publicContent.assetBase.StartsWith("quiz-assets/")) { $publicContent.assetBase } else { "quiz-assets/$($publicContent.assetBase)" }
+$storageBase = "$supabaseUrl/storage/v1/object/public/$cleanAssetBase"
 
 Write-Host "Importing Quiz: $($publicContent.quiz.title)..."
 

@@ -12,7 +12,10 @@ const root = path.resolve(import.meta.dirname, "..");
 const publicContent = JSON.parse(await readFile(path.join(root, "content/test-6.public.json"), "utf8"));
 const privateAnswers = JSON.parse(await readFile(path.join(root, "content/test-6.private.json"), "utf8"));
 
-const storageBase = `${url}/storage/v1/object/public/quiz-assets/${publicContent.assetBase}`;
+const cleanAssetBase = publicContent.assetBase.startsWith("quiz-assets/")
+  ? publicContent.assetBase
+  : `quiz-assets/${publicContent.assetBase}`;
+const storageBase = `${url}/storage/v1/object/public/${cleanAssetBase}`;
 
 console.log(`Importing Quiz: ${publicContent.quiz.title}...`);
 
