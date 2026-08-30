@@ -26,5 +26,4 @@ content/test-3-assets/audio/
 content/test-4-assets/*.jpg
 content/test-4-assets/*.png
 content/test-4-assets/audio/
-
-.env*
+content/test-6-assets/

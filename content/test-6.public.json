@@ -1,0 +1,97 @@
+{
+  "quiz": {
+    "id": "16000000-0000-4000-8000-000000000001",
+    "slug": "cambridge-starters-test-6-mixed",
+    "title": "Test 6 – Cambridge Starters Practice",
+    "description": "Listening Parts 2, 3 & 4 – Fill in, True/False, Image Choice, Matching",
+    "grade": "Pre A1",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-6",
+  "sections": [
+    {
+      "id": "26000000-0000-4000-8000-000000000001",
+      "title": "Listening – Part 1",
+      "instruction": "Listen to the audio. Answer the questions by filling in, or choosing True / False.",
+      "section_type": "fill_blank",
+      "position": 1,
+      "audio": "audio/test6-lis-part2.mp3",
+      "image": "images/test6-part1-scene.jpg",
+      "questions": [
+        { "id": "36000000-0000-4000-8000-000000000001", "position": 1, "question_type": "fill_blank", "prompt": "1. What number is the bus he lives in?", "points": 1, "metadata": { "hint": "Bus number ____" }, "options": [] },
+        { "id": "36000000-0000-4000-8000-000000000002", "position": 2, "question_type": "fill_blank", "prompt": "2. What is the name of his school?", "points": 1, "metadata": { "hint": "____ School" }, "options": [] },
+        { "id": "36000000-0000-4000-8000-000000000003", "position": 3, "question_type": "fill_blank", "prompt": "3. How many legs has he got?", "points": 1, "metadata": { "hint": "____ legs" }, "options": [] },
+        { "id": "36000000-0000-4000-8000-000000000004", "position": 4, "question_type": "fill_blank", "prompt": "4. What is the name of his chicken friend?", "points": 1, "options": [] },
+        { "id": "36000000-0000-4000-8000-000000000005", "position": 5, "question_type": "fill_blank", "prompt": "5. How many eggs has the chicken got?", "points": 1, "metadata": { "hint": "____ eggs" }, "options": [] },
+        { "id": "36000000-0000-4000-8000-000000000006", "position": 6, "question_type": "fill_blank", "prompt": "6. He lives in a ________.", "points": 1, "options": [] },
+        { "id": "36000000-0000-4000-8000-000000000007", "position": 7, "question_type": "fill_blank", "prompt": "7. His school is a school for ________.", "points": 1, "options": [] },
+        { "id": "36000000-0000-4000-8000-000000000008", "position": 8, "question_type": "fill_blank", "prompt": "8. He has got ________ legs.", "points": 1, "options": [] },
+        { "id": "36000000-0000-4000-8000-000000000009", "position": 9, "question_type": "fill_blank", "prompt": "9. His friend is not a monster, it is a ________.", "points": 1, "options": [] },
+        { "id": "36000000-0000-4000-8000-000000000010", "position": 10, "question_type": "fill_blank", "prompt": "10. His friend has got three ________ eggs.", "points": 1, "options": [] },
+        { "id": "36000000-0000-4000-8000-000000000011", "position": 11, "question_type": "single_choice", "prompt": "11. He lives in a house.", "points": 1, "options": [["a", "True"], ["b", "False"]] },
+        { "id": "36000000-0000-4000-8000-000000000012", "position": 12, "question_type": "single_choice", "prompt": "12. The bus number is 12.", "points": 1, "options": [["a", "True"], ["b", "False"]] },
+        { "id": "36000000-0000-4000-8000-000000000013", "position": 13, "question_type": "single_choice", "prompt": "13. The name of the school is Robot School.", "points": 1, "options": [["a", "True"], ["b", "False"]] },
+        { "id": "36000000-0000-4000-8000-000000000014", "position": 14, "question_type": "single_choice", "prompt": "14. He has got seven legs.", "points": 1, "options": [["a", "True"], ["b", "False"]] },
+        { "id": "36000000-0000-4000-8000-000000000015", "position": 15, "question_type": "single_choice", "prompt": "15. His friend is a chicken named Lucy.", "points": 1, "options": [["a", "True"], ["b", "False"]] },
+        { "id": "36000000-0000-4000-8000-000000000016", "position": 16, "question_type": "single_choice", "prompt": "16. The chicken has got five brown eggs.", "points": 1, "options": [["a", "True"], ["b", "False"]] }
+      ]
+    },
+    {
+      "id": "26000000-0000-4000-8000-000000000002",
+      "title": "Listening – Part 2",
+      "instruction": "Listen to the audio. Look at the three pictures and choose the correct one.",
+      "section_type": "listening_image_choice",
+      "position": 2,
+      "audio": "audio/test6-lis-part3.mp3",
+      "questions": [
+        { "id": "36000000-0000-4000-8000-000000000017", "position": 1, "question_type": "image_choice", "prompt": "1a. What does Pat think about hippos?", "points": 1, "options": [["a", "They're ugly", "images/q1a-a.jpg"], ["b", "They're cute", "images/q1a-b.jpg"], ["c", "They're scary", "images/q1a-c.jpg"]] },
+        { "id": "36000000-0000-4000-8000-000000000018", "position": 2, "question_type": "image_choice", "prompt": "1b. What is Pat's favourite animal?", "points": 1, "options": [["a", "An elephant", "images/q1b-a.jpg"], ["b", "A hippo", "images/q1b-b.jpg"], ["c", "A crocodile", "images/q1b-c.jpg"]] },
+        { "id": "36000000-0000-4000-8000-000000000019", "position": 3, "question_type": "image_choice", "prompt": "2a. Is Anna's grandmother sleeping?", "points": 1, "options": [["a", "No, she is playing tennis", "images/q2a-a.jpg"], ["b", "Yes, she is sleeping", "images/q2a-b.jpg"], ["c", "She is swimming", "images/q2a-c.jpg"]] },
+        { "id": "36000000-0000-4000-8000-000000000020", "position": 4, "question_type": "image_choice", "prompt": "2b. What sport is she playing with her friends?", "points": 1, "options": [["a", "Tennis", "images/q2b-c.jpg"], ["b", "Sleeping in chair", "images/q2b-a.jpg"], ["c", "Swimming", "images/q2b-b.jpg"]] },
+        { "id": "36000000-0000-4000-8000-000000000021", "position": 5, "question_type": "image_choice", "prompt": "3a. Can the baby bounce or catch the ball?", "points": 1, "options": [["a", "No, he can't", "images/q3a-a.jpg"], ["b", "Yes, he can bounce it", "images/q3a-b.jpg"], ["c", "Yes, he can catch it", "images/q3a-c.jpg"]] },
+        { "id": "36000000-0000-4000-8000-000000000022", "position": 6, "question_type": "image_choice", "prompt": "3b. What action can the baby do with his new ball?", "points": 1, "options": [["a", "Throw it", "images/q3b-c.jpg"], ["b", "Roll it", "images/q3b-a.jpg"], ["c", "Catch it", "images/q3b-b.jpg"]] },
+        { "id": "36000000-0000-4000-8000-000000000023", "position": 7, "question_type": "image_choice", "prompt": "4a. What two fruits does Sam's mom offer him first?", "points": 1, "options": [["a", "Pineapple and watermelon", "images/q4a-a.jpg"], ["b", "Apple and banana", "images/q4a-b.jpg"], ["c", "Orange and grapes", "images/q4a-c.jpg"]] },
+        { "id": "36000000-0000-4000-8000-000000000024", "position": 8, "question_type": "image_choice", "prompt": "4b. What fruit does Sam actually ask to eat?", "points": 1, "options": [["a", "A banana", "images/q4b-b.jpg"], ["b", "A watermelon", "images/q4b-a.jpg"], ["c", "A pineapple", "images/q4b-c.jpg"]] },
+        { "id": "36000000-0000-4000-8000-000000000025", "position": 9, "question_type": "image_choice", "prompt": "5a. Is there a computer in Nick's bedroom or kitchen?", "points": 1, "options": [["a", "No, it's in the living room", "images/q5a-a.jpg"], ["b", "Yes, in the bedroom", "images/q5a-b.jpg"], ["c", "Yes, in the kitchen", "images/q5a-c.jpg"]] },
+        { "id": "36000000-0000-4000-8000-000000000026", "position": 10, "question_type": "image_choice", "prompt": "5b. Where is the computer located?", "points": 1, "options": [["a", "In the living room", "images/q5b-a.jpg"], ["b", "In the kitchen", "images/q5b-b.jpg"], ["c", "In the bedroom", "images/q5b-c.jpg"]] }
+      ]
+    },
+    {
+      "id": "26000000-0000-4000-8000-000000000003",
+      "title": "Listening – Part 3",
+      "instruction": "Listen to the audio. Look at the picture and match each car with its correct color.",
+      "section_type": "matching",
+      "position": 3,
+      "audio": "audio/test6-lis-part4.mp3",
+      "image": "images/test6-part3-scene.jpg",
+      "questions": [
+        {
+          "id": "36000000-0000-4000-8000-000000000027",
+          "position": 1,
+          "question_type": "matching",
+          "prompt": "Match each car with its color.",
+          "points": 5,
+          "metadata": {
+            "left_items": [
+              { "key": "q1", "text": "The car on the truck" },
+              { "key": "q2", "text": "The car next to the flowers" },
+              { "key": "q3", "text": "The car behind the bike" },
+              { "key": "q4", "text": "The car in the dog's mouth" },
+              { "key": "q5", "text": "The car behind the bag" }
+            ]
+          },
+          "options": [
+            ["a", "Blue"],
+            ["b", "Yellow"],
+            ["c", "Green"],
+            ["d", "Purple"],
+            ["e", "Red"],
+            ["f", "Orange"],
+            ["g", "Pink"]
+          ]
+        }
+      ]
+    }
+  ]
+}
