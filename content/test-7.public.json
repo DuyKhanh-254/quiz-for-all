@@ -1,0 +1,100 @@
+{
+  "quiz": {
+    "id": "17000000-0000-4000-8000-000000000001",
+    "slug": "cambridge-starters-test-7-mixed",
+    "title": "Test 7 – Cambridge Starters Practice",
+    "description": "Listening Parts 2 & 3 (Test 3)",
+    "grade": "Pre A1",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-7",
+  "sections": [
+    {
+      "id": "27000000-0000-4000-8000-000000000001",
+      "title": "Listening – Part 2",
+      "instruction": "Read the question. Listen and write a name or a number. There are two examples.",
+      "section_type": "fill_blank",
+      "position": 1,
+      "audio": "audio/test7-lis-part2.mp3",
+      "image": "images/listening/test7-part2-scene.jpg",
+      "questions": [
+        { "id": "37000000-0000-4000-8000-000000000001", "position": 1, "question_type": "fill_blank", "prompt": "1. What is the monster's name?", "points": 1, "options": [] },
+        { "id": "37000000-0000-4000-8000-000000000002", "position": 2, "question_type": "fill_blank", "prompt": "2. How many drawings of monsters has Bill got?", "points": 1, "options": [] },
+        { "id": "37000000-0000-4000-8000-000000000003", "position": 3, "question_type": "fill_blank", "prompt": "3. What is Bill's teacher's name?", "points": 1, "metadata": { "hint": "Mrs _______" }, "options": [] },
+        { "id": "37000000-0000-4000-8000-000000000004", "position": 4, "question_type": "fill_blank", "prompt": "4. How many boys are in Bill's class?", "points": 1, "options": [] },
+        { "id": "37000000-0000-4000-8000-000000000005", "position": 5, "question_type": "fill_blank", "prompt": "5. Which school does Bill go to?", "points": 1, "metadata": { "hint": "_______ School" }, "options": [] }
+      ]
+    },
+    {
+      "id": "27000000-0000-4000-8000-000000000002",
+      "title": "Listening – Part 3",
+      "instruction": "Listen and tick (✔) the box. There is one example.",
+      "section_type": "listening_image_choice",
+      "position": 2,
+      "audio": "audio/test7-lis-part3.mp3",
+      "questions": [
+        {
+          "id": "37000000-0000-4000-8000-000000000006",
+          "position": 1,
+          "question_type": "image_choice",
+          "prompt": "1. What can Tom have for dinner?",
+          "points": 1,
+          "options": [
+            ["a", "Fish and peas with chips", "images/listening/q1-a.jpg"],
+            ["b", "Sausages and chips with tomato", "images/listening/q1-b.jpg"],
+            ["c", "Sausages and peas with tomato", "images/listening/q1-c.jpg"]
+          ]
+        },
+        {
+          "id": "37000000-0000-4000-8000-000000000007",
+          "position": 2,
+          "question_type": "image_choice",
+          "prompt": "2. Where is Anna?",
+          "points": 1,
+          "options": [
+            ["a", "In the armchair", "images/listening/q2-a.jpg"],
+            ["b", "On the garden chair", "images/listening/q2-b.jpg"],
+            ["c", "In bed", "images/listening/q2-c.jpg"]
+          ]
+        },
+        {
+          "id": "37000000-0000-4000-8000-000000000008",
+          "position": 3,
+          "question_type": "image_choice",
+          "prompt": "3. Which is May's mouse?",
+          "points": 1,
+          "options": [
+            ["a", "White mouse", "images/listening/q3-a.jpg"],
+            ["b", "Grey mouse", "images/listening/q3-b.jpg"],
+            ["c", "White mouse holding cheese", "images/listening/q3-c.jpg"]
+          ]
+        },
+        {
+          "id": "37000000-0000-4000-8000-000000000009",
+          "position": 4,
+          "question_type": "image_choice",
+          "prompt": "4. Which sport is Ben doing today?",
+          "points": 1,
+          "options": [
+            ["a", "Badminton", "images/listening/q4-a.jpg"],
+            ["b", "Baseball", "images/listening/q4-b.jpg"],
+            ["c", "Hockey", "images/listening/q4-c.jpg"]
+          ]
+        },
+        {
+          "id": "37000000-0000-4000-8000-000000000010",
+          "position": 5,
+          "question_type": "image_choice",
+          "prompt": "5. What is Alex doing now?",
+          "points": 1,
+          "options": [
+            ["a", "Drawing a picture", "images/listening/q5-a.jpg"],
+            ["b", "Riding a bike", "images/listening/q5-b.jpg"],
+            ["c", "Playing on the computer", "images/listening/q5-c.jpg"]
+          ]
+        }
+      ]
+    }
+  ]
+}
