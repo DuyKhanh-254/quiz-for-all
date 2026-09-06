@@ -1,0 +1,67 @@
+{
+  "quiz": {
+    "id": "18000000-0000-4000-8000-000000000001",
+    "slug": "cambridge-starters-test-8-matching",
+    "title": "Test 8 – Cambridge Starters Practice",
+    "description": "Listening Part 1 – Listen and Draw Lines (Toy Shop)",
+    "grade": "Pre A1",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-8",
+  "sections": [
+    {
+      "id": "28000000-0000-4000-8000-000000000001",
+      "title": "Listening – Part 1",
+      "instruction": "Listen and draw lines. There is one example.",
+      "section_type": "matching",
+      "position": 1,
+      "audio": "audio/test8-lis-part1.mp3",
+      "image": "images/listening/test8-part1-scene.jpg",
+      "questions": [
+        {
+          "id": "38000000-0000-4000-8000-000000000001",
+          "position": 1,
+          "question_type": "matching",
+          "prompt": "Listen and draw lines between names and the people in the picture.",
+          "points": 5,
+          "metadata": {
+            "line_drawing": true,
+            "scene_image": "images/listening/test8-part1-scene.jpg",
+            "left_items": [
+              { "key": "mark", "text": "Mark" },
+              { "key": "ben", "text": "Ben" },
+              { "key": "jill", "text": "Jill" },
+              { "key": "hugo", "text": "Hugo" },
+              { "key": "sue", "text": "Sue" }
+            ],
+            "names": [
+              { "id": "mark", "text": "Mark", "position": "top", "x": 18 },
+              { "id": "anna", "text": "Anna", "position": "top", "x": 40, "is_example": true, "target_id": "person_anna" },
+              { "id": "ben", "text": "Ben", "position": "top", "x": 65 },
+              { "id": "jill", "text": "Jill", "position": "top", "x": 88 },
+              { "id": "may", "text": "May", "position": "bottom", "x": 22, "is_distractor": true },
+              { "id": "hugo", "text": "Hugo", "position": "bottom", "x": 50 },
+              { "id": "sue", "text": "Sue", "position": "bottom", "x": 80 }
+            ],
+            "targets": [
+              { "id": "person_anna", "name": "Anna (Example)", "x": 36.5, "y": 33.0, "is_example": true },
+              { "id": "person_dollhouse", "name": "Man at doll's house (Mark)", "x": 68.3, "y": 37.0 },
+              { "id": "person_book", "name": "Woman with book (Jill)", "x": 83.8, "y": 42.0 },
+              { "id": "person_mouse", "name": "Woman with mouse (Sue)", "x": 43.5, "y": 54.0 },
+              { "id": "person_chair", "name": "Boy on chair (Hugo)", "x": 18.8, "y": 66.0 },
+              { "id": "person_train", "name": "Boy with train (Ben)", "x": 72.0, "y": 71.0 }
+            ]
+          },
+          "options": [
+            ["person_dollhouse", "The man looking at the doll's house"],
+            ["person_chair", "The boy on the chair wearing glasses"],
+            ["person_book", "The woman looking at the book with trees"],
+            ["person_mouse", "The woman smiling at the toy mouse"],
+            ["person_train", "The boy on the floor playing with the train"]
+          ]
+        }
+      ]
+    }
+  ]
+}

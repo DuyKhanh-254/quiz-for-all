@@ -4,6 +4,7 @@ import { Check, CheckCircle2, CircleX, Link2, Volume2 } from "lucide-react";
 import { AudioPlayer } from "@/components/audio-player";
 import { QuestionImage } from "@/components/question-image";
 import { SpriteImage } from "@/components/sprite-image";
+import { LineDrawingMatching } from "@/components/line-drawing-matching";
 import type { JsonResponse, QuizQuestion } from "@/lib/types";
 
 interface Props {
@@ -22,6 +23,7 @@ type SpriteMetadata = {
   left_items?: Array<{ key: string; text: string }>;
   visual_theme?: string;
   concept?: string;
+  line_drawing?: boolean;
 };
 
 function Status({ isCorrect }: { isCorrect?: boolean | null }) {
@@ -48,8 +50,11 @@ function ChoiceQuestion({ question, value, onChange, readonly }: Omit<Props, "nu
   </div>;
 }
 
-function MatchingQuestion({ question, value, onChange, readonly }: Omit<Props, "number" | "isCorrect">) {
+function MatchingQuestion({ question, value, onChange, readonly, isCorrect }: Omit<Props, "number">) {
   const metadata = question.metadata as SpriteMetadata;
+  if (metadata.line_drawing) {
+    return <LineDrawingMatching question={question} value={value} onChange={onChange} readonly={readonly} isCorrect={isCorrect} />;
+  }
   const leftItems = metadata.left_items ?? [];
   const spriteColumns = Number(metadata.sprite_columns) || 0;
   const pairs = value && "pairs" in value ? value.pairs : {};
@@ -95,7 +100,9 @@ export function isAnswered(question: QuizQuestion, response?: JsonResponse) {
   if ("option" in response) return Boolean(response.option);
   if ("value" in response) return Boolean(response.value.trim());
   if ("pairs" in response) {
-    const expected = ((question.metadata as { left_items?: unknown[] }).left_items ?? []).length;
+    const meta = question.metadata as { left_items?: unknown[]; line_drawing?: boolean };
+    const expected = (meta.left_items ?? []).length;
+    if (meta.line_drawing) return Object.keys(response.pairs).length > 0;
     return expected > 0 && Object.keys(response.pairs).length >= expected;
   }
   return false;
