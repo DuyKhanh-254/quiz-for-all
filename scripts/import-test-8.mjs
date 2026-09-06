@@ -45,6 +45,18 @@ for (const section of publicContent.sections) {
 
   for (const q of section.questions) {
     questionIds.push(q.id);
+
+    const questionImageUrl = q.image
+      ? `${storageBase}/${q.image}`
+      : q.metadata?.scene_image
+      ? `${storageBase}/${q.metadata.scene_image}`
+      : null;
+
+    const resolvedMetadata = { ...(q.metadata || {}) };
+    if (resolvedMetadata.scene_image) {
+      resolvedMetadata.scene_image = `${storageBase}/${resolvedMetadata.scene_image}`;
+    }
+
     questionRows.push({
       id: q.id,
       quiz_id: publicContent.quiz.id,
@@ -53,7 +65,8 @@ for (const section of publicContent.sections) {
       question_type: q.question_type,
       prompt: q.prompt,
       points: q.points,
-      metadata: q.metadata || {},
+      image_url: questionImageUrl,
+      metadata: resolvedMetadata,
     });
 
     if (q.options && q.options.length > 0) {
@@ -105,4 +118,4 @@ if (allKeyRows.length > 0) {
   console.log(`Upserted ${allKeyRows.length} answer keys.`);
 }
 
-console.log("SUCCESS: Test 8 fully imported into Supabase!");
+console.log("SUCCESS: Test 8 updated in Supabase!");
