@@ -46,20 +46,20 @@
             ],
             "targets": [
               { "id": "person_anna", "name": "Anna (Example)", "x": 34.0, "y": 35.5, "is_example": true },
-              { "id": "person_mother", "name": "Mother (Blue coat)", "x": 18.5, "y": 31.0 },
-              { "id": "person_dollhouse", "name": "Mark (Man at doll's house)", "x": 65.5, "y": 40.0 },
-              { "id": "person_book", "name": "Jill (Woman looking at tree book)", "x": 79.0, "y": 46.0 },
-              { "id": "person_mouse", "name": "Sue (Woman smiling at toy mouse)", "x": 41.5, "y": 62.0 },
-              { "id": "person_chair", "name": "Hugo (Boy on chair with glasses)", "x": 17.5, "y": 77.0 },
-              { "id": "person_train", "name": "Ben (Boy playing with train)", "x": 70.0, "y": 79.0 }
+              { "id": "person_mother", "name": "Person in picture", "x": 18.5, "y": 31.0 },
+              { "id": "person_dollhouse", "name": "Person in picture", "x": 65.5, "y": 40.0 },
+              { "id": "person_book", "name": "Person in picture", "x": 79.0, "y": 46.0 },
+              { "id": "person_mouse", "name": "Person in picture", "x": 41.5, "y": 62.0 },
+              { "id": "person_chair", "name": "Person in picture", "x": 17.5, "y": 77.0 },
+              { "id": "person_train", "name": "Person in picture", "x": 70.0, "y": 79.0 }
             ]
           },
           "options": [
-            ["person_dollhouse", "The man looking at the doll's house"],
-            ["person_chair", "The boy on the chair wearing glasses"],
-            ["person_book", "The woman looking at the book with trees"],
-            ["person_mouse", "The woman smiling at the toy mouse"],
-            ["person_train", "The boy on the floor playing with the train"]
+            ["person_dollhouse", "Person in picture"],
+            ["person_chair", "Person in picture"],
+            ["person_book", "Person in picture"],
+            ["person_mouse", "Person in picture"],
+            ["person_train", "Person in picture"]
           ]
         }
       ]

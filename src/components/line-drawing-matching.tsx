@@ -41,13 +41,13 @@ const COLOR_PALETTE: Record<string, { stroke: string; fill: string; bg: string; 
 };
 
 const DEFAULT_TARGETS: TargetPoint[] = [
-  { id: "person_anna", name: "Anna (Ví dụ - Cô bé nhìn con cá)", x: 34.0, y: 35.5, is_example: true },
-  { id: "person_mother", name: "Người mẹ (Áo khoác xanh dương)", x: 18.5, y: 31.0 },
-  { id: "person_dollhouse", name: "Người đàn ông xem nhà búp bê (Mark)", x: 65.5, y: 40.0 },
-  { id: "person_book", name: "Người phụ nữ xem sách cây (Jill)", x: 79.0, y: 46.0 },
-  { id: "person_mouse", name: "Người phụ nữ chỉ chuột đồ chơi (Sue)", x: 41.5, y: 62.0 },
-  { id: "person_chair", name: "Cậu bé đeo kính ngồi ghế (Hugo)", x: 17.5, y: 77.0 },
-  { id: "person_train", name: "Cậu bé chơi xe lửa dưới sàn (Ben)", x: 70.0, y: 79.0 },
+  { id: "person_anna", name: "Anna (Ví dụ)", x: 34.0, y: 35.5, is_example: true },
+  { id: "person_mother", name: "Người trong tranh", x: 18.5, y: 31.0 },
+  { id: "person_dollhouse", name: "Người trong tranh", x: 65.5, y: 40.0 },
+  { id: "person_book", name: "Người trong tranh", x: 79.0, y: 46.0 },
+  { id: "person_mouse", name: "Người trong tranh", x: 41.5, y: 62.0 },
+  { id: "person_chair", name: "Người trong tranh", x: 17.5, y: 77.0 },
+  { id: "person_train", name: "Người trong tranh", x: 70.0, y: 79.0 },
 ];
 
 const DEFAULT_NAMES: NameTag[] = [
@@ -407,8 +407,7 @@ export function LineDrawingMatching({ question, value, onChange, readonly }: Pro
                 className={`group absolute -translate-x-1/2 -translate-y-1/2 transition-all duration-200 z-20 ${
                   readonly ? "cursor-default" : "cursor-pointer"
                 }`}
-                title={t.name}
-                aria-label={`Target: ${t.name}`}
+                aria-label={isExample ? "Anna (Ví dụ)" : "Người trong tranh"}
               >
                 {/* Outer glowing ring / halo */}
                 <div
@@ -441,11 +440,6 @@ export function LineDrawingMatching({ question, value, onChange, readonly }: Pro
                     {isExample ? "✓" : isTargeted ? "✓" : <span className="size-2 rounded-full bg-white block" />}
                   </div>
                 </div>
-
-                {/* Person identification hint tooltip on hover */}
-                <span className="pointer-events-none absolute -bottom-7 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-gray-900/80 px-2 py-0.5 text-[10px] font-bold text-white opacity-0 group-hover:opacity-100 transition shadow">
-                  {t.name.split("(")[0].trim()}
-                </span>
               </button>
             );
           })}
