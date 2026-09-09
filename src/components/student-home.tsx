@@ -79,7 +79,7 @@ export function StudentHome({ configured }: { configured: boolean }) {
           setIsInfoSubmitted(true);
         }
         
-        const available = (publishedQuizzes ?? []).filter((q: QuizCard) => q.slug !== "test-1-vocab-flashcards") as QuizCard[];
+        const available = (publishedQuizzes ?? []).filter((q: QuizCard) => !q.slug.includes("vocab-flashcards")) as QuizCard[];
         setAttempts((history ?? []) as AttemptWithQuiz[]);
         setQuizzes(available);
         setSelectedSlug(available[0]?.slug ?? "");
@@ -414,7 +414,7 @@ export function StudentHome({ configured }: { configured: boolean }) {
                 </div>
 
                 <span className="badge bg-[#fef0c7] text-[#785412] text-xs font-black">
-                  1 bộ đang mở
+                  2 bộ đang mở
                 </span>
               </div>
 
@@ -442,7 +442,30 @@ export function StudentHome({ configured }: { configured: boolean }) {
                   </p>
                 </button>
 
-                {[2, 3].map((number) => (
+                <button
+                  type="button"
+                  onClick={() => setSelectedVocabSet("test-2")}
+                  className="card relative p-6 text-left transition hover:-translate-y-0.5 hover:border-[#3b82f6] hover:bg-[#f0f9ff]"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="grid size-12 place-items-center rounded-2xl bg-[#dbeafe] font-black text-[#1d4ed8]">
+                      2
+                    </span>
+                    <span className="badge bg-[#dbeafe] text-[#1e40af] font-bold">
+                      <BookOpen size={15} /> 30 từ
+                    </span>
+                  </div>
+                  <h3 className="mt-5 text-xl font-black text-[#1e3a8a]">Vocab Test 2</h3>
+                  <p className="mt-1 font-bold text-[#35516e]">Hoạt động hàng ngày (Daily Activities)</p>
+                  <p className="muted mt-2 line-clamp-2 text-sm">
+                    Học 30 cụm từ về thói quen sinh hoạt, nghe phát âm chuẩn và lật thẻ ghi nhớ.
+                  </p>
+                  <p className="mt-4 text-xs font-extrabold uppercase tracking-wide text-[#2563eb]">
+                    Bấm để mở phần học từ vựng
+                  </p>
+                </button>
+
+                {[3].map((number) => (
                   <div
                     key={number}
                     className="card border-dashed border-[#f6d77d] bg-[#fffdf5] p-6 text-left opacity-75"
@@ -478,6 +501,7 @@ export function StudentHome({ configured }: { configured: boolean }) {
                 fullName={fullName}
                 className={className}
                 onLockChange={setIsVocabLocked}
+                vocabSet={selectedVocabSet as "test-1" | "test-2"}
               />
             </div>
           )}

@@ -48,6 +48,39 @@ export const TEST1_VOCABULARY: VocabItem[] = [
   { id: 30, word: "picture", phonetic: "/ˈpɪk.tʃər/", type: "noun", meaning: "bức tranh", example: "There is a picture on the wall.", typeVi: "danh từ" },
 ];
 
+export const TEST2_VOCABULARY: VocabItem[] = [
+  { id: 1, word: "get up", phonetic: "/ɡɛt ʌp/", type: "verb", meaning: "thức dậy", example: "I get up early at 6 o'clock every morning.", typeVi: "động từ" },
+  { id: 2, word: "brush one's teeth", phonetic: "/brʌʃ wʌnz tiːθ/", type: "verb", meaning: "đánh răng", example: "Remember to brush your teeth after meals.", typeVi: "động từ" },
+  { id: 3, word: "go to school", phonetic: "/ɡəʊ tə skuːl/", type: "verb", meaning: "đi đến trường", example: "The children go to school by bus every day.", typeVi: "động từ" },
+  { id: 4, word: "go to bed", phonetic: "/ɡəʊ tə bɛd/", type: "verb", meaning: "đi ngủ", example: "It is 10 o'clock, time to go to bed.", typeVi: "động từ" },
+  { id: 5, word: "have breakfast", phonetic: "/hæv ˈbrɛkfəst/", type: "verb", meaning: "ăn sáng", example: "We have breakfast with bread, eggs and milk.", typeVi: "động từ" },
+  { id: 6, word: "have lunch", phonetic: "/hæv lʌntʃ/", type: "verb", meaning: "ăn trưa", example: "They have lunch at the school canteen.", typeVi: "động từ" },
+  { id: 7, word: "have dinner", phonetic: "/hæv ˈdɪnər/", type: "verb", meaning: "ăn tối", example: "My family has dinner together at 7 p.m.", typeVi: "động từ" },
+  { id: 8, word: "take a shower", phonetic: "/teɪk ə ˈʃaʊər/", type: "verb", meaning: "tắm", example: "I take a shower after playing sports.", typeVi: "động từ" },
+  { id: 9, word: "go to the park", phonetic: "/ɡəʊ tə ðə pɑːk/", type: "verb", meaning: "đi đến công viên", example: "On Sundays, we go to the park to play.", typeVi: "động từ" },
+  { id: 10, word: "play with friends", phonetic: "/pleɪ wɪð frɛndz/", type: "verb", meaning: "chơi với bạn bè", example: "After school, I like to play with friends.", typeVi: "động từ" },
+  { id: 11, word: "watch TV", phonetic: "/wɒtʃ tiːˈviː/", type: "verb", meaning: "xem TV", example: "The children watch TV in the living room.", typeVi: "động từ" },
+  { id: 12, word: "read a book", phonetic: "/riːd ə bʊk/", type: "verb", meaning: "đọc sách", example: "She likes to read a book before sleeping.", typeVi: "động từ" },
+  { id: 13, word: "listen to music", phonetic: "/ˈlɪsən tə ˈmjuːzɪk/", type: "verb", meaning: "nghe nhạc", example: "I listen to music when I do my art project.", typeVi: "động từ" },
+  { id: 14, word: "play a game", phonetic: "/pleɪ ə ɡeɪm/", type: "verb", meaning: "chơi trò chơi", example: "Let's play a game together on the weekend.", typeVi: "động từ" },
+  { id: 15, word: "do homework", phonetic: "/duː ˈhəʊmˌwɜːk/", type: "verb", meaning: "làm bài tập", example: "He does homework in his bedroom after dinner.", typeVi: "động từ" },
+  { id: 16, word: "ride a bike", phonetic: "/raɪd ə baɪk/", type: "verb", meaning: "đi xe đạp", example: "Tom rides a bike in the park every afternoon.", typeVi: "động từ" },
+  { id: 17, word: "go to the supermarket", phonetic: "/ɡəʊ tə ðə ˈsuːpəmɑːrkɪt/", type: "verb", meaning: "đi siêu thị", example: "Mom and I go to the supermarket to buy food.", typeVi: "động từ" },
+  { id: 18, word: "clean the house", phonetic: "/kliːn ðə haʊs/", type: "verb", meaning: "dọn nhà", example: "We clean the house together on Saturday.", typeVi: "động từ" },
+  { id: 19, word: "water the plants", phonetic: "/ˈwɔːtər ðə plɑːnts/", type: "verb", meaning: "tưới cây", example: "She waters the plants in the garden every morning.", typeVi: "động từ" },
+  { id: 20, word: "feed the pets", phonetic: "/fiːd ðə pɛts/", type: "verb", meaning: "cho thú cưng ăn", example: "Don't forget to feed the pets before going out.", typeVi: "động từ" },
+  { id: 21, word: "go shopping", phonetic: "/ɡəʊ ˈʃɒpɪŋ/", type: "verb", meaning: "đi mua sắm", example: "They go shopping for new clothes and toys.", typeVi: "động từ" },
+  { id: 22, word: "help parents", phonetic: "/hɛlp ˈpeərənts/", type: "verb", meaning: "giúp đỡ cha mẹ", example: "Good children always help parents with house chores.", typeVi: "động từ" },
+  { id: 23, word: "make the bed", phonetic: "/meɪk ðə bɛd/", type: "verb", meaning: "dọn giường", example: "I make the bed right after waking up.", typeVi: "động từ" },
+  { id: 24, word: "take out the trash", phonetic: "/teɪk aʊt ðə træʃ/", type: "verb", meaning: "đổ rác", example: "Please take out the trash in the evening.", typeVi: "động từ" },
+  { id: 25, word: "go for a walk", phonetic: "/ɡəʊ fɔːr ə wɔːk/", type: "verb", meaning: "đi dạo", example: "Grandpa goes for a walk around the lake.", typeVi: "động từ" },
+  { id: 26, word: "go to the library", phonetic: "/ɡəʊ tə ðə ˈlaɪbrəri/", type: "verb", meaning: "đi thư viện", example: "We go to the library to read English storybooks.", typeVi: "động từ" },
+  { id: 27, word: "make lunch", phonetic: "/meɪk lʌntʃ/", type: "verb", meaning: "làm bữa trưa", example: "Dad helps mom make lunch on Sunday.", typeVi: "động từ" },
+  { id: 28, word: "make breakfast", phonetic: "/meɪk ˈbrɛkfəst/", type: "verb", meaning: "làm bữa sáng", example: "Mom makes breakfast with pancakes and orange juice.", typeVi: "động từ" },
+  { id: 29, word: "play football", phonetic: "/pleɪ ˈfʊtbɔːl/", type: "verb", meaning: "chơi bóng đá", example: "The boys play football on the playground.", typeVi: "động từ" },
+  { id: 30, word: "play tennis", phonetic: "/pleɪ ˈtɛnɪs/", type: "verb", meaning: "chơi quần vợt", example: "They play tennis at the sports club every afternoon.", typeVi: "động từ" },
+];
+
 export interface VocabQuestion {
   id: number;
   prompt: string;
@@ -58,12 +91,12 @@ export interface VocabQuestion {
   targetMeaning: string;
 }
 
-export function generateVocabQuestions(): VocabQuestion[] {
+export function generateVocabQuestions(vocabList: VocabItem[] = TEST1_VOCABULARY): VocabQuestion[] {
   const questions: VocabQuestion[] = [];
 
   // 20 Questions Eng -> Vi
-  TEST1_VOCABULARY.slice(0, 20).forEach((item, index) => {
-    const distractors = TEST1_VOCABULARY
+  vocabList.slice(0, 20).forEach((item, index) => {
+    const distractors = vocabList
       .filter((v) => v.id !== item.id)
       .sort(() => (index % 2 === 0 ? 0.5 - Math.random() : -0.5 + Math.random()))
       .map((v) => v.meaning)
@@ -86,8 +119,8 @@ export function generateVocabQuestions(): VocabQuestion[] {
   });
 
   // 10 Questions Vi -> Eng
-  TEST1_VOCABULARY.slice(20, 30).concat(TEST1_VOCABULARY.slice(0, 10)).slice(0, 10).forEach((item, index) => {
-    const distractors = TEST1_VOCABULARY
+  vocabList.slice(20, 30).concat(vocabList.slice(0, 10)).slice(0, 10).forEach((item, index) => {
+    const distractors = vocabList
       .filter((v) => v.id !== item.id)
       .sort(() => (index % 2 === 0 ? -0.5 + Math.random() : 0.5 - Math.random()))
       .map((v) => v.word)
@@ -116,22 +149,40 @@ export function VocabFlashcards({
   fullName,
   className,
   onLockChange,
+  vocabSet = "test-1",
 }: {
   fullName: string;
   className: string;
   onLockChange?: (locked: boolean) => void;
+  vocabSet?: "test-1" | "test-2";
 }) {
+  const isTest2 = vocabSet === "test-2";
+  const activeVocabulary = isTest2 ? TEST2_VOCABULARY : TEST1_VOCABULARY;
+  const vocabTitle = isTest2 ? "Test 2 (Daily Activities)" : "Test 1";
+  const quizSlug = isTest2 ? "test-2-vocab-flashcards" : "test-1-vocab-flashcards";
+
   const [subMode, setSubMode] = useState<"study" | "practice" | "matching">("study");
   const [isMatchingLocked, setIsMatchingLocked] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
   // Practice Quiz State
-  const [questions, setQuestions] = useState<VocabQuestion[]>(generateVocabQuestions);
+  const [questions, setQuestions] = useState<VocabQuestion[]>(() => generateVocabQuestions(activeVocabulary));
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [quizResult, setQuizResult] = useState<{ score: number; total: number; percentage: number } | null>(null);
+
+  // Reset state when switching between vocab sets
+  useEffect(() => {
+    setCurrentIndex(0);
+    setIsFlipped(false);
+    setSubMode("study");
+    setQuestions(generateVocabQuestions(activeVocabulary));
+    setUserAnswers({});
+    setIsSubmitted(false);
+    setQuizResult(null);
+  }, [vocabSet]);
 
   // Notify parent component about lock status when taking the practice test
   useEffect(() => {
@@ -142,23 +193,24 @@ export function VocabFlashcards({
   const speak = (text: string) => {
     if (typeof window !== "undefined" && "speechSynthesis" in window) {
       window.speechSynthesis.cancel();
-      const utterance = new SpeechSynthesisUtterance(text);
+      const textToSpeak = text.replace(/one's/g, "your");
+      const utterance = new SpeechSynthesisUtterance(textToSpeak);
       utterance.lang = "en-US";
       utterance.rate = 0.85;
       window.speechSynthesis.speak(utterance);
     }
   };
 
-  const currentItem = TEST1_VOCABULARY[currentIndex];
+  const currentItem = activeVocabulary[currentIndex] || activeVocabulary[0];
 
   const handleNext = () => {
     setIsFlipped(false);
-    setCurrentIndex((prev) => (prev + 1) % TEST1_VOCABULARY.length);
+    setCurrentIndex((prev) => (prev + 1) % activeVocabulary.length);
   };
 
   const handlePrev = () => {
     setIsFlipped(false);
-    setCurrentIndex((prev) => (prev - 1 + TEST1_VOCABULARY.length) % TEST1_VOCABULARY.length);
+    setCurrentIndex((prev) => (prev - 1 + activeVocabulary.length) % activeVocabulary.length);
   };
 
   const handleOptionSelect = (questionId: number, key: string) => {
@@ -186,7 +238,7 @@ export function VocabFlashcards({
       const response = await fetch("/api/attempts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ fullName, className, quizSlug: "test-1-vocab-flashcards" }),
+        body: JSON.stringify({ fullName, className, quizSlug }),
       });
       const data = await response.json();
       if (response.ok && data.attemptId) {
@@ -213,13 +265,13 @@ export function VocabFlashcards({
   };
 
   const resetPractice = () => {
-    setQuestions(generateVocabQuestions());
+    setQuestions(generateVocabQuestions(activeVocabulary));
     setUserAnswers({});
     setIsSubmitted(false);
     setQuizResult(null);
   };
 
-  const isTestingLocked = (subMode === "practice" && !isSubmitted) || (subMode === "matching" && isMatchingLocked);
+  const isTestingLocked = (subMode === "practice" && !isSubmitted && !isTest2) || (subMode === "matching" && isMatchingLocked);
 
   return (
     <div className="space-y-6">
@@ -252,25 +304,27 @@ export function VocabFlashcards({
                 : "text-[#785412] hover:bg-[#ffe9ad]"
             }`}
           >
-            <Award size={18} /> 📝 Bài Luyện Tập (30 Câu)
+            <Award size={18} /> 📝 Bài Luyện Tập {isTest2 ? "(Đang chuẩn bị)" : "(30 Câu)"}
           </button>
-          <button
-            type="button"
-            disabled={isTestingLocked && subMode !== "matching"}
-            onClick={() => {
-              setSubMode("matching");
-              setIsMatchingLocked(true);
-            }}
-            className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-extrabold transition ${
-              subMode === "matching"
-                ? "bg-[#f59e0b] text-white shadow-md"
-                : isTestingLocked
-                ? "opacity-50 cursor-not-allowed text-[#785412]"
-                : "text-[#785412] hover:bg-[#ffe9ad]"
-            }`}
-          >
-            🔗 Nối câu hỏi &amp; trả lời (24 Câu)
-          </button>
+          {!isTest2 && (
+            <button
+              type="button"
+              disabled={isTestingLocked && subMode !== "matching"}
+              onClick={() => {
+                setSubMode("matching");
+                setIsMatchingLocked(true);
+              }}
+              className={`flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-extrabold transition ${
+                subMode === "matching"
+                  ? "bg-[#f59e0b] text-white shadow-md"
+                  : isTestingLocked
+                  ? "opacity-50 cursor-not-allowed text-[#785412]"
+                  : "text-[#785412] hover:bg-[#ffe9ad]"
+              }`}
+            >
+              🔗 Nối câu hỏi &amp; trả lời (24 Câu)
+            </button>
+          )}
         </div>
 
         <div className="flex items-center gap-2">
@@ -280,7 +334,7 @@ export function VocabFlashcards({
             </span>
           )}
           <span className="badge bg-[#fef0c7] text-[#785412] text-xs font-black">
-            🦁 30 Từ Vựng Test 1
+            🦁 30 Từ Vựng {vocabTitle}
           </span>
         </div>
       </div>
@@ -340,7 +394,7 @@ export function VocabFlashcards({
 
               <div className="flex items-center justify-between text-xs font-bold text-[#94a3b8]">
                 <span>Mặt: {isFlipped ? "Tiếng Việt" : "Tiếng Anh"}</span>
-                <span>{currentIndex + 1} / {TEST1_VOCABULARY.length}</span>
+                <span>{currentIndex + 1} / {activeVocabulary.length}</span>
               </div>
             </div>
 
@@ -376,10 +430,10 @@ export function VocabFlashcards({
           {/* Word List Grid */}
           <div className="card p-6 border-2 border-[#fef0c7]">
             <h3 className="text-lg font-extrabold text-[#78350f] mb-3 flex items-center gap-2">
-              <Sparkles size={18} /> Danh sách 30 từ vựng Test 1
+              <Sparkles size={18} /> Danh sách {activeVocabulary.length} từ vựng {vocabTitle}
             </h3>
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 md:grid-cols-5">
-              {TEST1_VOCABULARY.map((item, idx) => (
+              {activeVocabulary.map((item, idx) => (
                 <button
                   type="button"
                   key={item.id}
@@ -403,57 +457,76 @@ export function VocabFlashcards({
         </div>
       )}
 
-      {/* MODE 2: PRACTICE QUIZ (30 Questions) */}
+      {/* MODE 2: PRACTICE QUIZ */}
       {subMode === "practice" && (
         <div className="space-y-6">
-          {/* Result Banner if Submitted */}
-          {isSubmitted && quizResult && (
-            <div className="card overflow-hidden border-2 border-[#22c55e] bg-white text-center">
-              <div className="bg-[#22c55e] p-6 text-white">
-                <span className="mx-auto grid size-14 place-items-center rounded-full bg-white text-[#22c55e]">
-                  <Award size={32} />
-                </span>
-                <h3 className="mt-3 text-3xl font-black">Kết quả Bài Luyện Từ Vựng!</h3>
-                <p className="mt-1 text-emerald-100 font-bold">
-                  Học sinh: {fullName} · Lớp {className}
-                </p>
+          {isTest2 ? (
+            <div className="card border-2 border-dashed border-[#f59e0b] bg-[#fffdf5] p-8 text-center space-y-4">
+              <div className="mx-auto grid size-16 place-items-center rounded-2xl bg-[#fef3c7] text-[#b45309]">
+                <Award size={36} />
               </div>
+              <h3 className="text-2xl font-black text-[#78350f]">Bài Luyện Tập – Vocab Test 2</h3>
+              <p className="max-w-md mx-auto text-sm font-bold text-[#61738a]">
+                Phần bài luyện tập cho Vocab Test 2 đang chờ kế hoạch từ bạn. Hãy luyện tập và ghi nhớ thật kỹ 30 thẻ từ vựng qua Flashcards trước nhé!
+              </p>
+              <button
+                type="button"
+                onClick={() => setSubMode("study")}
+                className="btn btn-primary !bg-[#f59e0b] hover:!bg-[#d97706] font-extrabold px-6"
+              >
+                <BookOpen size={18} /> Quay lại Thẻ Ghi Nhớ Flashcards
+              </button>
+            </div>
+          ) : (
+            <>
+              {/* Result Banner if Submitted */}
+              {isSubmitted && quizResult && (
+                <div className="card overflow-hidden border-2 border-[#22c55e] bg-white text-center">
+                  <div className="bg-[#22c55e] p-6 text-white">
+                    <span className="mx-auto grid size-14 place-items-center rounded-full bg-white text-[#22c55e]">
+                      <Award size={32} />
+                    </span>
+                    <h3 className="mt-3 text-3xl font-black">Kết quả Bài Luyện Từ Vựng!</h3>
+                    <p className="mt-1 text-emerald-100 font-bold">
+                      Học sinh: {fullName} · Lớp {className}
+                    </p>
+                  </div>
 
-              <div className="p-6">
-                <p className="text-5xl font-black text-[#15803d]">
-                  {quizResult.score} <span className="text-2xl text-slate-400">/ {quizResult.total}</span>
-                </p>
-                <p className="mt-2 text-xl font-extrabold text-[#166534]">
-                  Đạt {quizResult.percentage}% số câu đúng
-                </p>
+                  <div className="p-6">
+                    <p className="text-5xl font-black text-[#15803d]">
+                      {quizResult.score} <span className="text-2xl text-slate-400">/ {quizResult.total}</span>
+                    </p>
+                    <p className="mt-2 text-xl font-extrabold text-[#166534]">
+                      Đạt {quizResult.percentage}% số câu đúng
+                    </p>
 
-                <p className="mt-4 text-sm font-bold text-slate-600">
-                  ✅ Kết quả đã được tự động lưu và gửi cho Giáo viên (Admin) xem chi tiết! Các phần khác đã được mở khóa!
-                </p>
+                    <p className="mt-4 text-sm font-bold text-slate-600">
+                      ✅ Kết quả đã được tự động lưu và gửi cho Giáo viên (Admin) xem chi tiết! Các phần khác đã được mở khóa!
+                    </p>
 
-                <div className="mt-6 flex justify-center gap-3">
-                  <button
-                    type="button"
-                    onClick={resetPractice}
-                    className="btn btn-primary !bg-[#f59e0b] hover:!bg-[#d97706]"
-                  >
-                    <RefreshCw size={18} /> Làm lại bài kiểm tra từ vựng
-                  </button>
+                    <div className="mt-6 flex justify-center gap-3">
+                      <button
+                        type="button"
+                        onClick={resetPractice}
+                        className="btn btn-primary !bg-[#f59e0b] hover:!bg-[#d97706]"
+                      >
+                        <RefreshCw size={18} /> Làm lại bài kiểm tra từ vựng
+                      </button>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          )}
+              )}
 
-          {/* Question Cards List */}
-          <div className="space-y-4">
-            <div className="flex items-center justify-between">
-              <h3 className="text-xl font-black text-[#78350f]">
-                Bài Luyện Tập Từ Vựng (30 Câu Hỏi)
-              </h3>
-              <span className="text-sm font-extrabold text-[#926011]">
-                Đã làm: {Object.keys(userAnswers).length} / {questions.length} câu
-              </span>
-            </div>
+              {/* Question Cards List */}
+              <div className="space-y-4">
+                <div className="flex items-center justify-between">
+                  <h3 className="text-xl font-black text-[#78350f]">
+                    Bài Luyện Tập Từ Vựng (30 Câu Hỏi)
+                  </h3>
+                  <span className="text-sm font-extrabold text-[#926011]">
+                    Đã làm: {Object.keys(userAnswers).length} / {questions.length} câu
+                  </span>
+                </div>
 
             {questions.map((q, idx) => {
               const selectedKey = userAnswers[q.id];
@@ -556,6 +629,8 @@ export function VocabFlashcards({
                 </button>
               </div>
             </div>
+          )}
+            </>
           )}
         </div>
       )}
