@@ -1,0 +1,127 @@
+{
+  "quiz": {
+    "id": "19000000-0000-4000-8000-000000000001",
+    "slug": "cambridge-starters-test-9",
+    "title": "Test 9 – Cambridge Starters Practice",
+    "description": "Listening Parts 1, 2 & 3 (Starters 2 Test 1)",
+    "grade": "Pre A1",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-9",
+  "sections": [
+    {
+      "id": "29000000-0000-4000-8000-000000000001",
+      "title": "Listening – Part 1",
+      "instruction": "Read the question. Listen to the audio and write a name, a number or words. There are two examples.",
+      "section_type": "fill_blank",
+      "position": 1,
+      "audio": "audio/test9-lis-part1.mp3",
+      "image": "images/listening/test9-part1-scene.jpg",
+      "questions": [
+        { "id": "39000000-0000-4000-8000-000000000001", "position": 1, "question_type": "fill_blank", "prompt": "1. What can the robot do?", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000002", "position": 2, "question_type": "fill_blank", "prompt": "2. What is the friend's name?", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000003", "position": 3, "question_type": "fill_blank", "prompt": "3. How many words can the robot say?", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000004", "position": 4, "question_type": "fill_blank", "prompt": "4. What does the robot like learning?", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000005", "position": 5, "question_type": "fill_blank", "prompt": "5. What is in the robot's head?", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000006", "position": 6, "question_type": "fill_blank", "prompt": "6. Who loves playing with this robot?", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000007", "position": 7, "question_type": "fill_blank", "prompt": "7. What is the cousin's name?", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000008", "position": 8, "question_type": "fill_blank", "prompt": "8. How many games can the robot play?", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000009", "position": 9, "question_type": "fill_blank", "prompt": "9. Does the robot know its favourite game? / Can the robot tell its favourite game?", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000010", "position": 10, "question_type": "fill_blank", "prompt": "10. What does the robot give to the cat in the mornings?", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000011", "position": 11, "question_type": "fill_blank", "prompt": "11. What is the cat's name?", "points": 1, "options": [] }
+      ]
+    },
+    {
+      "id": "29000000-0000-4000-8000-000000000002",
+      "title": "Listening – Part 2",
+      "instruction": "Listen and tick (✔) the box. There is one example.",
+      "section_type": "listening_image_choice",
+      "position": 2,
+      "audio": "audio/test9-lis-part2.mp3",
+      "questions": [
+        {
+          "id": "39000000-0000-4000-8000-000000000012",
+          "position": 1,
+          "question_type": "image_choice",
+          "prompt": "1. What is Dad doing?",
+          "points": 1,
+          "options": [
+            ["a", "Playing guitar", "images/listening/q1-a.jpg"],
+            ["b", "Watching basketball on TV", "images/listening/q1-b.jpg"],
+            ["c", "Listening to the radio", "images/listening/q1-c.jpg"]
+          ]
+        },
+        {
+          "id": "39000000-0000-4000-8000-000000000013",
+          "position": 2,
+          "question_type": "image_choice",
+          "prompt": "2. Which is Anna's sister?",
+          "points": 1,
+          "options": [
+            ["a", "Girl with brown hair and boots", "images/listening/q2-a.jpg"],
+            ["b", "Girl with black hair and pink shoes", "images/listening/q2-b.jpg"],
+            ["c", "Girl with brown ponytail and yellow shoes", "images/listening/q2-c.jpg"]
+          ]
+        },
+        {
+          "id": "39000000-0000-4000-8000-000000000014",
+          "position": 3,
+          "question_type": "image_choice",
+          "prompt": "3. What is in Sam's school bag?",
+          "points": 1,
+          "options": [
+            ["a", "Box of crayons", "images/listening/q3-a.jpg"],
+            ["b", "Tablet in red case", "images/listening/q3-b.jpg"],
+            ["c", "Long ruler", "images/listening/q3-c.jpg"]
+          ]
+        },
+        {
+          "id": "39000000-0000-4000-8000-000000000015",
+          "position": 4,
+          "question_type": "image_choice",
+          "prompt": "4. Where are Grandpa's glasses?",
+          "points": 1,
+          "options": [
+            ["a", "In the car", "images/listening/q4-a.jpg"],
+            ["b", "On the table", "images/listening/q4-b.jpg"],
+            ["c", "On the armchair", "images/listening/q4-c.jpg"]
+          ]
+        },
+        {
+          "id": "39000000-0000-4000-8000-000000000016",
+          "position": 5,
+          "question_type": "image_choice",
+          "prompt": "5. What is May drawing?",
+          "points": 1,
+          "options": [
+            ["a", "A monkey", "images/listening/q5-a.jpg"],
+            ["b", "A polar bear", "images/listening/q5-b.jpg"],
+            ["c", "A giraffe", "images/listening/q5-c.jpg"]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "29000000-0000-4000-8000-000000000003",
+      "title": "Listening – Part 3",
+      "instruction": "Listen and answer the questions about the cakes in the picture. There is one example.",
+      "section_type": "fill_blank",
+      "position": 3,
+      "audio": "audio/test9-lis-part3.mp3",
+      "image": "images/listening/test9-part3-scene.jpg",
+      "questions": [
+        { "id": "39000000-0000-4000-8000-000000000017", "position": 1, "question_type": "fill_blank", "prompt": "1. Which cake is it? (Cake 1)", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000018", "position": 2, "question_type": "fill_blank", "prompt": "2. What colour is it? (Cake 1)", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000019", "position": 3, "question_type": "fill_blank", "prompt": "3. Which cake is it? (Cake 2)", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000020", "position": 4, "question_type": "fill_blank", "prompt": "4. What colour is it? (Cake 2)", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000021", "position": 5, "question_type": "fill_blank", "prompt": "5. Which cake is it? (Cake 3)", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000022", "position": 6, "question_type": "fill_blank", "prompt": "6. What colour is it? (Cake 3)", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000023", "position": 7, "question_type": "fill_blank", "prompt": "7. Which cake is it? (Cake 4)", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000024", "position": 8, "question_type": "fill_blank", "prompt": "8. What colour is it? (Cake 4)", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000025", "position": 9, "question_type": "fill_blank", "prompt": "9. Which cake is it? (Cake 5)", "points": 1, "options": [] },
+        { "id": "39000000-0000-4000-8000-000000000026", "position": 10, "question_type": "fill_blank", "prompt": "10. What colour is it? (Cake 5)", "points": 1, "options": [] }
+      ]
+    }
+  ]
+}
