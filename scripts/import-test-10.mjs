@@ -24,12 +24,25 @@ const { error: quizError } = await supabase.from("quizzes").upsert(publicContent
 if (quizError) throw quizError;
 console.log("Quiz upserted.");
 
+// Find existing questions for this quiz to clean up
+const { data: existingQuestions } = await supabase
+  .from("questions")
+  .select("id")
+  .eq("quiz_id", publicContent.quiz.id);
+
+if (existingQuestions && existingQuestions.length > 0) {
+  const existingIds = existingQuestions.map((q) => q.id);
+  await supabase.from("answer_keys").delete().in("question_id", existingIds);
+  await supabase.from("question_options").delete().in("question_id", existingIds);
+  await supabase.from("questions").delete().in("id", existingIds);
+  console.log(`Cleaned up ${existingIds.length} existing questions.`);
+}
+
 // 2. Prepare Sections, Questions, Options, Answer Keys
 const sectionRows = [];
 const questionRows = [];
 const allOptionRows = [];
 const allKeyRows = [];
-const questionIds = [];
 
 for (const section of publicContent.sections) {
   sectionRows.push({
@@ -44,7 +57,6 @@ for (const section of publicContent.sections) {
   });
 
   for (const q of section.questions) {
-    questionIds.push(q.id);
     questionRows.push({
       id: q.id,
       quiz_id: publicContent.quiz.id,
@@ -88,23 +100,18 @@ const { error: qError } = await supabase.from("questions").upsert(questionRows, 
 if (qError) throw qError;
 console.log(`Upserted ${questionRows.length} questions.`);
 
-// Clear old options for these questions and re-insert if any
-if (questionIds.length > 0) {
-  const { error: delOptError } = await supabase.from("question_options").delete().in("question_id", questionIds);
-  if (delOptError) throw delOptError;
-
-  if (allOptionRows.length > 0) {
-    const { error: optError } = await supabase.from("question_options").insert(allOptionRows);
-    if (optError) throw optError;
-    console.log(`Inserted ${allOptionRows.length} question options.`);
-  }
+// Insert options
+if (allOptionRows.length > 0) {
+  const { error: optError } = await supabase.from("question_options").insert(allOptionRows);
+  if (optError) throw optError;
+  console.log(`Inserted ${allOptionRows.length} question options.`);
 }
 
-// Batch Upsert Answer Keys
+// Upsert answer keys
 if (allKeyRows.length > 0) {
   const { error: keyError } = await supabase.from("answer_keys").upsert(allKeyRows, { onConflict: "question_id" });
   if (keyError) throw keyError;
   console.log(`Upserted ${allKeyRows.length} answer keys.`);
 }
 
-console.log("SUCCESS: Test 10 imported to Supabase successfully!");
+console.log("Test 10 imported successfully!");

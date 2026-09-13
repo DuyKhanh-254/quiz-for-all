@@ -1,16 +1,7 @@
 {
   "3a000000-0000-4000-8000-000000000001": { "option": "b" },
-  "3a000000-0000-4000-8000-000000000002": { "option": "c" },
-  "3a000000-0000-4000-8000-000000000003": { "option": "c" },
+  "3a000000-0000-4000-8000-000000000002": { "option": "a" },
+  "3a000000-0000-4000-8000-000000000003": { "option": "b" },
   "3a000000-0000-4000-8000-000000000004": { "option": "c" },
-  "3a000000-0000-4000-8000-000000000005": { "option": "c" },
-  "3a000000-0000-4000-8000-000000000006": { "option": "b" },
-  "3a000000-0000-4000-8000-000000000007": { "option": "a" },
-  "3a000000-0000-4000-8000-000000000008": { "option": "c" },
-  "3a000000-0000-4000-8000-000000000009": { "accepted": ["A funny monster", "a funny monster", "funny monster", "A monster", "a monster", "monster"] },
-  "3a000000-0000-4000-8000-000000000010": { "accepted": ["No, she doesn't.", "No, she doesn't", "no, she doesn't", "No", "no"] },
-  "3a000000-0000-4000-8000-000000000011": { "accepted": ["He is on a train.", "He is on a train", "he is on a train", "On a train", "on a train", "Train", "train", "a train", "In a train", "on the train"] },
-  "3a000000-0000-4000-8000-000000000012": { "accepted": ["To his grandpa's house.", "To his grandpa's house", "to his grandpa's house", "His grandpa's house", "his grandpa's house", "Grandpa's house", "grandpa's house", "grandpa house"] },
-  "3a000000-0000-4000-8000-000000000013": { "accepted": ["No, she doesn't.", "No, she doesn't", "no, she doesn't", "No", "no"] },
-  "3a000000-0000-4000-8000-000000000014": { "accepted": ["To the playground.", "To the playground", "to the playground", "The playground", "the playground", "Playground", "playground"] }
+  "3a000000-0000-4000-8000-000000000005": { "option": "c" }
 }

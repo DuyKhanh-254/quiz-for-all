@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 import { createClient } from "@supabase/supabase-js";
@@ -6,26 +6,39 @@ import { createClient } from "@supabase/supabase-js";
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL || "https://syghsisooccdvpvshgvm.supabase.co";
 const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY || "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InN5Z2hzaXNvb2NjZHZwdnNoZ3ZtIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4Njg3ODM5NSwiZXhwIjoyMTAyNDU0Mzk1fQ.kVg4wYbtpw2T5jqRbNL3g-zDDqeNZsa1WAs1gyFAzfw";
 
-const root = path.resolve(import.meta.dirname, "..");
-const files = [
-  // Audio file
-  ["content/test-10-assets/audio/test10-lis-part2.mp3", "english-grade-2-test-10/audio/test10-lis-part2.mp3", "audio/mpeg"],
-  // Scene image
-  ["content/test-10-assets/images/listening/test10-part2-scene.jpg", "english-grade-2-test-10/images/listening/test10-part2-scene.jpg", "image/jpeg"],
-];
-
 const supabase = createClient(url, serviceKey, { auth: { persistSession: false, autoRefreshToken: false } });
-console.log(`Uploading ${files.length} media assets to Supabase Storage for Test 10...`);
 
-for (const [source, destination, contentType] of files) {
-  const body = await readFile(path.join(root, source));
-  const { error } = await supabase.storage.from("quiz-assets").upload(destination, body, {
-    contentType,
-    upsert: true,
-    cacheControl: "3600"
-  });
+async function uploadFile(localPath, remotePath, contentType) {
+  console.log(`Uploading ${localPath} -> ${remotePath}...`);
+  const buf = await readFile(localPath);
+  const { error } = await supabase.storage
+    .from("quiz-assets")
+    .upload(remotePath, buf, { contentType, upsert: true });
+
   if (error) throw error;
-  console.log(`Uploaded ${destination} (${body.length} bytes)`);
+  console.log(`Uploaded ${remotePath} (${buf.length} bytes)`);
 }
 
-console.log("All Test 10 media uploaded successfully!");
+async function main() {
+  const root = path.resolve(import.meta.dirname, "..");
+  const assetsDir = path.join(root, "content/test-10-assets");
+
+  // 1. Upload audio
+  const audioPath = path.join(assetsDir, "audio/test10-lis-part3.mp3");
+  await uploadFile(audioPath, "english-grade-2-test-10/audio/test10-lis-part3.mp3", "audio/mpeg");
+
+  // 2. Upload all 15 cropped images
+  const imgDir = path.join(assetsDir, "images/listening");
+  const files = await readdir(imgDir);
+  for (const file of files) {
+    if (file.endsWith(".jpg") || file.endsWith(".png")) {
+      const localFile = path.join(imgDir, file);
+      const remoteFile = `english-grade-2-test-10/images/listening/${file}`;
+      await uploadFile(localFile, remoteFile, "image/jpeg");
+    }
+  }
+
+  console.log("All Test 10 media uploaded successfully!");
+}
+
+main().catch(console.error);
