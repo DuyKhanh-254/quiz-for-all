@@ -1,0 +1,168 @@
+{
+  "quiz": {
+    "id": "1a000000-0000-4000-8000-000000000001",
+    "slug": "cambridge-starters-test-10",
+    "title": "Test 10 – Cambridge Starters Practice",
+    "description": "Listening – Full Dialogue Comprehension (14 Questions)",
+    "grade": "Pre A1",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-10",
+  "sections": [
+    {
+      "id": "2a000000-0000-4000-8000-000000000001",
+      "title": "Listening – Part 2 (Questions 1 – 14)",
+      "instruction": "Listen to the audio carefully and look at the reference picture. Answer all questions below by choosing the correct option or typing short answers.",
+      "section_type": "fill_blank",
+      "position": 1,
+      "audio": "audio/test10-lis-part2.mp3",
+      "image": "images/listening/test10-part2-scene.jpg",
+      "questions": [
+        {
+          "id": "3a000000-0000-4000-8000-000000000001",
+          "position": 1,
+          "question_type": "single_choice",
+          "prompt": "1. Where is the girl’s tablet?",
+          "points": 1,
+          "options": [
+            ["a", "In the living room."],
+            ["b", "On the table in the kitchen."],
+            ["c", "In the bedroom."]
+          ]
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000002",
+          "position": 2,
+          "question_type": "single_choice",
+          "prompt": "2. What does the boy have in his bedroom?",
+          "points": 1,
+          "options": [
+            ["a", "A tablet."],
+            ["b", "A small computer."],
+            ["c", "A big computer."]
+          ]
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000003",
+          "position": 3,
+          "question_type": "single_choice",
+          "prompt": "3. Who is Bill with at the park?",
+          "points": 1,
+          "options": [
+            ["a", "His friend."],
+            ["b", "His brother."],
+            ["c", "His sister."]
+          ]
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000004",
+          "position": 4,
+          "question_type": "single_choice",
+          "prompt": "4. Which sport is Bill playing today?",
+          "points": 1,
+          "options": [
+            ["a", "Badminton"],
+            ["b", "Basketball"],
+            ["c", "Football"]
+          ]
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000005",
+          "position": 5,
+          "question_type": "single_choice",
+          "prompt": "5. Who is Pat talking to?",
+          "points": 1,
+          "options": [
+            ["a", "Her brother"],
+            ["b", "Her teacher"],
+            ["c", "Her dad"]
+          ]
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000006",
+          "position": 6,
+          "question_type": "single_choice",
+          "prompt": "6. Does Pat want a burger and fries for dinner?",
+          "points": 1,
+          "options": [
+            ["a", "Yes, she does."],
+            ["b", "No, she doesn't."]
+          ]
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000007",
+          "position": 7,
+          "question_type": "single_choice",
+          "prompt": "7. What food does Pat NOT want today?",
+          "points": 1,
+          "options": [
+            ["a", "Sausages"],
+            ["b", "Chicken"],
+            ["c", "Rice"]
+          ]
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000008",
+          "position": 8,
+          "question_type": "single_choice",
+          "prompt": "8. What food does Pat want for dinner?",
+          "points": 1,
+          "options": [
+            ["a", "Burger and fries"],
+            ["b", "Sausages"],
+            ["c", "Chicken and rice"]
+          ]
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000009",
+          "position": 9,
+          "question_type": "fill_blank",
+          "prompt": "9. What is in the picture in the boy's book?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000010",
+          "position": 10,
+          "question_type": "fill_blank",
+          "prompt": "10. Does the mother like monsters?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000011",
+          "position": 11,
+          "question_type": "fill_blank",
+          "prompt": "11. Where is Dan now?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000012",
+          "position": 12,
+          "question_type": "fill_blank",
+          "prompt": "12. Where is Dan going?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000013",
+          "position": 13,
+          "question_type": "fill_blank",
+          "prompt": "13. Does the girl want to go to the zoo?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3a000000-0000-4000-8000-000000000014",
+          "position": 14,
+          "question_type": "fill_blank",
+          "prompt": "14. Where does the girl want to go?",
+          "points": 1,
+          "options": []
+        }
+      ]
+    }
+  ]
+}
