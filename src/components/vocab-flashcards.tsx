@@ -108,6 +108,9 @@ export interface VocabQuestion {
   correctKey: string;
   targetWord: string;
   targetMeaning: string;
+  sectionTitle?: string;
+  sectionDesc?: string;
+  explanation?: string;
 }
 
 export const TEST2_IMAGE_QUESTIONS: VocabQuestion[] = [
@@ -336,6 +339,340 @@ export function generateVocabQuestions(vocabList: VocabItem[] = TEST1_VOCABULARY
   return questions;
 }
 
+export const TEST3_VOCABULARY: VocabItem[] = [
+  { id: 1, word: "peninsulas", phonetic: "/pəˈnɪn.sjʊ.ləz/", type: "noun", meaning: "bán đảo", example: "Florida and Indochina are well-known peninsulas.", typeVi: "danh từ" },
+  { id: 2, word: "Earth’s crust", phonetic: "/ɜːθs krʌst/", type: "noun", meaning: "vỏ trái đất", example: "Tectonic plates make up the Earth's crust.", typeVi: "danh từ" },
+  { id: 3, word: "tectonic plates", phonetic: "/tekˈtɒn.ɪk pleɪts/", type: "noun", meaning: "các mảng kiến tạo", example: "Earthquakes occur when tectonic plates slide past each other.", typeVi: "danh từ" },
+  { id: 4, word: "parallel mountain ranges", phonetic: "/ˈpær.ə.lel ˈmaʊn.tɪn ˈreɪn.dʒɪz/", type: "noun", meaning: "các dãy núi song song", example: "The region features several long parallel mountain ranges.", typeVi: "danh từ" },
+  { id: 5, word: "fertile deltas", phonetic: "/ˈfɜː.taɪl ˈdel.təz/", type: "noun", meaning: "đồng bằng phù sa màu mỡ", example: "Farmers grow rice in the fertile deltas of major rivers.", typeVi: "danh từ" },
+  { id: 6, word: "volcanic", phonetic: "/vɒlˈkæn.ɪk/", type: "adjective", meaning: "núi lửa (thuộc núi lửa)", example: "The island was formed by ancient volcanic activity.", typeVi: "tính từ" },
+  { id: 7, word: "eruptions", phonetic: "/ɪˈrʌp.ʃənz/", type: "noun", meaning: "sự phun trào", example: "Violent volcanic eruptions sent ash into the sky.", typeVi: "danh từ" },
+  { id: 8, word: "Ring of Life / Ring of Fire", phonetic: "/rɪŋ əv faɪər/", type: "noun", meaning: "vành đai lửa", example: "Many active volcanoes are situated along the Ring of Fire.", typeVi: "danh từ" },
+  { id: 9, word: "rainforests", phonetic: "/ˈreɪn.fɒr.ɪsts/", type: "noun", meaning: "rừng nhiệt đới", example: "Tropical rainforests are home to rare wildlife species.", typeVi: "danh từ" },
+  { id: 10, word: "sustained", phonetic: "/səˈsteɪnd/", type: "verb", meaning: "duy trì", example: "The ecosystem is sustained by abundant rainfall.", typeVi: "động từ" },
+  { id: 11, word: "monsoon rains", phonetic: "/mɒnˈsuːn reɪnz/", type: "noun", meaning: "cơn mưa gió mùa", example: "Heavy monsoon rains bring needed water to agricultural lands.", typeVi: "danh từ" },
+  { id: 12, word: "logging", phonetic: "/ˈlɒɡ.ɪŋ/", type: "noun", meaning: "khai thác gỗ", example: "Illegal logging has reduced the area of natural forests.", typeVi: "danh từ" },
+  { id: 13, word: "timber", phonetic: "/ˈtɪm.bər/", type: "noun", meaning: "gỗ xây dựng, gỗ nguyên liệu", example: "The tall trees provide valuable timber for construction.", typeVi: "danh từ" },
+  { id: 14, word: "collided", phonetic: "/kəˈlaɪ.dɪd/", type: "verb", meaning: "va chạm", example: "Millions of years ago, two massive landmasses collided.", typeVi: "động từ" },
+  { id: 15, word: "landmasses", phonetic: "/ˈlænd.mæs.ɪz/", type: "noun", meaning: "khối đất liền lớn", example: "Continents are the largest landmasses on Earth.", typeVi: "danh từ" },
+  { id: 16, word: "upheaval", phonetic: "/ʌpˈhiː.vəl/", type: "noun", meaning: "sự trồi lên / vỏ trái đất bị đẩy lên", example: "Geological upheaval created majestic mountain ridges.", typeVi: "danh từ" },
+  { id: 17, word: "cordilleras", phonetic: "/ˌkɔː.dɪlˈjeər.əz/", type: "noun", meaning: "chuỗi hệ thống dãy núi", example: "Extensive cordilleras stretch across the western continent.", typeVi: "danh từ" },
+  { id: 18, word: "the Indochina Peninsula", phonetic: "/ðiː ˌɪn.dəʊˈtʃaɪ.nə pəˈnɪn.sjʊ.lə/", type: "noun", meaning: "bán đảo Đông Dương", example: "Vietnam, Laos, and Cambodia are located on the Indochina Peninsula.", typeVi: "danh từ" },
+  { id: 19, word: "archipelagos", phonetic: "/ˌɑː.kɪˈpel.ə.ɡəʊz/", type: "noun", meaning: "nhóm quần đảo gần nhau", example: "Indonesia and the Philippines are famous island archipelagos.", typeVi: "danh từ" },
+  { id: 20, word: "straddling the Equator", phonetic: "/ˈstræd.lɪŋ ðiː ɪˈkweɪ.tər/", type: "phrase", meaning: "trải qua xích đạo", example: "The archipelago extends across thousands of miles, straddling the Equator.", typeVi: "cụm từ" },
+  { id: 21, word: "terrain", phonetic: "/təˈreɪn/", type: "noun", meaning: "địa hình", example: "The rugged mountain terrain makes travel challenging.", typeVi: "danh từ" },
+  { id: 22, word: "predominantly", phonetic: "/prɪˈdɒm.ɪ.nənt.li/", type: "adverb", meaning: "phần lớn / chủ yếu", example: "The island's economy is predominantly based on agriculture.", typeVi: "trạng từ" },
+  { id: 23, word: "tropical climate", phonetic: "/ˈtrɒp.ɪ.kəl ˈklaɪ.mət/", type: "noun", meaning: "khí hậu nhiệt đới", example: "Countries near the equator usually have a warm tropical climate.", typeVi: "danh từ" },
+  { id: 24, word: "extend into = stretches", phonetic: "/ɪkˈstend ˈɪn.tuː/", type: "verb", meaning: "kéo dài vào", example: "The mountain ridges extend into neighbouring countries.", typeVi: "động từ" },
+  { id: 25, word: "cover", phonetic: "/ˈkʌv.ər/", type: "verb", meaning: "bao phủ", example: "Dense green forests cover more than half of the province.", typeVi: "động từ" },
+  { id: 26, word: "vast of", phonetic: "/vɑːst əv/", type: "phrase", meaning: "rộng", example: "A vast expanse of ocean surrounds the isolated islands.", typeVi: "cụm từ" },
+  { id: 27, word: "make up", phonetic: "/meɪk ʌp/", type: "phrasal verb", meaning: "hợp thành", example: "Islands and islets make up the complex archipelago.", typeVi: "cụm động từ" },
+  { id: 28, word: "Malay Archipelago", phonetic: "/məˈleɪ ˌɑː.kɪˈpel.ə.ɡəʊ/", type: "noun", meaning: "quần đảo Mã Lai", example: "The Malay Archipelago contains over 25,000 islands.", typeVi: "danh từ" },
+  { id: 29, word: "landlocked = without a coast line", phonetic: "/ˈlænd.lɒkt/", type: "adjective", meaning: "0 giáp biển (không giáp biển)", example: "Laos is the only landlocked country in Southeast Asia.", typeVi: "tính từ" },
+  { id: 30, word: "lie entirely on", phonetic: "/laɪ ɪnˈtaɪə.li ɒn/", type: "phrase", meaning: "nằm hoàn toàn trên", example: "Some small countries lie entirely on a single island.", typeVi: "cụm từ" },
+  { id: 31, word: "trails southward", phonetic: "/treɪlz ˈsaʊθ.wəd/", type: "phrase", meaning: "kéo dài về phía Nam", example: "The long strip of land trails southward toward the sea.", typeVi: "cụm từ" },
+  { id: 32, word: "the rest of", phonetic: "/ðə rest əv/", type: "phrase", meaning: "phần còn lại", example: "While northern areas are hilly, the rest of the country is flat.", typeVi: "cụm từ" },
+  { id: 33, word: "the insular = island", phonetic: "/ðiː ˈɪn.sjʊ.lər/", type: "noun", meaning: "quần đảo (thuộc quần đảo)", example: "Southeast Asia is divided into mainland and insular regions.", typeVi: "danh từ" },
+  { id: 34, word: "span", phonetic: "/spæn/", type: "verb", meaning: "trải", example: "The great forest spans across several national borders.", typeVi: "động từ" },
+  { id: 35, word: "permanently", phonetic: "/ˈpɜː.mə.nənt.li/", type: "adverb", meaning: "lâu dài", example: "Some high mountain peaks are permanently covered in snow.", typeVi: "trạng từ" },
+  { id: 36, word: "assembly", phonetic: "/əˈsem.bli/", type: "noun", meaning: "quốc hội", example: "Representatives gathered for the national assembly meeting.", typeVi: "danh từ" },
+  { id: 37, word: "tips of Malay Peninsula", phonetic: "/tɪps əv məˈleɪ pəˈnɪn.sjʊ.lə/", type: "phrase", meaning: "khối mũi của bán đảo Mã Lai", example: "Singapore lies just off the southern tips of the Malay Peninsula.", typeVi: "cụm từ" },
+  { id: 38, word: "inhabited", phonetic: "/ɪnˈhæb.ɪ.tɪd/", type: "adjective", meaning: "không ai ở (theo tài liệu)", example: "Many isolated islets in the ocean remain uninhabited / not inhabited.", typeVi: "tính từ" },
+  { id: 39, word: "account for", phonetic: "/əˈkaʊnt fɔːr/", type: "phrasal verb", meaning: "chiếm", example: "Forests account for over forty percent of the total land area.", typeVi: "cụm động từ" },
+];
+
+export const TEST3_PART2_QUESTIONS: VocabQuestion[] = [
+  {
+    id: 40,
+    prompt: 'Hoạt động "khai thác gỗ / đốn hạ cây rừng" để lấy gỗ nguyên liệu phục vụ sản xuất là:',
+    type: "eng_to_vi",
+    targetWord: "logging",
+    targetMeaning: "khai thác gỗ",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Logging (hoạt động khai thác gỗ rừng)" },
+      { key: "b", text: "Timber (gỗ thành phẩm, gỗ xây dựng)" },
+      { key: "c", text: "Lodging (dịch vụ cư trú, nhà trọ)" },
+      { key: "d", text: "Forestation (hoạt động trồng rừng mới)" },
+    ],
+    explanation: 'Từ "logging" là danh từ chỉ hoạt động chặt cây khai thác gỗ rừng. "Timber" là gỗ thương phẩm; "Lodging" là nơi lưu trú; "Forestation" là trồng rừng.',
+    sectionTitle: "Phần 2: Câu hỏi phân biệt ngữ cảnh (4 đáp án na ná nhau)",
+    sectionDesc: "Đọc kỹ ngữ cảnh câu hỏi và chọn 1 đáp án chuẩn xác nhất trong các phương án tương tự nhau.",
+  },
+  {
+    id: 41,
+    prompt: 'Một quốc gia nằm sâu trong đất liền, "hoàn toàn không có đường bờ biển tiếp giáp biển" (ví dụ như Lào) gọi là:',
+    type: "eng_to_vi",
+    targetWord: "landlocked",
+    targetMeaning: "không giáp biển",
+    correctKey: "b",
+    options: [
+      { key: "a", text: "Landmass (khối đất liền lớn)" },
+      { key: "b", text: "Landlocked (quốc gia không giáp biển)" },
+      { key: "c", text: "Landmark (cột mốc địa danh nổi bật)" },
+      { key: "d", text: "Landscape (phong cảnh thiên nhiên)" },
+    ],
+    explanation: '"Landlocked" là thuật ngữ địa lý chỉ quốc gia bị bao quanh bởi đất liền, không giáp biển.',
+  },
+  {
+    id: 42,
+    prompt: 'Chuỗi hoặc hệ thống bao gồm nhiều "dãy núi song song và nối tiếp nhau" trên quy mô lục địa được gọi là:',
+    type: "eng_to_vi",
+    targetWord: "cordilleras",
+    targetMeaning: "chuỗi hệ thống dãy núi",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Cordilleras (chuỗi hệ thống dãy núi song song)" },
+      { key: "b", text: "Archipelagos (quần đảo gồm nhiều hòn đảo)" },
+      { key: "c", text: "Peninsulas (bán đảo có 3 mặt giáp nước)" },
+      { key: "d", text: "Corridors (hành lang giao thông / tự nhiên)" },
+    ],
+    explanation: '"Cordilleras" là chuỗi hệ thống dãy núi lớn song song chạy dài qua nhiều khu vực.',
+  },
+  {
+    id: 43,
+    prompt: 'Trong địa chất học, khi hai mảng lục địa khổng lồ đâm mạnh vào nhau tạo nên các dãy núi cao, từ diễn đạt sự "va chạm" này là:',
+    type: "eng_to_vi",
+    targetWord: "collided",
+    targetMeaning: "va chạm",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Collided (va chạm mạnh)" },
+      { key: "b", text: "Collapsed (sụp đổ hoàn toàn)" },
+      { key: "c", text: "Collected (tập hợp, thu thập)" },
+      { key: "d", text: "Corroded (bị ăn mòn dần dần)" },
+    ],
+    explanation: '"Collided" diễn tả sự va chạm mạnh giữa các khối vật thể hoặc mảng kiến tạo (tectonic plates).',
+  },
+  {
+    id: 44,
+    prompt: 'Một nhóm hoặc cụm gồm rất nhiều hòn đảo nằm gần nhau trên biển (như Indonesia, Philippines) được gọi là:',
+    type: "eng_to_vi",
+    targetWord: "archipelagos",
+    targetMeaning: "nhóm quần đảo gần nhau",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Archipelagos (nhóm quần đảo)" },
+      { key: "b", text: "Peninsulas (bán đảo)" },
+      { key: "c", text: "Continents (châu lục)" },
+      { key: "d", text: "Deltas (vùng châu thổ)" },
+    ],
+    explanation: '"Archipelagos" là danh từ số nhiều chỉ các nhóm quần đảo gồm nhiều đảo gần nhau.',
+  },
+  {
+    id: 45,
+    prompt: 'Vùng châu thổ hạ lưu sông lớn với đất đai bồi đắp màu mỡ rất thuận lợi cho trồng lúa nước là:',
+    type: "eng_to_vi",
+    targetWord: "fertile deltas",
+    targetMeaning: "đồng bằng phù sa màu mỡ",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Fertile deltas (đồng bằng phù sa màu mỡ)" },
+      { key: "b", text: "Fragile deltas (đồng bằng mỏng manh dễ vỡ)" },
+      { key: "c", text: "Forest deltas (đồng bằng rừng rậm)" },
+      { key: "d", text: "Fossil deltas (đồng bằng hóa thạch)" },
+    ],
+    explanation: '"Fertile deltas" là các vùng đồng bằng châu thổ màu mỡ, giàu dinh dưỡng cho mùa màng.',
+  },
+  {
+    id: 46,
+    prompt: 'Cụm từ diễn tả một khu vực địa lý "vắt ngang / trải dài qua đường xích đạo" là:',
+    type: "eng_to_vi",
+    targetWord: "straddling the Equator",
+    targetMeaning: "trải qua xích đạo",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Straddling the Equator (vắt ngang xích đạo)" },
+      { key: "b", text: "Struggling the Equator (vật lộn xích đạo)" },
+      { key: "c", text: "Stretching the Equator (kéo giãn xích đạo)" },
+      { key: "d", text: "Striking the Equator (đánh vào xích đạo)" },
+    ],
+    explanation: '"Straddling the Equator" là cách diễn đạt địa lý chuẩn xác chỉ vùng đất nằm vắt ngang đường xích đạo.',
+  },
+  {
+    id: 47,
+    prompt: 'Hiện tượng núi lửa phun trào dung nham nóng đỏ, tro tàn và khói bụi lên bầu trời được gọi là:',
+    type: "eng_to_vi",
+    targetWord: "volcanic eruptions",
+    targetMeaning: "sự phun trào núi lửa",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Volcanic eruptions (sự phun trào núi lửa)" },
+      { key: "b", text: "Volcanic disruptions (sự gián đoạn núi lửa)" },
+      { key: "c", text: "Volcanic interruptions (sự ngắt quãng núi lửa)" },
+      { key: "d", text: "Volcanic corruptions (sự hư hỏng núi lửa)" },
+    ],
+    explanation: '"Eruptions" là từ chính xác chỉ sự phun trào núi lửa. Các từ còn lại có đuôi na ná nhưng mang nghĩa hoàn toàn khác.',
+  },
+  {
+    id: 48,
+    prompt: 'Vành đai địa chấn hình móng ngựa bao quanh Thái Bình Dương nơi tập trung 75% núi lửa trên thế giới gọi là:',
+    type: "eng_to_vi",
+    targetWord: "Ring of Fire",
+    targetMeaning: "vành đai lửa",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Ring of Fire (Vành đai lửa)" },
+      { key: "b", text: "Ring of Flame (Vành đai ngọn lửa)" },
+      { key: "c", text: "Ring of Flare (Vành đai pháo sáng)" },
+      { key: "d", text: "Ring of Frost (Vành đai sương giá)" },
+    ],
+    explanation: '"Ring of Fire" (Vành đai lửa) là tên gọi địa chất quốc tế chính thức cho khu vực địa chấn Thái Bình Dương.',
+  },
+  {
+    id: 49,
+    prompt: 'Một vùng đất rộng lớn có 3 mặt giáp biển và 1 mặt nối với đất liền (như bán đảo Đông Dương, bán đảo Mã Lai) gọi là:',
+    type: "eng_to_vi",
+    targetWord: "peninsulas",
+    targetMeaning: "bán đảo",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Peninsulas (bán đảo)" },
+      { key: "b", text: "Archipelagos (quần đảo)" },
+      { key: "c", text: "Continents (đại lục)" },
+      { key: "d", text: "Atolls (đảo san hô vòng)" },
+    ],
+    explanation: '"Peninsulas" là các bán đảo, vùng đất nhô ra biển với 3 mặt tiếp giáp nước.',
+  },
+  {
+    id: 50,
+    prompt: 'Cụm động từ mang nghĩa "chiếm tỉ lệ / cấu thành bao nhiêu phần trăm" trong tổng thể diện tích là:',
+    type: "eng_to_vi",
+    targetWord: "account for",
+    targetMeaning: "chiếm",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Account for (chiếm tỉ lệ)" },
+      { key: "b", text: "Amount for (sai ngữ pháp)" },
+      { key: "c", text: "Count on (trông cậy vào)" },
+      { key: "d", text: "Apply for (nộp đơn xin việc)" },
+    ],
+    explanation: '"Account for" + percentage (ví dụ: account for 40%) có nghĩa là chiếm bao nhiêu phần trăm.',
+  },
+  {
+    id: 51,
+    prompt: 'Sự trồi lên / vỏ trái đất bị áp lực kiến tạo đẩy nhô cao hình thành nên các rặng núi được gọi là:',
+    type: "eng_to_vi",
+    targetWord: "upheaval",
+    targetMeaning: "sự trồi lên / vỏ trái đất bị đẩy lên",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Geological upheaval (sự trồi lên của vỏ trái đất)" },
+      { key: "b", text: "Geological uprising (cuộc khởi nghĩa địa chất)" },
+      { key: "c", text: "Geological upgrade (sự nâng cấp địa chất)" },
+      { key: "d", text: "Geological update (sự cập nhật địa chất)" },
+    ],
+    explanation: '"Upheaval" là thuật ngữ địa chất chỉ sự trồi lên, nâng lên đột ngột của các lớp vỏ trái đất.',
+  },
+  {
+    id: 52,
+    prompt: 'Trạng từ mang nghĩa "phần lớn / chiếm ưu thế / chủ yếu" trong câu "The terrain is ... mountainous" là:',
+    type: "eng_to_vi",
+    targetWord: "predominantly",
+    targetMeaning: "phần lớn / chủ yếu",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Predominantly (phần lớn, chiếm ưu thế)" },
+      { key: "b", text: "Permanently (lâu dài, vĩnh viễn)" },
+      { key: "c", text: "Prominently (nổi bật, đáng chú ý)" },
+      { key: "d", text: "Proportionally (tương xứng tỉ lệ)" },
+    ],
+    explanation: '"Predominantly" nghĩa là phần lớn/chủ yếu. "Permanently" là vĩnh cửu; "Prominently" là nổi bật.',
+  },
+  {
+    id: 53,
+    prompt: 'Những trận mưa theo mùa mang lại nguồn nước dồi dào cho rừng nhiệt đới và nông nghiệp Đông Nam Á là:',
+    type: "eng_to_vi",
+    targetWord: "monsoon rains",
+    targetMeaning: "cơn mưa gió mùa",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Monsoon rains (cơn mưa gió mùa)" },
+      { key: "b", text: "Moon rains (mưa mặt trăng)" },
+      { key: "c", text: "Morning rains (mưa ban sáng)" },
+      { key: "d", text: "Mountain rains (mưa vùng núi)" },
+    ],
+    explanation: '"Monsoon rains" là các đợt mưa gió mùa theo chu kỳ khí hậu nhiệt đới.',
+  },
+  {
+    id: 54,
+    prompt: 'Thuật ngữ "the insular region" trong phân chia địa lý Đông Nam Á dùng để chỉ khu vực:',
+    type: "eng_to_vi",
+    targetWord: "the insular = island",
+    targetMeaning: "quần đảo (thuộc quần đảo)",
+    correctKey: "a",
+    options: [
+      { key: "a", text: "Vùng hải đảo / các quần đảo (ngược với đất liền)" },
+      { key: "b", text: "Vùng đất nội địa bị cô lập" },
+      { key: "c", text: "Vùng đồng bằng khô hạn" },
+      { key: "d", text: "Vùng đầm lầy ngập mặn" },
+    ],
+    explanation: '"Insular" xuất phát từ gốc đảo (island), dùng để chỉ khu vực các quần đảo/hải đảo Đông Nam Á.',
+  },
+];
+
+export function generateTest3Questions(): VocabQuestion[] {
+  const questions: VocabQuestion[] = [];
+  const keys = ["a", "b", "c", "d"];
+
+  // PHẦN 1: Full 39 câu dịch từ tiếng Anh sang tiếng Việt
+  TEST3_VOCABULARY.forEach((item, index) => {
+    // Pick 3 distractors from the remaining 38 words
+    const otherMeanings = TEST3_VOCABULARY
+      .filter((v) => v.id !== item.id)
+      .map((v) => v.meaning);
+
+    // Deterministic offset pick so options are stable but well varied
+    const d1 = otherMeanings[(index * 7 + 1) % otherMeanings.length];
+    const d2 = otherMeanings[(index * 13 + 5) % otherMeanings.length];
+    const d3 = otherMeanings[(index * 19 + 11) % otherMeanings.length];
+
+    // Ensure 3 unique distractors different from item.meaning
+    const pool = otherMeanings.filter((m) => m !== item.meaning && m !== d1 && m !== d2 && m !== d3);
+    const distractorList = [d1, d2, d3];
+    if (distractorList.includes(item.meaning) || new Set(distractorList).size < 3) {
+      distractorList[0] = pool[0] || "đồng bằng";
+      distractorList[1] = pool[1] || "rừng nhiệt đới";
+      distractorList[2] = pool[2] || "khí hậu nhiệt đới";
+    }
+
+    // Place the correct meaning at variable position (index % 4)
+    const correctPos = (index + 1) % 4;
+    const choices: string[] = [];
+    let distractorIdx = 0;
+    for (let pos = 0; pos < 4; pos++) {
+      if (pos === correctPos) {
+        choices.push(item.meaning);
+      } else {
+        choices.push(distractorList[distractorIdx++]);
+      }
+    }
+
+    const options = choices.map((choice, i) => ({ key: keys[i], text: choice }));
+    const correctOpt = options[correctPos];
+
+    questions.push({
+      id: index + 1,
+      prompt: `Nghĩa tiếng Việt của từ / cụm từ "${item.word}" là gì?`,
+      type: "eng_to_vi",
+      options,
+      correctKey: correctOpt.key,
+      targetWord: item.word,
+      targetMeaning: item.meaning,
+      sectionTitle: index === 0 ? "Phần 1: Dịch nghĩa 39 từ vựng tiếng Anh sang tiếng Việt" : undefined,
+      sectionDesc: index === 0 ? "Chọn nghĩa tiếng Việt chính xác nhất tương ứng với từ vựng tiếng Anh." : undefined,
+    });
+  });
+
+  // PHẦN 2: 15 câu hỏi phân biệt ngữ cảnh với các đáp án tương tự nhau
+  TEST3_PART2_QUESTIONS.forEach((q) => {
+    // Shuffle options predictably while keeping track of correctKey
+    questions.push(q);
+  });
+
+  return questions;
+}
+
 export function VocabFlashcards({
   fullName,
   className,
@@ -345,22 +682,39 @@ export function VocabFlashcards({
   fullName: string;
   className: string;
   onLockChange?: (locked: boolean) => void;
-  vocabSet?: "test-1" | "test-2";
+  vocabSet?: "test-1" | "test-2" | "test-3";
 }) {
   const isTest2 = vocabSet === "test-2";
-  const activeVocabulary = isTest2 ? TEST2_VOCABULARY : TEST1_VOCABULARY;
-  const vocabTitle = isTest2 ? "Test 2 (Daily Activities)" : "Test 1";
-  const quizSlug = isTest2 ? "test-2-vocab-flashcards" : "test-1-vocab-flashcards";
+  const isTest3 = vocabSet === "test-3";
+  const activeVocabulary = isTest3
+    ? TEST3_VOCABULARY
+    : isTest2
+    ? TEST2_VOCABULARY
+    : TEST1_VOCABULARY;
+  const vocabTitle = isTest3
+    ? "Test 3 (Geography & Earth Science)"
+    : isTest2
+    ? "Test 2 (Daily Activities)"
+    : "Test 1";
+  const quizSlug = isTest3
+    ? "test-3-vocab-flashcards"
+    : isTest2
+    ? "test-2-vocab-flashcards"
+    : "test-1-vocab-flashcards";
 
   const [subMode, setSubMode] = useState<"study" | "practice" | "matching">("study");
   const [isMatchingLocked, setIsMatchingLocked] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFlipped, setIsFlipped] = useState(false);
 
+  const getInitialQuestions = () => {
+    if (isTest3) return generateTest3Questions();
+    if (isTest2) return TEST2_IMAGE_QUESTIONS;
+    return generateVocabQuestions(activeVocabulary);
+  };
+
   // Practice Quiz State
-  const [questions, setQuestions] = useState<VocabQuestion[]>(() =>
-    isTest2 ? TEST2_IMAGE_QUESTIONS : generateVocabQuestions(activeVocabulary)
-  );
+  const [questions, setQuestions] = useState<VocabQuestion[]>(getInitialQuestions);
   const [userAnswers, setUserAnswers] = useState<Record<number, string>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -371,7 +725,7 @@ export function VocabFlashcards({
     setCurrentIndex(0);
     setIsFlipped(false);
     setSubMode("study");
-    setQuestions(isTest2 ? TEST2_IMAGE_QUESTIONS : generateVocabQuestions(activeVocabulary));
+    setQuestions(getInitialQuestions());
     setUserAnswers({});
     setIsSubmitted(false);
     setQuizResult(null);
@@ -458,7 +812,7 @@ export function VocabFlashcards({
   };
 
   const resetPractice = () => {
-    setQuestions(isTest2 ? TEST2_IMAGE_QUESTIONS : generateVocabQuestions(activeVocabulary));
+    setQuestions(getInitialQuestions());
     setUserAnswers({});
     setIsSubmitted(false);
     setQuizResult(null);
@@ -497,9 +851,14 @@ export function VocabFlashcards({
                 : "text-[#785412] hover:bg-[#ffe9ad]"
             }`}
           >
-            <Award size={18} /> 📝 Bài Luyện Tập {isTest2 ? `Chọn Ảnh (${questions.length} Câu)` : "(30 Câu)"}
+            <Award size={18} /> 📝 Bài Luyện Tập{" "}
+            {isTest3
+              ? `(54 Câu: Dịch & Ngữ cảnh)`
+              : isTest2
+              ? `Chọn Ảnh (${questions.length} Câu)`
+              : "(30 Câu)"}
           </button>
-          {!isTest2 && (
+          {!isTest2 && !isTest3 && (
             <button
               type="button"
               disabled={isTestingLocked && subMode !== "matching"}
@@ -527,7 +886,7 @@ export function VocabFlashcards({
             </span>
           )}
           <span className="badge bg-[#fef0c7] text-[#785412] text-xs font-black">
-            🦁 30 Từ Vựng {vocabTitle}
+            🦁 {activeVocabulary.length} Từ Vựng {vocabTitle}
           </span>
         </div>
       </div>
@@ -714,12 +1073,16 @@ export function VocabFlashcards({
             <div className="flex items-center justify-between">
               <div>
                 <h3 className="text-xl font-black text-[#78350f]">
-                  {isTest2
+                  {isTest3
+                    ? `Bài Luyện Tập Từ Vựng Địa Lý & Trái Đất (${questions.length} Câu Hỏi: 2 Phần)`
+                    : isTest2
                     ? `Bài Luyện Tập Từ Vựng – Chọn Ảnh (${questions.length} Câu)`
                     : `Bài Luyện Tập Từ Vựng (${questions.length} Câu Hỏi)`}
                 </h3>
                 <p className="text-xs font-bold text-[#926011] mt-0.5">
-                  {isTest2
+                  {isTest3
+                    ? "Phần 1: Dịch 39 từ tiếng Anh sang tiếng Việt. Phần 2: 15 câu chọn đáp án phân biệt ngữ cảnh chính xác."
+                    : isTest2
                     ? "Nhìn các bức tranh và bấm chọn bức tranh thể hiện đúng hành động dưới đây."
                     : "Chọn nghĩa tiếng Việt hoặc từ tiếng Anh tương ứng."}
                 </p>
@@ -734,16 +1097,28 @@ export function VocabFlashcards({
               const isCorrect = selectedKey === q.correctKey;
 
               return (
-                <div
-                  key={q.id}
-                  className={`card p-5 border-2 transition ${
-                    isSubmitted
-                      ? isCorrect
-                        ? "border-[#86efac] bg-[#f0fdf4]"
-                        : "border-[#fca5a5] bg-[#fef2f2]"
-                      : "border-[#fef0c7]"
-                  }`}
-                >
+                <div key={q.id} className="space-y-3">
+                  {q.sectionTitle && (
+                    <div className="rounded-2xl bg-gradient-to-r from-amber-500 via-amber-600 to-yellow-600 p-4 text-white shadow-lg border-2 border-amber-300">
+                      <div className="flex items-center gap-2 text-lg font-black tracking-wide">
+                        <Sparkles size={20} className="text-yellow-200 animate-pulse" />
+                        {q.sectionTitle}
+                      </div>
+                      {q.sectionDesc && (
+                        <p className="mt-1 text-xs font-bold text-amber-100">{q.sectionDesc}</p>
+                      )}
+                    </div>
+                  )}
+
+                  <div
+                    className={`card p-5 border-2 transition ${
+                      isSubmitted
+                        ? isCorrect
+                          ? "border-[#86efac] bg-[#f0fdf4]"
+                          : "border-[#fca5a5] bg-[#fef2f2]"
+                        : "border-[#fef0c7]"
+                    }`}
+                  >
                   <div className="flex flex-wrap items-center justify-between gap-3 mb-4 border-b border-slate-100 pb-3">
                     <div className="flex items-center gap-2">
                       <span className="badge bg-[#fef3c7] text-[#785412] font-black">
@@ -909,9 +1284,19 @@ export function VocabFlashcards({
                       })}
                     </div>
                   )}
+
+                  {isSubmitted && q.explanation && (
+                    <div className="mt-4 rounded-xl bg-amber-50/90 border-2 border-amber-200 p-3.5 text-xs font-bold text-amber-950 shadow-sm">
+                      <div className="flex items-center gap-1.5 font-extrabold text-amber-800 mb-1">
+                        <Sparkles size={14} /> Giải thích chi tiết:
+                      </div>
+                      <p className="leading-relaxed text-slate-700">{q.explanation}</p>
+                    </div>
+                  )}
                 </div>
-              );
-            })}
+              </div>
+            );
+          })}
           </div>
 
           {/* Submit Button Bar */}

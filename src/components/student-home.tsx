@@ -414,7 +414,7 @@ export function StudentHome({ configured }: { configured: boolean }) {
                 </div>
 
                 <span className="badge bg-[#fef0c7] text-[#785412] text-xs font-black">
-                  2 bộ đang mở
+                  3 bộ đang mở
                 </span>
               </div>
 
@@ -433,7 +433,7 @@ export function StudentHome({ configured }: { configured: boolean }) {
                     </span>
                   </div>
                   <h3 className="mt-5 text-xl font-black text-[#78350f]">Vocab Test 1</h3>
-                  <p className="mt-1 font-bold text-[#35516e]">Flashcards & bài luyện tập từ vựng</p>
+                  <p className="mt-1 font-bold text-[#35516e]">Flashcards &amp; bài luyện tập từ vựng</p>
                   <p className="muted mt-2 line-clamp-2 text-sm">
                     Học từ, nghe phát âm, lật thẻ ghi nhớ và làm bài kiểm tra 30 câu.
                   </p>
@@ -465,23 +465,28 @@ export function StudentHome({ configured }: { configured: boolean }) {
                   </p>
                 </button>
 
-                {[3].map((number) => (
-                  <div
-                    key={number}
-                    className="card border-dashed border-[#f6d77d] bg-[#fffdf5] p-6 text-left opacity-75"
-                  >
-                    <div className="flex items-start justify-between gap-3">
-                      <span className="grid size-12 place-items-center rounded-2xl bg-[#fef3c7] font-black text-[#b45309]">
-                        {number}
-                      </span>
-                      <span className="badge bg-[#f1f5f9] text-[#64748b] font-bold">Sắp có</span>
-                    </div>
-                    <h3 className="mt-5 text-xl font-black text-[#78350f]">Vocab Test {number}</h3>
-                    <p className="muted mt-2 text-sm">
-                      Có thể thêm bộ từ vựng mới vào đây khi có nội dung Test {number}.
-                    </p>
+                <button
+                  type="button"
+                  onClick={() => setSelectedVocabSet("test-3")}
+                  className="card relative p-6 text-left transition hover:-translate-y-0.5 hover:border-[#10b981] hover:bg-[#ecfdf5]"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="grid size-12 place-items-center rounded-2xl bg-[#d1fae5] font-black text-[#059669]">
+                      3
+                    </span>
+                    <span className="badge bg-[#d1fae5] text-[#065f46] font-bold">
+                      <BookOpen size={15} /> 39 từ
+                    </span>
                   </div>
-                ))}
+                  <h3 className="mt-5 text-xl font-black text-[#065f46]">Vocab Test 3</h3>
+                  <p className="mt-1 font-bold text-[#047857]">Địa lý &amp; Trái đất (Geography &amp; Earth Science)</p>
+                  <p className="muted mt-2 line-clamp-2 text-sm">
+                    Học 39 thuật ngữ chuyên ngành địa mạo, khí hậu, vỏ trái đất và làm bài test 54 câu (Dịch 39 từ + 15 câu phân biệt).
+                  </p>
+                  <p className="mt-4 text-xs font-extrabold uppercase tracking-wide text-[#059669]">
+                    Bấm để mở phần học từ vựng
+                  </p>
+                </button>
               </div>
             </section>
           ) : (
@@ -501,7 +506,7 @@ export function StudentHome({ configured }: { configured: boolean }) {
                 fullName={fullName}
                 className={className}
                 onLockChange={setIsVocabLocked}
-                vocabSet={selectedVocabSet as "test-1" | "test-2"}
+                vocabSet={selectedVocabSet as "test-1" | "test-2" | "test-3"}
               />
             </div>
           )}
