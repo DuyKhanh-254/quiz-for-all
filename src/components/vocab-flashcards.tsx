@@ -1140,11 +1140,6 @@ export function VocabFlashcards({
                     </div>
 
                     <div className="flex items-center gap-2">
-                      {isSubmitted && q.targetMeaning && (
-                        <span className="text-xs font-bold text-[#64748b]">
-                          (Nghĩa: {q.targetMeaning})
-                        </span>
-                      )}
                       <button
                         type="button"
                         onClick={() =>
