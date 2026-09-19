@@ -1,0 +1,117 @@
+{
+  "3c000000-0000-4000-8000-000000000001": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "It is in the sky / above the sea"
+  },
+  "3c000000-0000-4000-8000-000000000002": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "She is sitting on a chair, next to the boy."
+  },
+  "3c000000-0000-4000-8000-000000000003": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "It is next to the boy"
+  },
+  "3c000000-0000-4000-8000-000000000004": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "It is on the beach / in front of the man."
+  },
+  "3c000000-0000-4000-8000-000000000005": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "It is on the hill / near the trees / on the right."
+  },
+  "3c000000-0000-4000-8000-000000000006": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "They are on the sand / beach."
+  },
+  "3c000000-0000-4000-8000-000000000007": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "It is in the sea, behind the sailboat."
+  },
+  "3c000000-0000-4000-8000-000000000008": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "He is fishing."
+  },
+  "3c000000-0000-4000-8000-000000000009": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "She is reading a newspaper / book."
+  },
+  "3c000000-0000-4000-8000-000000000010": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "He is walking and carrying bags / waving."
+  },
+  "3c000000-0000-4000-8000-000000000011": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "There are 3 people"
+  },
+  "3c000000-0000-4000-8000-000000000012": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "I can see 3 boats."
+  },
+  "3c000000-0000-4000-8000-000000000013": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "There are 2 trees."
+  },
+  "3c000000-0000-4000-8000-000000000014": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "They are blue."
+  },
+  "3c000000-0000-4000-8000-000000000015": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "It is white and brown."
+  },
+  "3c000000-0000-4000-8000-000000000016": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "Yes, it is."
+  },
+  "3c000000-0000-4000-8000-000000000017": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "No, he isn't. He is walking."
+  },
+  "3c000000-0000-4000-8000-000000000018": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "No, there aren't."
+  },
+  "3c000000-0000-4000-8000-000000000019": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "No, it isn't. It's red."
+  },
+  "3c000000-0000-4000-8000-000000000020": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "It is sunny, warm and nice."
+  },
+  "3c000000-0000-4000-8000-000000000021": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "Yes, I do. / No, I don't."
+  },
+  "3c000000-0000-4000-8000-000000000022": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "I wear a T-shirt, shorts, and a hat."
+  },
+  "3c000000-0000-4000-8000-000000000023": {
+    "open_ended": true,
+    "accepted": ["*"],
+    "sample_answer": "Yes, I have. / No, I haven't."
+  }
+}

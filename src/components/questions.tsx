@@ -24,6 +24,7 @@ type SpriteMetadata = {
   visual_theme?: string;
   concept?: string;
   line_drawing?: boolean;
+  placeholder?: string;
 };
 
 function Status({ isCorrect }: { isCorrect?: boolean | null }) {
@@ -75,7 +76,7 @@ function FillBlankQuestion({ question, value, onChange, readonly }: Omit<Props, 
   const spriteColumns = Number(metadata.sprite_columns) || 0;
   const spriteRows = Number(metadata.sprite_rows) || 1;
   const spriteIndex = Number(metadata.sprite_index) || 0;
-  return <div>{question.image_url && spriteColumns > 0 ? <SpriteImage src={question.image_url} columns={spriteColumns} rows={spriteRows} index={spriteIndex} alt={`Picture for: ${question.prompt}`} className="mx-auto mb-5 max-w-sm" /> : <QuestionImage src={question.image_url} alt={`Picture for: ${question.prompt}`} className="mb-5 min-h-64" />}<label className="label" htmlFor={`answer-${question.id}`}>Write your answer</label><input id={`answer-${question.id}`} className="field !min-h-16 !text-xl !font-bold" value={text} readOnly={readonly} onChange={(event) => onChange?.({ value: event.target.value })} autoComplete="off" autoCapitalize="none" spellCheck={false} maxLength={500} placeholder={readonly ? "No answer" : "Type the word here…"} /></div>;
+  return <div>{question.image_url && spriteColumns > 0 ? <SpriteImage src={question.image_url} columns={spriteColumns} rows={spriteRows} index={spriteIndex} alt={`Picture for: ${question.prompt}`} className="mx-auto mb-5 max-w-sm" /> : <QuestionImage src={question.image_url} alt={`Picture for: ${question.prompt}`} className="mb-5 min-h-64" />}<label className="label" htmlFor={`answer-${question.id}`}>Write your answer</label><input id={`answer-${question.id}`} className="field !min-h-16 !text-xl !font-bold" value={text} readOnly={readonly} onChange={(event) => onChange?.({ value: event.target.value })} autoComplete="off" autoCapitalize="none" spellCheck={false} maxLength={500} placeholder={readonly ? "No answer" : metadata.placeholder || "Type your answer here…"} /></div>;
 }
 
 export function QuestionCard(props: Props) {

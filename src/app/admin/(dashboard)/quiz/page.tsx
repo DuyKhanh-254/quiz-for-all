@@ -7,7 +7,7 @@ import { createAdminClient } from "@/lib/supabase/admin";
 
 export const metadata = { title: "Quiz content" };
 
-type Answer = { option?: string; accepted?: string[]; pairs?: Record<string, string> };
+type Answer = { option?: string; accepted?: string[]; pairs?: Record<string, string>; open_ended?: boolean; sample_answer?: string };
 type Metadata = { visual_theme?: string; concept?: string; sprite_columns?: number; sprite_rows?: number; sprite_index?: number; left_items?: Array<{ key: string; text: string }> };
 
 function first<T>(value: T | T[] | null | undefined) {
@@ -19,6 +19,9 @@ function answerText(answer: Answer | undefined, options: Array<{ option_key: str
   if (answer.option) {
     const option = options.find((item) => item.option_key === answer.option);
     return `${answer.option.toUpperCase()}. ${option?.option_text || "Hình minh họa"}`;
+  }
+  if (answer.open_ended) {
+    return answer.sample_answer ? `Tự luận (Gợi ý: ${answer.sample_answer})` : "Tự luận (Học sinh tự trả lời)";
   }
   if (answer.accepted) return answer.accepted.join(" / ");
   if (answer.pairs) return Object.entries(answer.pairs).map(([left, right]) => `${left} → ${right.toUpperCase()}`).join("; ");

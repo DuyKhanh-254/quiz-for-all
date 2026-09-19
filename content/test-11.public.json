@@ -1,0 +1,113 @@
+{
+  "quiz": {
+    "id": "1b000000-0000-4000-8000-000000000001",
+    "slug": "cambridge-starters-test-11",
+    "title": "Test 11 – Cambridge Starters Practice",
+    "description": "Listening – Part 2 (11 Questions)",
+    "grade": "Pre A1",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-11",
+  "sections": [
+    {
+      "id": "2b000000-0000-4000-8000-000000000001",
+      "title": "Listening – Part 2",
+      "instruction": "Read the question. Listen to the audio and write a name, a number, or words. There are two examples.",
+      "section_type": "fill_blank",
+      "position": 1,
+      "audio": "audio/test11-lis-part2.mp3",
+      "image": "images/test11-scene.jpg",
+      "questions": [
+        {
+          "id": "3b000000-0000-4000-8000-000000000001",
+          "position": 1,
+          "question_type": "fill_blank",
+          "prompt": "1. What are the children making in the classroom?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3b000000-0000-4000-8000-000000000002",
+          "position": 2,
+          "question_type": "fill_blank",
+          "prompt": "2. Is the boy's class big or small?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3b000000-0000-4000-8000-000000000003",
+          "position": 3,
+          "question_type": "fill_blank",
+          "prompt": "3. How many children are there in the class?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3b000000-0000-4000-8000-000000000004",
+          "position": 4,
+          "question_type": "fill_blank",
+          "prompt": "4. How many monster pictures are on the wall?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3b000000-0000-4000-8000-000000000005",
+          "position": 5,
+          "question_type": "fill_blank",
+          "prompt": "5. Is the boy's monster a boy or a girl?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3b000000-0000-4000-8000-000000000006",
+          "position": 6,
+          "question_type": "fill_blank",
+          "prompt": "6. What is the monster's name?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3b000000-0000-4000-8000-000000000007",
+          "position": 7,
+          "question_type": "fill_blank",
+          "prompt": "7. How many eyes does the monster have?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3b000000-0000-4000-8000-000000000008",
+          "position": 8,
+          "question_type": "fill_blank",
+          "prompt": "8. What body part does the monster have a lot of?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3b000000-0000-4000-8000-000000000009",
+          "position": 9,
+          "question_type": "fill_blank",
+          "prompt": "9. What kind of monster is in Bill's picture?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3b000000-0000-4000-8000-000000000010",
+          "position": 10,
+          "question_type": "fill_blank",
+          "prompt": "10. Whose picture is the jellyfish monster?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3b000000-0000-4000-8000-000000000011",
+          "position": 11,
+          "question_type": "fill_blank",
+          "prompt": "11. What does Bill's monster look like?",
+          "points": 1,
+          "options": []
+        }
+      ]
+    }
+  ]
+}

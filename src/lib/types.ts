@@ -70,5 +70,12 @@ export interface AttemptAnswer {
 
 export interface AnswerKey {
   question_id: string;
-  answer: { option?: string; accepted?: string[]; pairs?: Record<string, string>; case_sensitive?: boolean };
+  answer: {
+    option?: string;
+    accepted?: string[];
+    pairs?: Record<string, string>;
+    case_sensitive?: boolean;
+    open_ended?: boolean;
+    sample_answer?: string;
+  };
 }

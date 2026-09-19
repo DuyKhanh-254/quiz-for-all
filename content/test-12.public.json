@@ -1,0 +1,231 @@
+{
+  "quiz": {
+    "id": "1c000000-0000-4000-8000-000000000001",
+    "slug": "cambridge-starters-test-12",
+    "title": "Test 12 – Cambridge Starters Speaking Practice",
+    "description": "Speaking & Free Response (23 Questions)",
+    "grade": "Pre A1",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-12",
+  "sections": [
+    {
+      "id": "2c000000-0000-4000-8000-000000000001",
+      "title": "Speaking – Beach Scene Questions",
+      "instruction": "Look at the picture and answer the questions in your own words. (Hình thức tự luận: Em hãy nhìn vào bức tranh và trả lời các câu hỏi bằng tiếng Anh theo ý của mình nhé!)",
+      "section_type": "fill_blank",
+      "position": 1,
+      "image": "images/test12-beach-scene.jpg",
+      "questions": [
+        {
+          "id": "3c000000-0000-4000-8000-000000000001",
+          "position": 1,
+          "question_type": "fill_blank",
+          "prompt": "1. Where is the sun?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000002",
+          "position": 2,
+          "question_type": "fill_blank",
+          "prompt": "2. Where is the girl sitting?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000003",
+          "position": 3,
+          "question_type": "fill_blank",
+          "prompt": "3. Where is the fishing box?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000004",
+          "position": 4,
+          "question_type": "fill_blank",
+          "prompt": "4. Where is the red car?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000005",
+          "position": 5,
+          "question_type": "fill_blank",
+          "prompt": "5. Where is the pink house?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000006",
+          "position": 6,
+          "question_type": "fill_blank",
+          "prompt": "6. Where are the seashells?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000007",
+          "position": 7,
+          "question_type": "fill_blank",
+          "prompt": "7. Where is the small island?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000008",
+          "position": 8,
+          "question_type": "fill_blank",
+          "prompt": "8. What is the boy with the fishing rod doing?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000009",
+          "position": 9,
+          "question_type": "fill_blank",
+          "prompt": "9. What is the girl reading?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000010",
+          "position": 10,
+          "question_type": "fill_blank",
+          "prompt": "10. What is the man in the green jacket doing?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000011",
+          "position": 11,
+          "question_type": "fill_blank",
+          "prompt": "11. How many people are there in the picture?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000012",
+          "position": 12,
+          "question_type": "fill_blank",
+          "prompt": "12. How many boats can you see?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000013",
+          "position": 13,
+          "question_type": "fill_blank",
+          "prompt": "13. How many trees are there near the pink house?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000014",
+          "position": 14,
+          "question_type": "fill_blank",
+          "prompt": "14. What color are the man’s trousers?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000015",
+          "position": 15,
+          "question_type": "fill_blank",
+          "prompt": "15. What color is the sailboat?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000016",
+          "position": 16,
+          "question_type": "fill_blank",
+          "prompt": "16. Is the sun yellow?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000017",
+          "position": 17,
+          "question_type": "fill_blank",
+          "prompt": "17. Is the man driving the red car?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000018",
+          "position": 18,
+          "question_type": "fill_blank",
+          "prompt": "18. Are there any birds in the sky?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000019",
+          "position": 19,
+          "question_type": "fill_blank",
+          "prompt": "19. Is the car green?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000020",
+          "position": 20,
+          "question_type": "fill_blank",
+          "prompt": "20. Tell me about the weather in the picture.",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000021",
+          "position": 21,
+          "question_type": "fill_blank",
+          "prompt": "21. Do you like going to the beach?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000022",
+          "position": 22,
+          "question_type": "fill_blank",
+          "prompt": "22. What do you usually wear when you go to the beach?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        },
+        {
+          "id": "3c000000-0000-4000-8000-000000000023",
+          "position": 23,
+          "question_type": "fill_blank",
+          "prompt": "23. Have you ever been on a boat?",
+          "points": 1,
+          "metadata": { "placeholder": "Type your answer here…" },
+          "options": []
+        }
+      ]
+    }
+  ]
+}

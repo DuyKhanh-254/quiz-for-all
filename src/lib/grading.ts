@@ -11,7 +11,11 @@ export function gradeResponse(type: QuestionType, response: JsonResponse | null,
     return "option" in response && response.option === key.option;
   }
   if (type === "fill_blank") {
-    if (!("value" in response) || !key.accepted?.length) return false;
+    if (!("value" in response)) return false;
+    if (key.open_ended || key.accepted?.includes("*")) {
+      return Boolean(response.value.trim());
+    }
+    if (!key.accepted?.length) return false;
     const received = normalize(response.value, key.case_sensitive);
     return key.accepted.some((item) => normalize(item, key.case_sensitive) === received);
   }

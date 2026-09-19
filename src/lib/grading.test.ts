@@ -12,6 +12,13 @@ describe("secure grading helpers", () => {
     expect(gradeResponse("fill_blank", { value: "kite" }, { accepted: ["blue kite"] })).toBe(false);
   });
 
+  it("accepts non-empty answers for open-ended questions", () => {
+    expect(gradeResponse("fill_blank", { value: "In the sky" }, { open_ended: true })).toBe(true);
+    expect(gradeResponse("fill_blank", { value: "   " }, { open_ended: true })).toBe(false);
+    expect(gradeResponse("fill_blank", { value: "He is fishing" }, { accepted: ["*"] })).toBe(true);
+    expect(gradeResponse("fill_blank", { value: "" }, { accepted: ["*"] })).toBe(false);
+  });
+
   it("requires every matching pair", () => {
     const key = { pairs: { one: "a", two: "b" } };
     expect(gradeResponse("matching", { pairs: { one: "a", two: "b" } }, key)).toBe(true);
