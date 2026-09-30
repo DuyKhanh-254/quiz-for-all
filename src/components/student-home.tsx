@@ -414,11 +414,11 @@ export function StudentHome({ configured }: { configured: boolean }) {
                 </div>
 
                 <span className="badge bg-[#fef0c7] text-[#785412] text-xs font-black">
-                  3 bộ đang mở
+                  4 bộ đang mở
                 </span>
               </div>
 
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 <button
                   type="button"
                   onClick={() => setSelectedVocabSet("test-1")}
@@ -487,6 +487,29 @@ export function StudentHome({ configured }: { configured: boolean }) {
                     Bấm để mở phần học từ vựng
                   </p>
                 </button>
+
+                <button
+                  type="button"
+                  onClick={() => setSelectedVocabSet("test-4")}
+                  className="card relative p-6 text-left transition hover:-translate-y-0.5 hover:border-[#8b5cf6] hover:bg-[#faf5ff]"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <span className="grid size-12 place-items-center rounded-2xl bg-[#ede9fe] font-black text-[#7c3aed]">
+                      4
+                    </span>
+                    <span className="badge bg-[#ede9fe] text-[#6d28d9] font-bold">
+                      <BookOpen size={15} /> 7 từ
+                    </span>
+                  </div>
+                  <h3 className="mt-5 text-xl font-black text-[#5b21b6]">Vocab Test 4</h3>
+                  <p className="mt-1 font-bold text-[#6d28d9]">Đồ dùng &amp; Hành động (Home Items &amp; Actions)</p>
+                  <p className="muted mt-2 line-clamp-2 text-sm">
+                    Học 7 từ vựng: tablet, wardrobe, rug, board games, wheelchair, hold, reach for và làm bài kiểm tra đoán nghĩa tiếng Việt (14 câu).
+                  </p>
+                  <p className="mt-4 text-xs font-extrabold uppercase tracking-wide text-[#7c3aed]">
+                    Bấm để mở phần học từ vựng
+                  </p>
+                </button>
               </div>
             </section>
           ) : (
@@ -506,7 +529,7 @@ export function StudentHome({ configured }: { configured: boolean }) {
                 fullName={fullName}
                 className={className}
                 onLockChange={setIsVocabLocked}
-                vocabSet={selectedVocabSet as "test-1" | "test-2" | "test-3"}
+                vocabSet={selectedVocabSet as "test-1" | "test-2" | "test-3" | "test-4"}
               />
             </div>
           )}

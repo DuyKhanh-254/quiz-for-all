@@ -611,6 +611,294 @@ export const TEST3_PART2_QUESTIONS: VocabQuestion[] = [
   },
 ];
 
+export const TEST4_VOCABULARY: VocabItem[] = [
+  {
+    id: 1,
+    word: "tablet",
+    phonetic: "/ˈtæb.lət/",
+    type: "noun",
+    meaning: "máy tính bảng",
+    example: "She is playing an educational game on her tablet.",
+    typeVi: "danh từ",
+  },
+  {
+    id: 2,
+    word: "wardrobe",
+    phonetic: "/ˈwɔː.drəʊb/",
+    type: "noun",
+    meaning: "tủ quần áo",
+    example: "He hung his new clothes neatly inside the wardrobe.",
+    typeVi: "danh từ",
+  },
+  {
+    id: 3,
+    word: "rug",
+    phonetic: "/rʌɡ/",
+    type: "noun",
+    meaning: "thảm trải sàn",
+    example: "There is a soft and colorful rug on the bedroom floor.",
+    typeVi: "danh từ",
+  },
+  {
+    id: 4,
+    word: "board games",
+    phonetic: "/ˈbɔːd ˌɡeɪmz/",
+    type: "noun",
+    meaning: "những trò chơi có tính tương tác cao",
+    example: "My family loves playing board games together on weekend evenings.",
+    typeVi: "danh từ",
+  },
+  {
+    id: 5,
+    word: "wheelchair",
+    phonetic: "/ˈwiːl.tʃeər/",
+    type: "noun",
+    meaning: "xe lăn",
+    example: "The boy uses a wheelchair to move around the school comfortably.",
+    typeVi: "danh từ",
+  },
+  {
+    id: 6,
+    word: "hold",
+    phonetic: "/həʊld/",
+    type: "verb",
+    meaning: "giữ",
+    example: "Please hold my hand when we cross the busy street.",
+    typeVi: "động từ",
+  },
+  {
+    id: 7,
+    word: "reach for",
+    phonetic: "/riːtʃ fɔːr/",
+    type: "verb",
+    meaning: "vươn tay để lấy",
+    example: "The little girl reached for the storybook on the high shelf.",
+    typeVi: "cụm động từ",
+  },
+];
+
+export function generateTest4Questions(): VocabQuestion[] {
+  return [
+    // PHẦN 1: Nhận diện nghĩa từ vựng tiếng Anh trực tiếp
+    {
+      id: 1,
+      prompt: 'Nghĩa tiếng Việt của từ "tablet" là gì?',
+      type: "eng_to_vi",
+      targetWord: "tablet",
+      targetMeaning: "máy tính bảng",
+      correctKey: "a",
+      options: [
+        { key: "a", text: "máy tính bảng" },
+        { key: "b", text: "tủ quần áo" },
+        { key: "c", text: "thảm trải sàn" },
+        { key: "d", text: "xe lăn" },
+      ],
+      explanation: '"tablet" có nghĩa là máy tính bảng, thiết bị điện tử màn hình cảm ứng dùng để học tập và giải trí.',
+      sectionTitle: "Phần 1: Nhận biết nghĩa từ vựng (English ➔ Tiếng Việt)",
+      sectionDesc: "Đọc từ tiếng Anh và chọn nghĩa tiếng Việt chính xác nhất.",
+    },
+    {
+      id: 2,
+      prompt: 'Nghĩa tiếng Việt của từ "wardrobe" là gì?',
+      type: "eng_to_vi",
+      targetWord: "wardrobe",
+      targetMeaning: "tủ quần áo",
+      correctKey: "b",
+      options: [
+        { key: "a", text: "thảm trải sàn" },
+        { key: "b", text: "tủ quần áo" },
+        { key: "c", text: "máy tính bảng" },
+        { key: "d", text: "những trò chơi có tính tương tác cao" },
+      ],
+      explanation: '"wardrobe" có nghĩa là tủ quần áo, đồ dùng nội thất trong gia đình dùng để treo và cất giữ trang phục.',
+    },
+    {
+      id: 3,
+      prompt: 'Nghĩa tiếng Việt của từ "rug" là gì?',
+      type: "eng_to_vi",
+      targetWord: "rug",
+      targetMeaning: "thảm trải sàn",
+      correctKey: "c",
+      options: [
+        { key: "a", text: "xe lăn" },
+        { key: "b", text: "giữ" },
+        { key: "c", text: "thảm trải sàn" },
+        { key: "d", text: "tủ quần áo" },
+      ],
+      explanation: '"rug" có nghĩa là thảm trải sàn, tấm thảm trang trí hoặc giữ ấm trên sàn nhà.',
+    },
+    {
+      id: 4,
+      prompt: 'Nghĩa tiếng Việt của cụm từ "board games" là gì?',
+      type: "eng_to_vi",
+      targetWord: "board games",
+      targetMeaning: "những trò chơi có tính tương tác cao",
+      correctKey: "d",
+      options: [
+        { key: "a", text: "máy tính bảng" },
+        { key: "b", text: "vươn tay để lấy" },
+        { key: "c", text: "xe lăn" },
+        { key: "d", text: "những trò chơi có tính tương tác cao" },
+      ],
+      explanation: '"board games" là những trò chơi có tính tương tác cao (như cờ cá ngựa, cờ tỉ phú, cờ vua...) nhiều người cùng chơi.',
+    },
+    {
+      id: 5,
+      prompt: 'Nghĩa tiếng Việt của từ "wheelchair" là gì?',
+      type: "eng_to_vi",
+      targetWord: "wheelchair",
+      targetMeaning: "xe lăn",
+      correctKey: "a",
+      options: [
+        { key: "a", text: "xe lăn" },
+        { key: "b", text: "thảm trải sàn" },
+        { key: "c", text: "tủ quần áo" },
+        { key: "d", text: "máy tính bảng" },
+      ],
+      explanation: '"wheelchair" có nghĩa là xe lăn, phương tiện hỗ trợ di chuyển cho người khuyết tật hoặc gặp khó khăn khi đi lại.',
+    },
+    {
+      id: 6,
+      prompt: 'Nghĩa tiếng Việt của từ "hold" là gì?',
+      type: "eng_to_vi",
+      targetWord: "hold",
+      targetMeaning: "giữ",
+      correctKey: "b",
+      options: [
+        { key: "a", text: "vươn tay để lấy" },
+        { key: "b", text: "giữ" },
+        { key: "c", text: "xe lăn" },
+        { key: "d", text: "những trò chơi có tính tương tác cao" },
+      ],
+      explanation: '"hold" là động từ có nghĩa là giữ, cầm hoặc nắm chắc vật gì đó bằng tay.',
+    },
+    {
+      id: 7,
+      prompt: 'Nghĩa tiếng Việt của cụm từ "reach for" là gì?',
+      type: "eng_to_vi",
+      targetWord: "reach for",
+      targetMeaning: "vươn tay để lấy",
+      correctKey: "c",
+      options: [
+        { key: "a", text: "giữ" },
+        { key: "b", text: "thảm trải sàn" },
+        { key: "c", text: "vươn tay để lấy" },
+        { key: "d", text: "tủ quần áo" },
+      ],
+      explanation: '"reach for" là cụm động từ có nghĩa là vươn tay, với tay để lấy hoặc chạm vào một vật thể.',
+    },
+
+    // PHẦN 2: Đoán nghĩa từ vựng qua câu ngữ cảnh tiếng Anh
+    {
+      id: 8,
+      prompt: 'Trong câu: "She is learning English on her tablet.", từ "tablet" có nghĩa là gì?',
+      type: "contextual",
+      targetWord: "tablet",
+      targetMeaning: "máy tính bảng",
+      correctKey: "a",
+      options: [
+        { key: "a", text: "máy tính bảng" },
+        { key: "b", text: "xe lăn" },
+        { key: "c", text: "tủ quần áo" },
+        { key: "d", text: "thảm trải sàn" },
+      ],
+      explanation: 'Trong câu "She is learning English on her tablet.", từ "tablet" mang nghĩa là máy tính bảng dùng để học tiếng Anh.',
+      sectionTitle: "Phần 2: Đoán nghĩa từ vựng trong câu ngữ cảnh tiếng Anh",
+      sectionDesc: "Đọc câu tiếng Anh và chọn nghĩa tiếng Việt chính xác nhất của từ / cụm từ được dùng trong câu.",
+    },
+    {
+      id: 9,
+      prompt: 'Trong câu: "He puts his shirts and trousers in the wardrobe.", từ "wardrobe" có nghĩa là gì?',
+      type: "contextual",
+      targetWord: "wardrobe",
+      targetMeaning: "tủ quần áo",
+      correctKey: "b",
+      options: [
+        { key: "a", text: "thảm trải sàn" },
+        { key: "b", text: "tủ quần áo" },
+        { key: "c", text: "máy tính bảng" },
+        { key: "d", text: "những trò chơi có tính tương tác cao" },
+      ],
+      explanation: 'Trong câu trên, "wardrobe" có nghĩa là tủ quần áo, nơi cất giữ áo sơ mi và quần dài.',
+    },
+    {
+      id: 10,
+      prompt: 'Trong câu: "There is a soft round rug in the living room.", từ "rug" có nghĩa là gì?',
+      type: "contextual",
+      targetWord: "rug",
+      targetMeaning: "thảm trải sàn",
+      correctKey: "c",
+      options: [
+        { key: "a", text: "xe lăn" },
+        { key: "b", text: "tủ quần áo" },
+        { key: "c", text: "thảm trải sàn" },
+        { key: "d", text: "máy tính bảng" },
+      ],
+      explanation: 'Trong câu trên, "rug" có nghĩa là chiếc thảm trải sàn êm ái hình tròn ở phòng khách.',
+    },
+    {
+      id: 11,
+      prompt: 'Trong câu: "We often play board games with friends on weekends.", cụm từ "board games" có nghĩa là gì?',
+      type: "contextual",
+      targetWord: "board games",
+      targetMeaning: "những trò chơi có tính tương tác cao",
+      correctKey: "d",
+      options: [
+        { key: "a", text: "máy tính bảng" },
+        { key: "b", text: "vươn tay để lấy" },
+        { key: "c", text: "xe lăn" },
+        { key: "d", text: "những trò chơi có tính tương tác cao" },
+      ],
+      explanation: 'Trong câu trên, "board games" là những trò chơi có tính tương tác cao mà bạn bè cùng tham gia vào cuối tuần.',
+    },
+    {
+      id: 12,
+      prompt: 'Trong câu: "The nurse helped the boy sit in the wheelchair.", từ "wheelchair" có nghĩa là gì?',
+      type: "contextual",
+      targetWord: "wheelchair",
+      targetMeaning: "xe lăn",
+      correctKey: "a",
+      options: [
+        { key: "a", text: "xe lăn" },
+        { key: "b", text: "thảm trải sàn" },
+        { key: "c", text: "tủ quần áo" },
+        { key: "d", text: "máy tính bảng" },
+      ],
+      explanation: 'Trong câu trên, "wheelchair" là xe lăn giúp người bệnh hoặc bạn nhỏ di chuyển thuận tiện.',
+    },
+    {
+      id: 13,
+      prompt: 'Trong câu: "Please hold this book for me, please.", từ "hold" có nghĩa là gì?',
+      type: "contextual",
+      targetWord: "hold",
+      targetMeaning: "giữ",
+      correctKey: "b",
+      options: [
+        { key: "a", text: "vươn tay để lấy" },
+        { key: "b", text: "giữ" },
+        { key: "c", text: "xe lăn" },
+        { key: "d", text: "thảm trải sàn" },
+      ],
+      explanation: 'Trong câu trên, "hold" có nghĩa là giữ hoặc cầm giúp quyển sách.',
+    },
+    {
+      id: 14,
+      prompt: 'Trong câu: "The girl reached for the storybook on the top shelf.", cụm từ "reached for" có nghĩa là gì?',
+      type: "contextual",
+      targetWord: "reach for",
+      targetMeaning: "vươn tay để lấy",
+      correctKey: "c",
+      options: [
+        { key: "a", text: "giữ" },
+        { key: "b", text: "thảm trải sàn" },
+        { key: "c", text: "vươn tay để lấy" },
+        { key: "d", text: "tủ quần áo" },
+      ],
+      explanation: 'Trong câu trên, "reached for" có nghĩa là vươn tay để lấy quyển truyện ở trên giá cao.',
+    },
+  ];
+}
+
 export function generateTest3Questions(): VocabQuestion[] {
   const questions: VocabQuestion[] = [];
   const keys = ["a", "b", "c", "d"];
@@ -682,21 +970,28 @@ export function VocabFlashcards({
   fullName: string;
   className: string;
   onLockChange?: (locked: boolean) => void;
-  vocabSet?: "test-1" | "test-2" | "test-3";
+  vocabSet?: "test-1" | "test-2" | "test-3" | "test-4";
 }) {
   const isTest2 = vocabSet === "test-2";
   const isTest3 = vocabSet === "test-3";
-  const activeVocabulary = isTest3
+  const isTest4 = vocabSet === "test-4";
+  const activeVocabulary = isTest4
+    ? TEST4_VOCABULARY
+    : isTest3
     ? TEST3_VOCABULARY
     : isTest2
     ? TEST2_VOCABULARY
     : TEST1_VOCABULARY;
-  const vocabTitle = isTest3
+  const vocabTitle = isTest4
+    ? "Test 4 (Home Items & Actions)"
+    : isTest3
     ? "Test 3 (Geography & Earth Science)"
     : isTest2
     ? "Test 2 (Daily Activities)"
     : "Test 1";
-  const quizSlug = isTest3
+  const quizSlug = isTest4
+    ? "test-4-vocab-flashcards"
+    : isTest3
     ? "test-3-vocab-flashcards"
     : isTest2
     ? "test-2-vocab-flashcards"
@@ -708,6 +1003,7 @@ export function VocabFlashcards({
   const [isFlipped, setIsFlipped] = useState(false);
 
   const getInitialQuestions = () => {
+    if (isTest4) return generateTest4Questions();
     if (isTest3) return generateTest3Questions();
     if (isTest2) return TEST2_IMAGE_QUESTIONS;
     return generateVocabQuestions(activeVocabulary);
@@ -852,13 +1148,15 @@ export function VocabFlashcards({
             }`}
           >
             <Award size={18} /> 📝 Bài Luyện Tập{" "}
-            {isTest3
+            {isTest4
+              ? `(14 Câu: Đoán nghĩa Tiếng Việt)`
+              : isTest3
               ? `(54 Câu: Dịch & Ngữ cảnh)`
               : isTest2
               ? `Chọn Ảnh (${questions.length} Câu)`
               : "(30 Câu)"}
           </button>
-          {!isTest2 && !isTest3 && (
+          {!isTest2 && !isTest3 && !isTest4 && (
             <button
               type="button"
               disabled={isTestingLocked && subMode !== "matching"}
