@@ -34,4 +34,21 @@ describe("secure grading helpers", () => {
       percentage: 66.7,
     });
   });
+
+  it("handles Test 13 trailing punctuation and keyword variations", () => {
+    const key = {
+      accepted: [
+        "She is sitting in a wheelchair",
+        "sitting in a wheelchair",
+        "holding a cat",
+        "cat",
+        "wheelchair",
+      ],
+    };
+    expect(gradeResponse("fill_blank", { value: "She is sitting in a wheelchair." }, key)).toBe(true);
+    expect(gradeResponse("fill_blank", { value: "sitting in a wheelchair" }, key)).toBe(true);
+    expect(gradeResponse("fill_blank", { value: "cat." }, key)).toBe(true);
+    expect(gradeResponse("fill_blank", { value: "larger." }, { accepted: ["larger"] })).toBe(true);
+    expect(gradeResponse("fill_blank", { value: "more quickly" }, { accepted: ["quicker", "more quickly"] })).toBe(true);
+  });
 });

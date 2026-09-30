@@ -1,0 +1,392 @@
+{
+  "3d000000-0000-4000-8000-000000000001": {
+    "accepted": [
+      "She is sitting in a wheelchair",
+      "She's sitting in a wheelchair",
+      "sitting in a wheelchair",
+      "sitting in wheelchair",
+      "She is in a wheelchair",
+      "in a wheelchair",
+      "holding a cat",
+      "holding a pet",
+      "holding a small animal",
+      "holding cat",
+      "holding pet",
+      "She is holding a cat",
+      "She's holding a cat",
+      "She is holding a pet",
+      "She's holding a pet",
+      "She is holding a small animal",
+      "holding a cat/pet",
+      "sitting in a wheelchair OR holding a cat/pet",
+      "wheelchair",
+      "cat",
+      "pet"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000002": {
+    "accepted": [
+      "She is holding a small animal",
+      "She's holding a small animal",
+      "She is holding a cat",
+      "She's holding a cat",
+      "She is holding a pet",
+      "holding a small animal",
+      "holding a cat",
+      "holding a pet",
+      "holding small animal",
+      "holding cat",
+      "holding pet",
+      "a small animal",
+      "small animal",
+      "a cat",
+      "cat",
+      "a pet",
+      "pet",
+      "a small animal/cat",
+      "small animal/cat"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000003": {
+    "accepted": [
+      "She is sitting on the green bed",
+      "She's sitting on the green bed",
+      "She is sitting on the bed",
+      "She's sitting on the bed",
+      "sitting on the green bed",
+      "sitting on the bed",
+      "sitting on green bed",
+      "sitting on bed",
+      "on the green bed",
+      "on the bed",
+      "on green bed",
+      "on bed",
+      "the green bed",
+      "the bed",
+      "green bed",
+      "bed"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000004": {
+    "accepted": [
+      "She is using a tablet",
+      "She's using a tablet",
+      "using a tablet",
+      "using tablet",
+      "tablet",
+      "She is reading a book",
+      "She's reading a book",
+      "reading a book",
+      "reading book",
+      "reading",
+      "using a tablet / reading a book",
+      "using a tablet or reading a book"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000005": {
+    "accepted": [
+      "He is reaching for a robot on the shelf",
+      "He's reaching for a robot on the shelf",
+      "reaching for a robot on the shelf",
+      "reaching for a robot on shelf",
+      "reaching for a robot",
+      "reaching for the robot",
+      "He is reaching for a robot",
+      "He's reaching for a robot",
+      "reaching for robot",
+      "reaching robot",
+      "taking a robot",
+      "robot"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000006": {
+    "accepted": [
+      "There is a book and a robot",
+      "There's a book and a robot",
+      "a book and a robot",
+      "book and a robot",
+      "a book and robot",
+      "book and robot",
+      "books and a robot",
+      "books and robot",
+      "a robot and a book",
+      "robot and a book",
+      "a robot and book",
+      "robot and book",
+      "a book, a robot",
+      "book, robot"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000007": {
+    "accepted": [
+      "She is putting clothes into the wardrobe",
+      "She's putting clothes into the wardrobe",
+      "putting clothes into the wardrobe",
+      "putting clothes in the wardrobe",
+      "putting clothes into wardrobe",
+      "putting clothes in wardrobe",
+      "She is organizing clothes",
+      "She's organizing clothes",
+      "organizing clothes",
+      "organising clothes",
+      "She is looking clothes",
+      "looking clothes",
+      "looking at clothes",
+      "She is looking at clothes",
+      "folding clothes",
+      "clothes",
+      "wardrobe"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000008": {
+    "accepted": [
+      "She is wearing a blue t-shirt",
+      "She's wearing a blue t-shirt",
+      "She is wearing a blue tshirt",
+      "a blue t-shirt",
+      "blue t-shirt",
+      "a blue tshirt",
+      "blue tshirt",
+      "a blue shirt",
+      "blue shirt",
+      "blue",
+      "Blue"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000009": {
+    "accepted": [
+      "They are playing chess on the rug",
+      "They're playing chess on the rug",
+      "playing chess on the rug",
+      "playing chess on rug",
+      "They are playing chess",
+      "They're playing chess",
+      "playing chess",
+      "playing a game",
+      "chess",
+      "play chess"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000010": {
+    "accepted": [
+      "She is sitting on the floor",
+      "She's sitting on the floor",
+      "sitting on the floor",
+      "sitting on floor",
+      "sitting on the rug",
+      "sitting on rug",
+      "She is playing chess with the boy",
+      "She's playing chess with the boy",
+      "playing chess with the boy",
+      "playing chess with boy",
+      "She is playing chess",
+      "playing chess",
+      "chess"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000011": {
+    "accepted": [
+      "There are seven children in the room",
+      "There are 7 children in the room",
+      "There are seven children",
+      "There are 7 children",
+      "There are seven",
+      "There are 7",
+      "seven children in the room",
+      "7 children in the room",
+      "seven children",
+      "7 children",
+      "seven",
+      "7",
+      "Seven"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000012": {
+    "accepted": [
+      "It is on the desk under the window",
+      "It's on the desk under the window",
+      "on the desk under the window",
+      "on desk under window",
+      "It is on the desk",
+      "It's on the desk",
+      "on the desk",
+      "on desk",
+      "under the window",
+      "desk",
+      "on the table",
+      "on table"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000013": {
+    "accepted": [
+      "There is a red lamp on the small table",
+      "There's a red lamp on the small table",
+      "There is a red lamp",
+      "There's a red lamp",
+      "a red lamp on the small table",
+      "a red lamp",
+      "red lamp",
+      "There is a lamp on the small table",
+      "a lamp on the small table",
+      "a lamp",
+      "lamp",
+      "a green lamp",
+      "green lamp"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000014": {
+    "accepted": [
+      "Kim",
+      "kim",
+      "Her name is Kim",
+      "It is Kim",
+      "It's Kim"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000015": {
+    "accepted": [
+      "9",
+      "nine",
+      "Class 9",
+      "class 9",
+      "Class nine",
+      "class nine",
+      "They are in class 9",
+      "in class 9"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000016": {
+    "accepted": [
+      "5",
+      "five",
+      "5 cats",
+      "five cats",
+      "There are 5 cats",
+      "There are five cats",
+      "There are 5",
+      "There are five"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000017": {
+    "accepted": [
+      "Sam",
+      "sam",
+      "His name is Sam",
+      "Sam is his favourite cat",
+      "It is Sam",
+      "It's Sam"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000018": {
+    "accepted": [
+      "He is sleeping",
+      "He's sleeping",
+      "sleeping",
+      "is sleeping",
+      "sleep",
+      "It is sleeping"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000019": {
+    "accepted": [
+      "No",
+      "no",
+      "No, she hasn't",
+      "No she hasn't",
+      "No, she has not",
+      "No she has not",
+      "She hasn't",
+      "she hasn't",
+      "She has not",
+      "she hasn't got a cat"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000020": {
+    "accepted": [
+      "She's got chickens",
+      "She has got chickens",
+      "She has chickens",
+      "chickens",
+      "chicken",
+      "Chickens",
+      "some chickens"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000021": {
+    "accepted": [
+      "15",
+      "fifteen",
+      "15 chickens",
+      "fifteen chickens",
+      "She has 15 chickens",
+      "She has fifteen chickens",
+      "She has 15",
+      "She has fifteen"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000022": {
+    "accepted": [
+      "They are in the garden",
+      "They're in the garden",
+      "in the garden",
+      "in garden",
+      "the garden",
+      "garden",
+      "Garden"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000023": {
+    "accepted": [
+      "larger"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000024": {
+    "accepted": [
+      "softer"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000025": {
+    "accepted": [
+      "warmer"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000026": {
+    "accepted": [
+      "quicker",
+      "more quickly"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000027": {
+    "accepted": [
+      "sleepier",
+      "more sleepy"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000028": {
+    "accepted": [
+      "more exciting"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000029": {
+    "accepted": [
+      "shorter"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000030": {
+    "accepted": [
+      "more modern"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000031": {
+    "accepted": [
+      "more neatly",
+      "neatlier"
+    ]
+  },
+  "3d000000-0000-4000-8000-000000000032": {
+    "accepted": [
+      "simpler",
+      "more simple"
+    ]
+  }
+}

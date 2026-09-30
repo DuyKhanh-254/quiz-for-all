@@ -1,7 +1,11 @@
 import type { AnswerKey, JsonResponse, QuestionType } from "@/lib/types";
 
 function normalize(value: string, caseSensitive = false) {
-  const compact = value.trim().replace(/\s+/g, " ");
+  const compact = value
+    .trim()
+    .replace(/[.,?!]+$/g, "")
+    .trim()
+    .replace(/\s+/g, " ");
   return caseSensitive ? compact : compact.toLocaleLowerCase("en");
 }
 

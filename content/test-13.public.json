@@ -1,0 +1,300 @@
+{
+  "quiz": {
+    "id": "1d000000-0000-4000-8000-000000000001",
+    "slug": "cambridge-starters-test-13",
+    "title": "Test 13 – Practice Tests Plus Starters 3",
+    "description": "Part 1 (Picture questions), Part 2 (Listening with audio), and So sánh hơn (32 Questions)",
+    "grade": "Pre A1",
+    "subject": "English",
+    "is_published": true
+  },
+  "assetBase": "quiz-assets/english-grade-2-test-13",
+  "sections": [
+    {
+      "id": "2d000000-0000-4000-8000-000000000001",
+      "title": "TEST 3: PART 1 – LOOK AT THIS PICTURE, ANSWER MY QUESTIONS",
+      "instruction": "Look at the picture carefully and answer the questions. You can write short answers (Trả lời theo keywords hoặc câu hoàn chỉnh).",
+      "section_type": "fill_blank",
+      "position": 1,
+      "image": "images/test13-bedroom-scene.jpg",
+      "questions": [
+        {
+          "id": "3d000000-0000-4000-8000-000000000001",
+          "position": 1,
+          "question_type": "fill_blank",
+          "prompt": "1. What is the girl in the wheelchair doing?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000002",
+          "position": 2,
+          "question_type": "fill_blank",
+          "prompt": "2. What is she holding?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000003",
+          "position": 3,
+          "question_type": "fill_blank",
+          "prompt": "3. Where is the girl reading/using a tablet?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000004",
+          "position": 4,
+          "question_type": "fill_blank",
+          "prompt": "4. What is she doing on the bed?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000005",
+          "position": 5,
+          "question_type": "fill_blank",
+          "prompt": "5. What is the boy near the bookshelf doing?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000006",
+          "position": 6,
+          "question_type": "fill_blank",
+          "prompt": "6. What is on the shelf above the bed?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000007",
+          "position": 7,
+          "question_type": "fill_blank",
+          "prompt": "7. What is the girl standing near the wardrobe doing?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000008",
+          "position": 8,
+          "question_type": "fill_blank",
+          "prompt": "8. What colour is her t-shirt?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000009",
+          "position": 9,
+          "question_type": "fill_blank",
+          "prompt": "9. What are the two children on the floor doing?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000010",
+          "position": 10,
+          "question_type": "fill_blank",
+          "prompt": "10. What is the girl in the red dress doing?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000011",
+          "position": 11,
+          "question_type": "fill_blank",
+          "prompt": "11. How many children are there in the room?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000012",
+          "position": 12,
+          "question_type": "fill_blank",
+          "prompt": "12. Where is the computer?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000013",
+          "position": 13,
+          "question_type": "fill_blank",
+          "prompt": "13. What is on the small table next to the bed?",
+          "points": 1,
+          "options": []
+        }
+      ]
+    },
+    {
+      "id": "2d000000-0000-4000-8000-000000000002",
+      "title": "TEST 3: PART 2 – LISTENING",
+      "instruction": "Listen to the audio and answer the questions. Write a name or a number / short answer (Nghe audio và trả lời câu hỏi).",
+      "section_type": "fill_blank",
+      "position": 2,
+      "audio": "audio/test13-lis-part2.mp3",
+      "image": "images/test13-park-scene.jpg",
+      "questions": [
+        {
+          "id": "3d000000-0000-4000-8000-000000000014",
+          "position": 1,
+          "question_type": "fill_blank",
+          "prompt": "1. What’s the name of the boy’s friend?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000015",
+          "position": 2,
+          "question_type": "fill_blank",
+          "prompt": "2. Which class are the children in at school?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000016",
+          "position": 3,
+          "question_type": "fill_blank",
+          "prompt": "3. How many cats are in Bill’s house?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000017",
+          "position": 4,
+          "question_type": "fill_blank",
+          "prompt": "4. What is the name of Bill’s favourite cat?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000018",
+          "position": 5,
+          "question_type": "fill_blank",
+          "prompt": "5. What is Bill’s favourite cat doing right now?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000019",
+          "position": 6,
+          "question_type": "fill_blank",
+          "prompt": "6. Has Kim got a cat?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000020",
+          "position": 7,
+          "question_type": "fill_blank",
+          "prompt": "7. What animals does Kim have?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000021",
+          "position": 8,
+          "question_type": "fill_blank",
+          "prompt": "8. How many chickens does she have?",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000022",
+          "position": 9,
+          "question_type": "fill_blank",
+          "prompt": "9. Where are the chickens?",
+          "points": 1,
+          "options": []
+        }
+      ]
+    },
+    {
+      "id": "2d000000-0000-4000-8000-000000000003",
+      "title": "BÀI TẬP THÊM: SO SÁNH HƠN (COMPARATIVE)",
+      "instruction": "Điền dạng so sánh hơn của từ trong ngoặc vào chỗ trống để hoàn thành câu.",
+      "section_type": "fill_blank",
+      "position": 3,
+      "questions": [
+        {
+          "id": "3d000000-0000-4000-8000-000000000023",
+          "position": 1,
+          "question_type": "fill_blank",
+          "prompt": "1. My garden is _____ (large) than yours.",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000024",
+          "position": 2,
+          "question_type": "fill_blank",
+          "prompt": "2. This sofa is _____ (soft) than that chair.",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000025",
+          "position": 3,
+          "question_type": "fill_blank",
+          "prompt": "3. Today’s temperature is _____ (warm) than it was yesterday.",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000026",
+          "position": 4,
+          "question_type": "fill_blank",
+          "prompt": "4. He swims _____ (quick) than his classmates.",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000027",
+          "position": 5,
+          "question_type": "fill_blank",
+          "prompt": "5. I feel _____ (sleepy) than usual.",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000028",
+          "position": 6,
+          "question_type": "fill_blank",
+          "prompt": "6. The movie was _____ (exciting) than the one we watched last weekend.",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000029",
+          "position": 7,
+          "question_type": "fill_blank",
+          "prompt": "7. Sarah is _____ (short) than her sister.",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000030",
+          "position": 8,
+          "question_type": "fill_blank",
+          "prompt": "8. Their house is _____ (modern) than ours.",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000031",
+          "position": 9,
+          "question_type": "fill_blank",
+          "prompt": "9. She writes essays _____ (neatly) than her friends.",
+          "points": 1,
+          "options": []
+        },
+        {
+          "id": "3d000000-0000-4000-8000-000000000032",
+          "position": 10,
+          "question_type": "fill_blank",
+          "prompt": "10. The task was _____ (simple) than we thought.",
+          "points": 1,
+          "options": []
+        }
+      ]
+    }
+  ]
+}
